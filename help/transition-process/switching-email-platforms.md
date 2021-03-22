@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 9e4c4c56a09fb505a431d3799104c2684aed4a70
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 電子メールプラットフォームをスムーズにトランジションする方法。
+# 電子メールプラットフォームの切り替え時のスムーズなトランジション方法
 
 電子メールサービスプロバイダー(ESP)を移動する場合、既存の確立済みIPアドレスにトランジションを設定することもできません。 新たに開始する際に、肯定的な評価を開発するためのベストプラクティスに従うことが重要です。 使用する新しいIPアドレスは評価を受けていないため、ISPはメールの送信を完全に信頼できず、顧客への配信を許可する内容には注意が必要です。
 
