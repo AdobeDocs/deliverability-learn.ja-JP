@@ -9,10 +9,10 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 2%
+source-wordcount: '291'
+ht-degree: 3%
 
 ---
 
@@ -35,6 +35,10 @@ Tier 1とTier 2 ISPのほとんどは、過去に電子メールアドレスの�
 
 ## 製品固有のリソース
 
+**Adobe Campaign Classic**
+
+* [トラッキング指標](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html#tracking-indicators)
+
 **Adobe Campaign Standard**
 
-* [苦情](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/complaints.html#reporting)
+* [苦情報告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/complaints.html#reporting)
