@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 配信品質の成功は、強力な基盤に左右されます。 電子メールインフラストラクチャは中核的な要素です。 適切に構成された電子メールインフラストラクチャには、ドメインとIPアドレスの複数のコンポーネントが含まれます。 これらの部品は送信する電子メールの背後にある機械のようなもので、よく評判を送るアンカーになります。 配信品質コンサルタントは、導入時にこれらの要素が適切に設定されることを確認しますが、評判の要素が原因で、この基本的な理解を持つことが重要です。
 
-## ドメインの設定と方法
+## ドメインの設定と方法{#domain-setup-and-strategy}
 
 時代が変わり、一部のISP（GmailやYahooなど）は、送信者に電子メールの評判を付ける際に、ドメインの評判を追加のポイントとして組み込んでいます。 ドメインの評価は、IPアドレスではなく、送信側ドメインに基づいています。 これは、ISPのフィルタリング決定に関しては、ブランドが優先されることを意味します。
 
@@ -32,7 +32,7 @@ Adobeプラットフォームの新しい送信者に対するオンボーディ
 * 親ドメインのサブドメインを使用して、送信ドメインを正当化することを検討します。
 * トランザクションメッセージドメインとマーケティングメッセージカテゴリ用にサブドメインを分けます。 これは、ISPがこの送信方法を探すので、電子メールトラフィックの流れをより信頼性の高いものにします。これは既知の電子メールのベストプラクティスであり、非常に推奨されています。
 
-## IP戦略
+## IP戦略{#ip-strategy}
 
 肯定的な評判を確立するのに役立つように、適切に構成されたIP戦略を策定することが重要です。 IPの数と設定は、ビジネスモデルとマーケティングの目標に応じて異なります。 専門家と協力して、適切に開始するための明確な戦略を策定します。 注意が必要な点を次に示します。
 
@@ -41,11 +41,11 @@ Adobeプラットフォームの新しい送信者に対するオンボーディ
 * メッセージングタイプに応じたトラフィックの分離が重要です。 最低でも、個別のIPプール上にマーケティングメールとトランザクションメールを個別に配置することが重要です。
 * メール戦略に応じて、評価が大幅に異なる場合は、異なる製品やマーケティングストリームを異なるIPプールに分けることもお勧めします。 一部のマーケターは、地域別にセグメント化することもできます。 IPを低い評価を持つトラフィックと切り離しても、評価の問題は修正されませんが、「良い」評価の電子メール配信の問題は回避されます。 結局、リスキーなオーディエンスのために良い情報を犠牲にしたくない
 
-## フィードバックループ
+## フィードバックループ{#feedback-loops}
 
 内部では、Adobeプラットフォームがバウンス、苦情、申し込み解除などに関するデータを処理しています。 これらのフィードバックループの設定は、配信品質の重要な側面です。 苦情は評判を損なう可能性があるので、ターゲットオーディエンスからの苦情を登録した電子メールアドレスを送信する必要があります。 Gmailがこのデータを返さないことに注意してください。 リストの登録解除ヘッダーとエンゲージメントフィルターは、現在は大部分の加入者データベースを構成するGmailの加入者にとって特に重要です。
 
-## 認証
+## 認証 {#authentication}
 
 認証とは、ISPが送信者のIDを検証するために使用するプロセスです。 最も一般的な認証プロトコルは、[!DNL Sender Policy Framework](SPF)と[!DNL DomainKeys Identified Mail](DKIM)の2つです。 これらはエンドユーザには表示されませんが、ISPが確認済みの送信者からの電子メールをフィルタするのに役立ちます。 [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC)は人気を集めていますが、そのポリシーは評判システムのすべてのISPに組み込まれているわけではありません。
 
@@ -63,10 +63,14 @@ Adobeプラットフォームの新しい送信者に対するオンボーディ
 
 ## 製品固有のリソース
 
-**Campaign Standard**
+**Campaign**
 
-* [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html): *サブドメインをAdobe Campaign Standardに完全に委任する方法を説明します。*
+* [このセクション](/help/putting-it-in-practice/ac-domain-name-setup.md)で、サブドメインをAdobe Campaign Classicまたは標準に完全に委任する方法を説明します。
+* [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Classicに委任する方法を *学びます。*
+* [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Standardに委任する方法を *学びます。*
+* [このセクション](/help/putting-it-in-practice/acc-technical-recommendations.md#feedback-loop-acc)で、Campaign Classicインスタンスにフィードバックループを実装する方法の詳細を説明します。
 
-**Campaign Classic**
+## その他のリソース
 
-* [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html): *サブドメインをAdobe Campaign Classicに完全に委任する方法を説明します。*
+* SPF、DKIM、およびDMARCの認証方法に関する詳細は、[このセクション](/help/additional-resources/authentication.md)を参照してください。
+* [このセクション](/help/additional-resources/increase-reputation-with-ip-warming.md)では、IPの暖機を使ってメールの評判を高める方法について説明します。
