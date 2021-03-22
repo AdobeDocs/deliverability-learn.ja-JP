@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '454'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 リサイクルされたスパムトラップは、以前は有効でしたが、使用されなくなったアドレスです。 リストをできる限りクリーンに保つための主な方法の1つは、リスト全体に電子メールを定期的に送信し、バウンスする電子メールを適切に抑制することです。 これにより、破棄された電子メールアドレスを隔離し、それ以上の使用を差し止めることができます。
 
-30日以内に住所がリサイクルされる場合があります。 定期的に送信することは、リストの衛生状態を保つ上で重要な点であり、非アクティブなユーザを定期的に抑える上で重要です。 **[再エンゲージメント](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/re-engagement-best-practices.html?lang=en#sending-messages)** キャンペーンは、通常、洗練された電子メールマーケティングプログラムの一部です。このキャンペーンスタイルを使用すると、送信者は、メールが送信されなくなったユーザーを取り戻そうとします。
+30日以内に住所がリサイクルされる場合があります。 定期的に送信することは、リストの衛生状態を保つ上で重要な点であり、非アクティブなユーザを定期的に抑える上で重要です。 **再エンゲージメント** キャンペーンは、通常、高度な電子メールマーケティングプログラムの一部です。このキャンペーンスタイルを使用すると、送信者は、メールが送信されなくなったユーザーを取り戻そうとします。
 
 ## 誤植
 
@@ -35,14 +35,20 @@ ht-degree: 3%
 
 手付かずのスパムトラップは、エンドユーザーがいなく、エンドユーザーがいないアドレスです。 これは、純粋にスパムメールを識別する目的で作成されたアドレスです。 これは、リストから掃除する際に実質的に不可能で、実質的に十分な努力が必要となる、最も効果的なタイプのスパムトラップです。 ほとんどのブロックリストは、不名誉な送信者をリストするためにプライスチンのスパムトラップを利用しています。 一般的なスパムトラップがより広いマーケティング電子メールリストに感染するのを防ぐ唯一の方法は、リスト収集用に&#x200B;**重複オプトインプロセス**&#x200B;を利用することです。
 
+## その他のリソース
+
+* スパムトラップの識別と回避について詳しくは、[このセクション](/help/additional-resources/all-about-spam-traps.md)を参照してください。
+* [このセクション](/help/additional-resources/re-engagement.md)のリエンゲージメント戦略を通じて配信品質を向上させる方法についての詳細。
+
 ## 製品固有のリソース
 
 **Adobe Campaign Classic**
 
 * [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=en#using-spamassassin)
+* [二重のオプトインを備えた購読フォームの作成](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
 
 **Adobe Campaign Standard**
 
-* [E メールおよびスパム対策分析のプレビュー](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html#designing-content)
+* [電子メールおよびスパム対策分析のプレビュー](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html#designing-content)
 * [重複のオプトイン処理](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=en#communication-channels)
 
