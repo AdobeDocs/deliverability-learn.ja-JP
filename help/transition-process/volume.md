@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -42,3 +42,17 @@ ht-degree: 0%
 2. 買い物かごの放棄：中 — 高エンゲージメントは一般的
 3. お知らせメール — エンゲージメントは高いが、リストの収集方法に応じて不正なアドレスが含まれる場合があります。
 4. Winback Email（一般的に低いエンゲージメント）
+
+## 製品固有のリソース
+
+**Campaign**
+
+* Adobe Campaignを使用して新しいプラットフォームを起動する際の配信品質の管理について詳しくは、[このセクション](/help/putting-it-in-practice/ac-starting-new-platform.md)を参照してください。
+* [このセクション](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)では、複数のウェーブをAdobe Campaign Classicと共に使用して送信する方法を説明します。
+* [このセクション](/help/putting-it-in-practice/ac-domain-name-setup.md)で、サブドメインをAdobe Campaign Classicまたは標準に完全に委任する方法を説明します。
+* [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Classicに委任する方法を *学びます。*
+* [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Standardに委任する方法を *学びます。*
+
+## その他のリソース
+
+* [このセクション](/help/additional-resources/increase-reputation-with-ip-warming.md)では、IPの暖機を使ってメールの評判を高める方法について説明します。
