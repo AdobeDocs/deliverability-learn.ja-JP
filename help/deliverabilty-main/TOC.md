@@ -3,10 +3,10 @@ user-guide-title: 配信品質のベストプラクティスガイド
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: マーケティングプログラムを確実に成功させるための主要な配信品質用語、概念、およびアプローチについて説明します。
 translation-type: tm+mt
-source-git-commit: 5019165cd38a3b7cd26e4971e11f155278c3d3da
+source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 20%
+source-wordcount: '163'
+ht-degree: 28%
 
 ---
 
@@ -40,4 +40,19 @@ ht-degree: 20%
    + [Microsoft （Hotmail、Outlook、Windows Liveなど）](/help/internet-service-provider-specifics/microsoft.md)
    + [Verizonメディアグループ（Yahoo、AOL、Verizonなど）](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [継続的な監視](/help/ongoing-monitoring.md)
-+ [実際に使う](/help/putting-it-in-practice.md)
++ 実際に使う{#putting-it-in-practice}
+   + [成功に到達する方法](/help/putting-it-in-practice/how-to-reach-success.md)
+   + Campaign {#campaign}
+      + [ドメイン名の設定](/help/putting-it-in-practice/ac-domain-name-setup.md)
+      + [SSL証明書要求プロセス](/help/putting-it-in-practice/ac-ssl-certificate-request.md)
+      + [新しいプラットフォームの開始](/help/putting-it-in-practice/ac-starting-new-platform.md)
+      + [Campaign Classic — 技術的な推奨事項](/help/putting-it-in-practice/acc-technical-recommendations.md)
++ その他のリソース {#additional-resources}
+   + [概要](/help/additional-resources/general-resources.md)
+   + [スパムトラップに関するすべて](/help/additional-resources/all-about-spam-traps.md)
+   + [IP ウォーミングによる E メールの評判の向上](/help/additional-resources/increase-reputation-with-ip-warming.md)
+   + [認証](/help/additional-resources/authentication.md)
+   + [重複](/help/additional-resources/duplicates.md)
+   + [再エンゲージメントのベストプラクティス](/help/additional-resources/re-engagement.md)
+   + [リアルタイムブラックホールリスト](/help/additional-resources/blocklist-databases.md)
+   + [トラブルシューティング](/help/additional-resources/troubleshooting.md)
