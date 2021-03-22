@@ -8,9 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 7e9cc30c6d3fb69f557b17f452b43de08ae85a03
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '430'
 ht-degree: 15%
 
 ---
@@ -39,7 +39,8 @@ ht-degree: 15%
 7. [送信者の永続性](/help/sender-permanence.md)
 8. [インターネットサービスプロバイダーの詳細](/help/internet-service-provider-specifics/overview.md)
 9. [継続的な監視](/help/ongoing-monitoring.md)
-   [実際に使う](/help/putting-it-in-practice.md)
+10. [実際に使う](/help/putting-it-in-practice/how-to-reach-success.md)
+11. [その他のリソース](/help/additional-resources/general-resources.md)
 
 ## ソース
 
