@@ -1,6 +1,6 @@
 ---
 title: バウンス
-description: 様々なタイプのバウンスについて説明します。
+description: バウンスのタイプについて説明します。
 feature: 指標
 topics: Deliverability
 kt: 7047
@@ -9,10 +9,10 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 3%
+source-wordcount: '478'
+ht-degree: 6%
 
 ---
 
@@ -51,11 +51,14 @@ ht-degree: 3%
 
 ## 製品固有のリソース
 
-**Adobe Campaign Standard**
-
-* [レポートのリスト — バウンスの概要（製品ドキュメント）](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=en#reporting)
-* [配信エラーについて（製品ドキュメント）](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=en#about-delivery-failures)
-
 **Adobe Campaign Classic**
 
-* [配信エラーについて（製品ドキュメント）](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=en#sending-messages)
+* [配信エラーのタイプと理由](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
+* [バウンスメール管理](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-management)
+* [配信不能件数およびバウンスレポート](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html#non-deliverables-and-bounces)
+
+**Adobe Campaign Standard**
+
+* [配信エラーのタイプと理由](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
+* [バウンスメールの選定](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#bounce-mail-qualification)
+* [バウンスの概要レポート](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=en#reporting)
