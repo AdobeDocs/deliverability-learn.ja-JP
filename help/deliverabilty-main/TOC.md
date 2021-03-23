@@ -3,7 +3,7 @@ user-guide-title: 配信品質のベストプラクティスガイド
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: マーケティングプログラムを確実に成功させるための主要な配信品質用語、概念、およびアプローチについて説明します。
 translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+source-git-commit: 5a7e8ef210941b79bd5eb31b27041ca329e301f2
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 86%
@@ -41,7 +41,7 @@ ht-degree: 86%
    + [Verizon Media Group（Yahoo、AOL、Verizon など）](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [継続的な監視](/help/ongoing-monitoring.md)
 + [実際の利用](/help/putting-it-in-practice.md)
-+ Apendix:追加のリソース{#additional-resources}
++ 付録：追加のリソース{#additional-resources}
    + [概要](/help/additional-resources/general-resources.md)
    + 汎用リソース{#generic-resources}
       + [スパムトラップに関するすべて](/help/additional-resources/all-about-spam-traps.md)
