@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Adobeプラットフォームの新しい送信者に対するオンボーディ
 
 ## フィードバックループ{#feedback-loops}
 
-内部では、Adobeプラットフォームがバウンス、苦情、申し込み解除などに関するデータを処理しています。 これらのフィードバックループの設定は、配信品質の重要な側面です。 苦情は評判を損なう可能性があるので、ターゲットオーディエンスからの苦情を登録した電子メールアドレスを送信する必要があります。 Gmailがこのデータを返さないことに注意してください。 リストの登録解除ヘッダーとエンゲージメントフィルターは、現在は大部分の加入者データベースを構成するGmailの加入者にとって特に重要です。
+内部では、Adobeプラットフォームがバウンス、苦情、申し込み解除などに関するデータを処理しています。 これらのフィードバックループの設定は、配信品質の重要な側面です。 苦情は評判を損なう可能性があるので、ターゲットオーディエンスからの苦情を登録した電子メールアドレスを送信する必要があります。 Gmailがこのデータを返さないことに注意してください。 リストの登録解除ヘッダーとエンゲージメントフィルターは、現在、大部分の加入者データベースを構成するGmailの加入者にとって特に重要です。
 
 ## 認証 {#authentication}
 
@@ -65,10 +65,10 @@ Adobeプラットフォームの新しい送信者に対するオンボーディ
 
 **Campaign**
 
-* [このセクション](/help/putting-it-in-practice/ac-domain-name-setup.md)で、サブドメインをAdobe Campaign Classicまたは標準に完全に委任する方法を説明します。
+* [このセクション](/help/additional-resources/ac-domain-name-setup.md)で、サブドメインをAdobe Campaign Classicまたは標準に完全に委任する方法を説明します。
 * [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Classicに委任する方法を *学びます。*
 * [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Standardに委任する方法を *学びます。*
-* [このセクション](/help/putting-it-in-practice/acc-technical-recommendations.md#feedback-loop-acc)で、Campaign Classicインスタンスにフィードバックループを実装する方法の詳細を説明します。
+* [このセクション](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc)で、Campaign Classicインスタンスにフィードバックループを実装する方法の詳細を説明します。
 
 ## その他のリソース
 
