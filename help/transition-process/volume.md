@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 **Campaign**
 
-* Adobe Campaignを使用して新しいプラットフォームを起動する際の配信品質の管理について詳しくは、[このセクション](/help/putting-it-in-practice/ac-starting-new-platform.md)を参照してください。
+* Adobe Campaignを使用して新しいプラットフォームを起動する際の配信品質の管理について詳しくは、[このセクション](/help/additional-resources/ac-starting-new-platform.md)を参照してください。
 * [このセクション](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)では、複数のウェーブをAdobe Campaign Classicと共に使用して送信する方法を説明します。
-* [このセクション](/help/putting-it-in-practice/ac-domain-name-setup.md)で、サブドメインをAdobe Campaign Classicまたは標準に完全に委任する方法を説明します。
+* [このセクション](/help/additional-resources/ac-domain-name-setup.md)で、サブドメインをAdobe Campaign Classicまたは標準に完全に委任する方法を説明します。
 * [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Classicに委任する方法を *学びます。*
 * [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Standardに委任する方法を *学びます。*
 
