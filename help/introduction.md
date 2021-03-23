@@ -8,9 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 6297a3331b458b88ce2141a6fa30bbc69190b524
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '431'
 ht-degree: 15%
 
 ---
@@ -39,8 +39,11 @@ ht-degree: 15%
 7. [送信者の永続性](/help/sender-permanence.md)
 8. [インターネットサービスプロバイダーの詳細](/help/internet-service-provider-specifics/overview.md)
 9. [継続的な監視](/help/ongoing-monitoring.md)
-10. [実際に使う](/help/putting-it-in-practice/putting-it-in-practice.md)
-11. [その他のリソース](/help/additional-resources/general-resources.md)
+10. [実際に使う](/help/putting-it-in-practice.md)
+
+>[!NOTE]
+>
+>[adobe-deliverability-best-practice-guide.pdf](/help/assets/adobe-deliverability-best-practice-guide.pdf)をダウンロードします。
 
 ## ソース
 
@@ -50,4 +53,4 @@ ht-degree: 15%
 
 ## その他のリソース
 
-[adobe-deliverability-best-practice-guide.pdf](/help/assets/adobe-deliverability-best-practice-guide.pdf)をダウンロードします。
+[付録：その他のリソース](/help/additional-resources/general-resources.md)
