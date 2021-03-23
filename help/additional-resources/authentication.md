@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 52%
@@ -56,7 +56,7 @@ DKIM を使用するには、次のように、いくつかの前提条件を満
 * **セキュリティ**:暗号化は、DKIMの主要な要素です。DKIMのセキュリティレベルを確保するために、暗号化サイズを推奨するベストプラクティスは1024bです。 下位DKIMキーは、大部分のアクセスプロバイダーでは有効と見なされません。
 * **評価**:評価はIPやドメインに基づいていますが、あまり透明でないDKIMセレクターも考慮すべき重要な要素です。セレクターの選択は重要です。誰にでも使える「デフォルト」のものを保持するのを避け、したがって評判が低い。 **顧客維持／獲得用の通信**&#x200B;と認証には、別のセレクターを実装する必要があります。
 
-Campaign Classicを使用する際のDKIMの前提条件に関する詳細は、[このセクション](/help/putting-it-in-practice/acc-technical-recommendations.md#dkim-acc)を参照してください。
+Campaign Classicを使用する際のDKIMの前提条件に関する詳細は、[このセクション](/help/additional-resources/acc-technical-recommendations.md#dkim-acc)を参照してください。
 
 ## DMARC {#dmarc}
 
