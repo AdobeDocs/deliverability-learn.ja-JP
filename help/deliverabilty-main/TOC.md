@@ -3,10 +3,10 @@ user-guide-title: 配信品質のベストプラクティスガイド
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: マーケティングプログラムを確実に成功させるための主要な配信品質用語、概念、およびアプローチについて説明します。
 translation-type: tm+mt
-source-git-commit: a823349a7619595c6dc3e0d135c253bc5150046e
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 29%
+source-wordcount: '165'
+ht-degree: 26%
 
 ---
 
@@ -40,19 +40,20 @@ ht-degree: 29%
    + [Microsoft （Hotmail、Outlook、Windows Liveなど）](/help/internet-service-provider-specifics/microsoft.md)
    + [Verizonメディアグループ（Yahoo、AOL、Verizonなど）](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [継続的な監視](/help/ongoing-monitoring.md)
-+ 実際に使う{#putting-it-in-practice}
-   + [概要](/help/putting-it-in-practice/putting-it-in-practice.md)
-   + Campaign {#campaign}
-      + [ドメイン名の設定](/help/putting-it-in-practice/ac-domain-name-setup.md)
-      + [SSL証明書要求プロセス](/help/putting-it-in-practice/ac-ssl-certificate-request.md)
-      + [新しいプラットフォームの開始](/help/putting-it-in-practice/ac-starting-new-platform.md)
-      + [Campaign Classic — 技術的な推奨事項](/help/putting-it-in-practice/acc-technical-recommendations.md)
-+ その他のリソース {#additional-resources}
++ [実際に使う](/help/putting-it-in-practice.md)
++ Apendix:追加のリソース{#additional-resources}
    + [概要](/help/additional-resources/general-resources.md)
-   + [スパムトラップに関するすべて](/help/additional-resources/all-about-spam-traps.md)
-   + [IP ウォーミングによる E メールの評判の向上](/help/additional-resources/increase-reputation-with-ip-warming.md)
-   + [認証](/help/additional-resources/authentication.md)
-   + [重複](/help/additional-resources/duplicates.md)
-   + [再エンゲージメントのベストプラクティス](/help/additional-resources/re-engagement.md)
-   + [リアルタイムブラックホールリスト](/help/additional-resources/blocklist-databases.md)
-   + [トラブルシューティング](/help/additional-resources/troubleshooting.md)
+   + 汎用リソース{#generic-resources}
+      + [スパムトラップに関するすべて](/help/additional-resources/all-about-spam-traps.md)
+      + [IP ウォーミングによる E メールの評判の向上](/help/additional-resources/increase-reputation-with-ip-warming.md)
+      + [認証](/help/additional-resources/authentication.md)
+      + [重複](/help/additional-resources/duplicates.md)
+      + [再エンゲージメントのベストプラクティス](/help/additional-resources/re-engagement.md)
+      + [リアルタイムブラックホールリスト](/help/additional-resources/blocklist-databases.md)
+      + [トラブルシューティング](/help/additional-resources/troubleshooting.md)
+   + 製品固有のリソース{#product-specific-resources}
+      + Campaign {#campaign}
+         + [ドメイン名の設定](/help/additional-resources/ac-domain-name-setup.md)
+         + [SSL証明書要求プロセス](/help/additional-resources/ac-ssl-certificate-request.md)
+         + [新しいプラットフォームの開始](/help/additional-resources/ac-starting-new-platform.md)
+         + [Campaign Classic — 技術的な推奨事項](/help/additional-resources/acc-technical-recommendations.md)
