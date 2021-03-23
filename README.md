@@ -1,7 +1,7 @@
 ---
 source-git-commit: 321dc7eb5ec9e3d82d7d133689104282b553efd1
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -16,13 +16,13 @@ ht-degree: 100%
 
 ## アドビのコンテンツへの投稿について
 
-「[Adobe Docs寄稿者ガイド](https://docs.adobe.com/content/help/ja-JP/contributor/contributor-guide/introduction.html)」を参照してください。
+[Adobe Docs 寄稿者ガイド](https://docs.adobe.com/content/help/ja-JP/contributor/contributor-guide/introduction.html)を参照してください。
 
 投稿方法は、誰がどのような変更を投稿するかに応じて異なります。
 
 ### マイナーな変更
 
-厳選されたマイナーな更新をおこなう場合は、記事にアクセスし、記事の GitHub ソースに移動する記事の&#x200B;**「編集」**&#x200B;リンクをクリックしてください。その後、GitHub UIを使用してアップデートを行います。詳細については、一般[的なAdobe Docs寄稿者ガイド](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)を参照してください。
+厳選されたマイナーな更新をおこなう場合は、記事にアクセスし、記事の GitHub ソースに移動する記事の&#x200B;**「編集」**&#x200B;リンクをクリックしてください。その後、GitHub UI を使用してアップデートをおこないます。詳細については、一般的な [Adobe Docs 寄稿者ガイド](https://docs.adobe.com/content/help/ja-JP/contributor/contributor-guide/introduction.html)を参照してください。
 
 このリポジトリのドキュメントおよびコード例については、マイナーな修正または詳細な説明をアドビの利用条件で説明しています。
 
@@ -44,11 +44,11 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 
 コミュニティ寄稿者は、基本的な編集に GitHub UI を使用したり、レポをフォークしてメジャー貢献度を確保したりできます。
 
-詳しくは、[Adobe Docs 寄稿者ガイド](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)を参照してください。
+詳しくは、[Adobe Docs 寄稿者ガイド](https://docs.adobe.com/content/help/ja-JP/contributor/contributor-guide/introduction.html)を参照してください。
 
-## markdown を使用してトピックをフォーマットする方法
+## Markdown を使用してトピックをフォーマットする方法
 
-このリポジトリのすべての記事は GitHub フレーズダウンダウンを使用します。マークダウンについて詳しくない場合は、以下を参照してください。
+このリポジトリのすべての記事は GitHub Flavored Markdown を使用します。Markdown について詳しくない場合は、以下を参照してください。
 
 * [Markdown の基本](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [印刷可能な Markdown のクイックリファレンス](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
