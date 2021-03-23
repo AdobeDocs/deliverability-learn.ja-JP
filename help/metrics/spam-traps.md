@@ -12,28 +12,28 @@ translation-type: tm+mt
 source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 3%
+ht-degree: 88%
 
 ---
 
 
 # スパムトラップ
 
-不正な送信者からのメールや、電子メールのベストプラクティスに従っていない送信者からのメールを識別するのに役立つスパムトラップが存在します。 スパムトラップの電子メールアドレスは、一般公開されていないので、ほとんど特定できません。 スパムトラップに電子メールを配信すると、トラップの種類やISPに応じて、様々な重大度のユーザーの評判に影響を及ぼします。 スパムトラップの種類については、以下の節を参照してください。
+スパムトラップは、不正な送信者や E メールのベストプラクティスに従っていない送信者からのメールを識別するために利用されます。スパムトラップの E メールアドレスは、通常一般公開されないので、ほぼ特定不可能です。スパムトラップに E メールを配信すると、送信者の評判に対し、トラップの種類や ISP に応じて多様な程度の影響を及ぼします。以下の節で、異なる種類のスパムトラップについて詳しく説明します。
 
-## リサイクル済み
+## 再利用
 
-リサイクルされたスパムトラップは、以前は有効でしたが、使用されなくなったアドレスです。 リストをできる限りクリーンに保つための主な方法の1つは、リスト全体に電子メールを定期的に送信し、バウンスする電子メールを適切に抑制することです。 これにより、破棄された電子メールアドレスを隔離し、それ以上の使用を差し止めることができます。
+再利用型のスパムトラップは、以前は有効だったが今では使用されなくなったアドレスです。リストをできる限りクリーンに保つための主な方法の 1 つは、定期的にリスト全体に E メールを送信し、バウンスする E メールを適切に抑制することです。これにより、破棄された E メールアドレスを強制隔離し、それ以降の使用を停止できます。
 
-30日以内に住所がリサイクルされる場合があります。 定期的に送信することは、リストの衛生状態を保つ上で重要な点であり、非アクティブなユーザを定期的に抑える上で重要です。 **再エンゲージメント** キャンペーンは、通常、高度な電子メールマーケティングプログラムの一部です。このキャンペーンスタイルを使用すると、送信者は、メールが送信されなくなったユーザーを取り戻そうとします。
+場合によっては、アドレスが 30 日以内に再利用されることもあります。定期的な送信をおこない、非アクティブユーザーを抑制することは、リストの衛生状態を保つうえで重要な点です。**再エンゲージメント** キャンペーンは、通常、高度な電子メールマーケティングプログラムの一部です。このキャンペーンスタイルでは、送信者は、メール送信対象ではなくなったユーザーを取り戻すための試行が可能です。
 
-## 誤植
+## タイプミス
 
-誤字スパムトラップは、誤字または奇形を含むアドレスです。 これは多くの場合、Gmailのような主要ドメインの既知の誤ったつづりで発生します(例：gmialは一般的なタイポ)。 ISPやその他のブロックリスト操作者は、スパムトラップとして使用する既知の不正ドメインを登録し、スパムマーを識別して送信者の正常性を測定します。 タイプミススパムトラップを防ぐ最善の方法は、重複の収集に&#x200B;**リストオプトインプロセス**&#x200B;を使用することです。
+タイプミス型のスパムトラップは、誤字または変形を含むアドレスです。これは多くの場合、Gmail など主要ドメインの既知の誤ったつづりで発生します（例：gmial はよくあるタイプミスです）。ISP やその他のブロックリスト運営者は、スパムトラップとして使用するために既知の不正ドメインを登録し、スパマーの識別、送信者の健全性の測定をおこないます。タイプミス型のスパムトラップを回避する最善の方法は、リスト収集に&#x200B;**ダブルオプトインプロセス**&#x200B;を使用することです。
 
-## プリスチン
+## 未使用
 
-手付かずのスパムトラップは、エンドユーザーがいなく、エンドユーザーがいないアドレスです。 これは、純粋にスパムメールを識別する目的で作成されたアドレスです。 これは、リストから掃除する際に実質的に不可能で、実質的に十分な努力が必要となる、最も効果的なタイプのスパムトラップです。 ほとんどのブロックリストは、不名誉な送信者をリストするためにプライスチンのスパムトラップを利用しています。 一般的なスパムトラップがより広いマーケティング電子メールリストに感染するのを防ぐ唯一の方法は、リスト収集用に&#x200B;**重複オプトインプロセス**&#x200B;を利用することです。
+未使用型のスパムトラップは、現在も過去にもエンドユーザーがいないアドレスです。これは、スパムメールを識別する目的のみに作成されたアドレスです。これは、最も影響力が大きい種類のスパムトラップです。実質的に特定は不可能で、リストから除去するには相当な努力を必要とします。ほとんどのブロックリストは、未使用型のスパムトラップを利用して信用できない送信者をリストに追加します。未使用型スパムトラップが広範なマーケティング E メールリストに侵入するのを防ぐ唯一の方法は、リスト収集時に&#x200B;**ダブルオプトインプロセス**&#x200B;を利用することです。
 
 ## その他のリソース
 
@@ -44,11 +44,11 @@ ht-degree: 3%
 
 **Adobe Campaign Classic**
 
-* [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=en#using-spamassassin)
+* [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=ja#using-spamassassin)
 * [二重のオプトインを備えた購読フォームの作成](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
 
 **Adobe Campaign Standard**
 
-* [電子メールおよびスパム対策分析のプレビュー](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html#designing-content)
-* [重複のオプトイン処理](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=en#communication-channels)
+* [電子メールおよびスパム対策分析のプレビュー](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html?lang=ja#designing-content)
+* [ダブルオプトインプロセス](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=ja#communication-channels)
 
