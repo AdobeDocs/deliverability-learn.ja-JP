@@ -1,6 +1,6 @@
 ---
 title: 配信品質の指標
-description: 監視する主要な配信品質指標と、評価の問題を特定するためのその指標の使用方法を理解します。
+description: 配信品質のどの主要指標を監視すればよいのか、その指標をどう利用すれば評判に関する問題を特定できるかについて説明します。
 feature: 指標
 topics: Deliverability
 kt: 5256
@@ -12,19 +12,19 @@ translation-type: tm+mt
 source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 15%
+ht-degree: 62%
 
 ---
 
 
 # 配信品質の指標
 
-送信評価の問題を特定する最善の方法の1つは、指標を通してです。 重要な配信品質指標を監視し、それらを使用して評価の問題を特定する方法を見てみましょう。
+送信評判に関する問題を特定する最善の方法の 1 つに指標があります。監視対象となる配信品質の主要指標およびそれらを使用して評判に関する問題を特定する方法について見てみましょう。
 
 * [バウンス](/help/metrics/bounces.md)
 * [苦情](/help/metrics/complaints.md)
 * [スパムトラップ](/help/metrics/spam-traps.md)
-* [バルクおよびブロック](/help/metrics/bulking-and-blocking.md)
+* [バルク指定とブロック](/help/metrics/bulking-and-blocking.md)
 
 ## 製品固有のリソース
 
