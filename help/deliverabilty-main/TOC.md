@@ -2,11 +2,11 @@
 user-guide-title: 配信品質のベストプラクティスガイド
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: マーケティングプログラムを確実に成功させるための主要な配信品質用語、概念、およびアプローチについて説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5a7e8ef210941b79bd5eb31b27041ca329e301f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 86%
    + [スパムトラップ](/help/metrics/spam-traps.md)
    + [バルク指定とブロック](/help/metrics/bulking-and-blocking.md)
 + [エンゲージメント](/help/engagement.md)
-+ トランジションプロセス - E メールプラットフォームの切り替え {#transition-process}
++ トランジションプロセス - E メールプラットフォームの切り替え{#transition-process}
    + [E メールプラットフォーム切り替え時、スムーズに移行する方法](/help/transition-process/switching-email-platforms.md)
    + [インフラストラクチャ](/help/transition-process/infrastructure.md)
    + [ターゲティング設定条件](/help/transition-process/targeting-criteria.md)
@@ -43,7 +43,7 @@ ht-degree: 86%
 + [実際の利用](/help/putting-it-in-practice.md)
 + 付録：追加のリソース{#additional-resources}
    + [概要](/help/additional-resources/general-resources.md)
-   + 汎用リソース{#generic-resources}
+   + 汎用リソース {#generic-resources}
       + [スパムトラップに関するすべて](/help/additional-resources/all-about-spam-traps.md)
       + [IP ウォーミングによる E メールの評判の向上](/help/additional-resources/increase-reputation-with-ip-warming.md)
       + [認証](/help/additional-resources/authentication.md)
@@ -54,6 +54,6 @@ ht-degree: 86%
    + 製品固有のリソース {#product-specific-resources}
       + Campaign {#campaign}
          + [ドメイン名の設定](/help/additional-resources/ac-domain-name-setup.md)
-         + [SSL証明書要求プロセス](/help/additional-resources/ac-ssl-certificate-request.md)
+         + [SSL 証明書要求プロセス](/help/additional-resources/ac-ssl-certificate-request.md)
          + [新しいプラットフォームの開始](/help/additional-resources/ac-starting-new-platform.md)
-         + [Campaign Classic — 技術的な推奨事項](/help/additional-resources/acc-technical-recommendations.md)
+         + [Campaign Classic - 技術的な推奨事項](/help/additional-resources/acc-technical-recommendations.md)
