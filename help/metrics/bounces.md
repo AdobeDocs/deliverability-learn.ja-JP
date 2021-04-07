@@ -1,6 +1,6 @@
 ---
 title: バウンス
-description: 様々なバウンスのタイプについて説明します。。
+description: '様々なバウンスのタイプについて説明します。 '
 feature: 指標
 topics: Deliverability
 kt: 7047
@@ -8,11 +8,11 @@ thumbnail: kt7047.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -52,12 +52,12 @@ ht-degree: 89%
 
 **Adobe Campaign Classic**
 
-* [配信エラーのタイプと理由](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
-* [バウンスメール管理](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-management)
-* [配信不能件数およびバウンスレポート](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html#non-deliverables-and-bounces)
+* [配信失敗のタイプと理由](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=ja#delivery-failure-types-and-reasons)
+* [バウンスメールの管理](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=ja#bounce-mail-management)
+* [配信不能件数とバウンス数のレポート](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html?lang=ja#non-deliverables-and-bounces)
 
 **Adobe Campaign Standard**
 
-* [配信エラーのタイプと理由](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
-* [バウンスメールの選定](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#bounce-mail-qualification)
+* [配信失敗のタイプと理由](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=ja#delivery-failure-types-and-reasons)
+* [バウンスメールの選定](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=ja#bounce-mail-qualification)
 * [バウンスの概要レポート](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=ja#reporting)
