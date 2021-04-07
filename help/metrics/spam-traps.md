@@ -8,11 +8,11 @@ thumbnail: kt7050.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 88%
 
 再利用型のスパムトラップは、以前は有効だったが今では使用されなくなったアドレスです。リストをできる限りクリーンに保つための主な方法の 1 つは、定期的にリスト全体に E メールを送信し、バウンスする E メールを適切に抑制することです。これにより、破棄された E メールアドレスを強制隔離し、それ以降の使用を停止できます。
 
-場合によっては、アドレスが 30 日以内に再利用されることもあります。定期的な送信をおこない、非アクティブユーザーを抑制することは、リストの衛生状態を保つうえで重要な点です。**再エンゲージメント** キャンペーンは、通常、高度な電子メールマーケティングプログラムの一部です。このキャンペーンスタイルでは、送信者は、メール送信対象ではなくなったユーザーを取り戻すための試行が可能です。
+場合によっては、アドレスが 30 日以内に再利用されることもあります。定期的な送信をおこない、非アクティブユーザーを抑制することは、リストの衛生状態を保つうえで重要な点です。**再エンゲージメントキャンペーン**&#x200B;は通常、高度な電子メールマーケティングプログラムの一部です。 このキャンペーンスタイルでは、送信者は、メール送信対象ではなくなったユーザーを取り戻すための試行が可能です。
 
 ## タイプミス
 
@@ -37,18 +37,18 @@ ht-degree: 88%
 
 ## その他のリソース
 
-* スパムトラップの識別と回避について詳しくは、[このセクション](/help/additional-resources/all-about-spam-traps.md)を参照してください。
-* [このセクション](/help/additional-resources/re-engagement.md)のリエンゲージメント戦略を通じて配信品質を向上させる方法についての詳細。
+* [このセクション](/help/additional-resources/all-about-spam-traps.md)では、スパムトラップの特定と回避の詳細について説明します。
+* [このセクション](/help/additional-resources/re-engagement.md)では、再エンゲージメント戦略を通じて配信品質を向上させる方法の詳細について説明します。
 
 ## 製品固有のリソース
 
 **Adobe Campaign Classic**
 
 * [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=ja#using-spamassassin)
-* [二重のオプトインを備えた購読フォームの作成](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
+* [ダブルオプトインによる購読フォームの作成](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=ja#create-a-subscription--form-with-double-opt-in)
 
 **Adobe Campaign Standard**
 
-* [電子メールおよびスパム対策分析のプレビュー](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html?lang=ja#designing-content)
+* [E メールおよびスパム対策分析のプレビュー](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html?lang=ja#designing-content)
 * [ダブルオプトインプロセス](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=ja#communication-channels)
 
