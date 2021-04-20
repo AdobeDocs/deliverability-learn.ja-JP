@@ -1,7 +1,7 @@
 ---
 title: リアルタイムブラックホールリスト
 description: スパマーが使用する可能性の高いIPアドレスとドメインのリストを管理する組織について説明します。
-feature: その他のリソース
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

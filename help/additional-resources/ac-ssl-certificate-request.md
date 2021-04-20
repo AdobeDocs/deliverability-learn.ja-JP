@@ -1,7 +1,7 @@
 ---
 title: SSL証明書要求プロセス
 description: Adobeに委任したサブドメインにSSL証明書をインストールする方法を説明します。
-feature: 実際に使う
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

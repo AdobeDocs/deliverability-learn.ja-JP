@@ -1,7 +1,7 @@
 ---
 title: 収集とリストの増加に対応
 description: '新しい電子メールアドレスの最適なソースは何か、高いデータ品質を確保する方法、および法的ガイドラインに沿った配置方法について説明します。 '
-feature: オーディエンス
+feature: Audiences
 topics: Deliverability
 kt: 7063
 thumbnail: kt7063.jpg

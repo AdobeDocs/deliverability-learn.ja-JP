@@ -1,7 +1,7 @@
 ---
 title: 配信品質の指標
 description: 配信品質のどの主要指標を監視すればよいのか、その指標をどう利用すれば評判に関する問題を特定できるかについて説明します。
-feature: 指標
+feature: Metrics
 topics: Deliverability
 kt: 5256
 thumbnail: kt5256.jpg

@@ -1,7 +1,7 @@
 ---
 title: 配信品質のトラブルシューティング
 description: 配信品質の問題を識別し、対処する方法を学びます。
-feature: その他のリソース
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

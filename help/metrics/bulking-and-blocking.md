@@ -1,7 +1,7 @@
 ---
 title: E メールのバルク指定とブロック
 description: ISP が E メールメッセージをバルクフォルダーに入れたりブロックしたりする理由について説明します。
-feature: 指標
+feature: Metrics
 topics: Deliverability
 kt: 7051
 thumbnail: kt7051.jpg

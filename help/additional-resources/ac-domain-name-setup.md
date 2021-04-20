@@ -1,7 +1,7 @@
 ---
 title: ドメイン名の設定
 description: サブドメインをAdobe Campaignに委任する方法を説明します。
-feature: 実際に使う
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

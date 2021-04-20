@@ -1,7 +1,7 @@
 ---
 title: 配信品質の戦略と配信品質の定義方法
 description: 配信品質の定義、配信品質が重要な理由および配信品質の主要な指標について説明します。
-feature: 配信品質
+feature: Deliverability
 topics: Deliverability
 kt: 5255
 thumbnail: kt5255.jpg

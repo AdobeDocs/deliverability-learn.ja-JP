@@ -1,7 +1,7 @@
 ---
 title: バウンス
 description: '様々なバウンスのタイプについて説明します。 '
-feature: 指標
+feature: Metrics
 topics: Deliverability
 kt: 7047
 thumbnail: kt7047.jpg

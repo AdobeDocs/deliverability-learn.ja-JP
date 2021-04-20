@@ -1,7 +1,7 @@
 ---
 title: 送信者の永続性
 description: 永続的な送信とは、ISPの評判を維持するために、一貫した送信量と方法を確立するプロセスです。
-feature: 送信者の永続性
+feature: Sender Permanence
 topics: Deliverability
 kt: 5261
 thumbnail: kt5261.jpg

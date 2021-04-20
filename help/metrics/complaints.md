@@ -1,7 +1,7 @@
 ---
 title: 苦情
 description: 'ユーザーが、不要または予期しない E メールであることを指摘した場合に登録される、苦情について説明します。 '
-feature: 指標
+feature: Metrics
 topics: Deliverability
 kt: 7048
 thumbnail: kt7048.jpg

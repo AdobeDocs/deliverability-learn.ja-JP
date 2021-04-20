@@ -1,7 +1,7 @@
 ---
 title: 実際に使う
 description: 永続的な送信とは、ISPの評判を維持するために、一貫した送信量と方法を確立するプロセスです。
-feature: 配信品質
+feature: Deliverability
 topics: Deliverability
 kt: 5264
 thumbnail: kt5264.jpg

@@ -1,7 +1,7 @@
 ---
 title: インフラ
 description: '電子メールインフラストラクチャを適切に構築するために必要な要件を学びます。 '
-feature: トランジションプロセス
+feature: Transition Process
 topics: Deliverability
 kt: 7052
 thumbnail: kt7052.jpg

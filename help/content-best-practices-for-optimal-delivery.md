@@ -1,7 +1,7 @@
 ---
 title: 最適な配信品質を実現するためのコンテンツのベストプラクティス
 description: 内容が重要。 関連性に関する当社の視点は既に読んでいますが、コンテンツの配信品質を最適化するためのいくつかの追加のヒントを以下に示します。
-feature: コンテンツ
+feature: Content
 topics: Deliverability
 kt: 5260
 thumbnail: kt5260.jpg

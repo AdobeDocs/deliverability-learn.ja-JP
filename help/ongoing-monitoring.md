@@ -1,7 +1,7 @@
 ---
 title: 継続的な監視
 description: どの問題に注意する必要があるか。
-feature: 監視
+feature: Monitoring
 topics: Deliverability
 kt: 5263
 thumbnail: kt5263.jpg

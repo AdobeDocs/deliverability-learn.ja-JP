@@ -1,7 +1,7 @@
 ---
 title: Verizonメディアグループ（Yahoo、AOL、Verizonなど）
 description: '[!DNL Verizon Media Group] は、通常、ほとんどのB2Cリストにとって上位3つのドメインの1つです。評判の問題が発生した場合、通常はメールの送信量を制限または一括送信するので、ユーザは多少独自の動作をします。'
-feature: ISP
+feature: ISPs
 topics: Deliverability
 kt: 5320
 doc-type: article

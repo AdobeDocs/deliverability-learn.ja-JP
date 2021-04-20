@@ -1,7 +1,7 @@
 ---
 title: ボリューム — スムーズなトランジション方法のヒント
 description: 送信するメールの量は、肯定的な評価を確立する上で重要です。 スムーズなトランジションを実現する方法を学びます。
-feature: トランジションプロセス
+feature: Transition Process
 topics: Deliverability
 kt: 7055
 thumbnail: kt7055.jpg

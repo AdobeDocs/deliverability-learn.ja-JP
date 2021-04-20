@@ -1,7 +1,7 @@
 ---
 title: Engagement
 description: アクションは、インボックスの配置に関する判断に影響を与える唯一の重要な要素となっています。
-feature: 関与
+feature: Engagement
 topics: Deliverability
 kt: 5257
 thumbnail: kt5257.jpg

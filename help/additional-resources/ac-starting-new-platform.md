@@ -1,7 +1,7 @@
 ---
 title: 新しいプラットフォームの開始
 description: Adobe Campaignを使用して新しいプラットフォームを開始する際の配信品質の管理についての詳細。
-feature: 実際に使う
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

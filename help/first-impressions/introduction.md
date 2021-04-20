@@ -1,7 +1,7 @@
 ---
 title: 最初のインプレッション：リストの収集とお知らせメール
 description: '第1印象を良くして、電子メールプログラムが成功するように設定する方法を説明します。 '
-feature: オーディエンス、電子メール
+feature: Audiences, Email
 topics: Deliverability
 kt: 5258
 thumbnail: kt5258.jpg

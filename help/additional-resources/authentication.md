@@ -1,7 +1,7 @@
 ---
 title: 認証
 description: SPF、DKIM、およびDMARCの認証方法に関する詳細。
-feature: その他のリソース
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

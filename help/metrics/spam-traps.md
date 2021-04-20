@@ -1,7 +1,7 @@
 ---
 title: スパムトラップ
 description: 様々な種類のスパムトラップについて説明します。
-feature: 指標
+feature: Metrics
 topics: Deliverability
 kt: 7050
 thumbnail: kt7050.jpg

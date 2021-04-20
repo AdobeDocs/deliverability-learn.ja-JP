@@ -1,7 +1,7 @@
 ---
 title: Gmail
 description: Gmailは、ほとんどの送信者の電子メールリストの中で最も大きな部分を占めています。 また、他の人とは少し異なる扱いをする傾向があります。
-feature: ISP
+feature: ISPs
 topics: Deliverability
 kt: 5262
 doc-type: article

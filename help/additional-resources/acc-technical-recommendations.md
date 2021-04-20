@@ -1,7 +1,7 @@
 ---
 title: Campaign Classic — 技術的な推奨事項
 description: Adobe Campaign Classic を使用して配信品質を向上させるために使用できるテクニック、設定およびツールを紹介します。
-feature: 実際に使う
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

@@ -1,7 +1,7 @@
 ---
 title: 配信品質のベストプラクティスの概要
 description: マーケティングプログラムを確実に成功させるための主要な配信品質用語、概念、およびアプローチについて説明します。
-feature: 配信品質
+feature: Deliverability
 kt: 5321
 thumbnail: kt5321.jpg
 doc-type: article

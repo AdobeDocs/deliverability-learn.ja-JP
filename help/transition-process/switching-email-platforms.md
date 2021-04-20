@@ -1,7 +1,7 @@
 ---
 title: 電子メールプラットフォームをスムーズにトランジションする方法。
 description: '電子メールサービスプロバイダー(ESP)を移動する場合、既存の確立済みIPアドレスにトランジションを設定することもできません。 新たに開始する際に、肯定的な評価を開発するためのベストプラクティスに従うことが重要です。 '
-feature: 配信品質
+feature: Deliverability
 topics: Deliverability
 kt: 5259
 thumbnail: kt5259.jpg

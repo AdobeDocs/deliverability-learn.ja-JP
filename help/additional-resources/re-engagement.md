@@ -1,7 +1,7 @@
 ---
 title: 再エンゲージメントのベストプラクティス
 description: 再関与戦略を通じて配信品質を向上させる方法を学びます。
-feature: その他のリソース
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

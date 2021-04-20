@@ -1,7 +1,7 @@
 ---
 title: ターゲット条件
 description: 関与の少ないオーディエンスをロールインする前に、Get Goから肯定的な評価を確立して、信頼を効果的に構築する方法を説明します。
-feature: トランジションプロセス
+feature: Transition Process
 topics: Deliverability
 kt: 7053
 thumbnail: kt7053.jpg

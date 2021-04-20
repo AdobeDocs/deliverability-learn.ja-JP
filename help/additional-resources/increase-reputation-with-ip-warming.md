@@ -1,7 +1,7 @@
 ---
 title: IP ウォーミングによる E メールの評判の向上
 description: IPウォーミング機能を使用してEメールの評判を高めることが重要な理由と、最適な配信品質を得るための進め方について説明します。
-feature: その他のリソース
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

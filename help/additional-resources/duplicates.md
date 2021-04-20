@@ -1,7 +1,7 @@
 ---
 title: 重複
 description: 配信品質を向上させるために、重複を識別および制限する方法について説明します。
-feature: その他のリソース
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

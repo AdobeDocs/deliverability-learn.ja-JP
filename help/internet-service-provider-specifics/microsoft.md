@@ -1,7 +1,7 @@
 ---
 title: Microsoft （Hotmail、Outlook、Windows Liveなど）
 description: 一般的に、Microsoftはリストの構成に応じて、2番目または3番目に大きいプロバイダで、他のISPとは少し異なるトラフィックを扱います。
-feature: ISP
+feature: ISPs
 topics: Deliverability
 kt: 5319
 doc-type: article

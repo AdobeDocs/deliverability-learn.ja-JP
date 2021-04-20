@@ -1,7 +1,7 @@
 ---
 title: スパムトラップに関するすべて
 description: 配信品質を管理する際に、スパムトラップを理解し、識別し、回避する方法を説明します。
-feature: その他のリソース
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

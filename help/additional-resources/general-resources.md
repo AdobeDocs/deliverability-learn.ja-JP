@@ -1,7 +1,7 @@
 ---
 title: その他のリソース
 description: ここでは、配信品質に関するその他のリソースの多くをリストします。
-feature: その他のリソース
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null
