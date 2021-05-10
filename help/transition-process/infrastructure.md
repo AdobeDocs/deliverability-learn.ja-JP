@@ -1,23 +1,23 @@
 ---
-title: インフラ
-description: '電子メールインフラストラクチャを適切に構築するために必要な要件を学びます。 '
-feature: Transition Process
+title: インフラストラクチャ
+description: '電子メールインフラストラクチャの適切な構築に必要な要件について説明します。 '
+feature: トランジションプロセス
 topics: Deliverability
 kt: 7052
 thumbnail: kt7052.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: 4025d95c-cc77-4e0c-9904-aaf60019b18c
 translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+source-git-commit: 65eb1fd03e6a6617ef24661c371f850d1f8e6054
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-
-# インフラ
+# インフラストラクチャ
 
 配信品質の成功は、強力な基盤に左右されます。 電子メールインフラストラクチャは中核的な要素です。 適切に構成された電子メールインフラストラクチャには、ドメインとIPアドレスの複数のコンポーネントが含まれます。 これらの部品は送信する電子メールの背後にある機械のようなもので、よく評判を送るアンカーになります。 配信品質コンサルタントは、導入時にこれらの要素が適切に設定されることを確認しますが、評判の要素が原因で、この基本的な理解を持つことが重要です。
 
@@ -32,7 +32,7 @@ Adobeプラットフォームの新しい送信者に対するオンボーディ
 * 親ドメインのサブドメインを使用して、送信ドメインを正当化することを検討します。
 * トランザクションメッセージドメインとマーケティングメッセージカテゴリ用にサブドメインを分けます。 これは、ISPがこの送信方法を探すので、電子メールトラフィックの流れをより信頼性の高いものにします。これは既知の電子メールのベストプラクティスであり、非常に推奨されています。
 
-## IP戦略{#ip-strategy}
+## IP 戦略 {#ip-strategy}
 
 肯定的な評判を確立するのに役立つように、適切に構成されたIP戦略を策定することが重要です。 IPの数と設定は、ビジネスモデルとマーケティングの目標に応じて異なります。 専門家と協力して、適切に開始するための明確な戦略を策定します。 注意が必要な点を次に示します。
 
@@ -66,11 +66,11 @@ Adobeプラットフォームの新しい送信者に対するオンボーディ
 **Campaign**
 
 * [このセクション](/help/additional-resources/ac-domain-name-setup.md)で、サブドメインをAdobe Campaign Classicまたは標準に完全に委任する方法を説明します。
-* [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Classicに委任する方法を *学びます。*
-* [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Standardに委任する方法を *学びます。*
+* [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Classicに委任する方法を *学びます。*
+* [Campaign コントロールパネル:完全なサブドメインの委任（チュートリアル）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html)  — サブドメインを完全にAdobe Campaign Standardに委任する方法を *学びます。*
 * [このセクション](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc)で、Campaign Classicインスタンスにフィードバックループを実装する方法の詳細を説明します。
 
-## その他のリソース
+## 追加のリソース
 
 * SPF、DKIM、およびDMARCの認証方法に関する詳細は、[このセクション](/help/additional-resources/authentication.md)を参照してください。
 * [このセクション](/help/additional-resources/increase-reputation-with-ip-warming.md)では、IPの暖機を使ってメールの評判を高める方法について説明します。
