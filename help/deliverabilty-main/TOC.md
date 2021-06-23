@@ -2,16 +2,15 @@
 user-guide-title: 配信品質のベストプラクティスガイド
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: マーケティングプログラムを確実に成功させるための主要な配信品質用語、概念、およびアプローチについて説明します。
-translation-type: ht
-source-git-commit: 5a7e8ef210941b79bd5eb31b27041ca329e301f2
-workflow-type: ht
-source-wordcount: '165'
-ht-degree: 100%
+source-git-commit: fb66dc0e4efc61b6303b7857b9c56b2c478642c4
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 97%
 
 ---
 
 
-# Adobe Campaign 配信品質のベストプラクティスガイド{#deliverability-best-practice-guide}
+# Adobe Campaign 配信品質のベストプラクティスガイド {#deliverability-best-practice-guide}
 
 + [はじめに](/help/introduction.md)
 + [配信品質の戦略と定義](/help/deliverability-strategy-and-definition.md)
@@ -23,10 +22,10 @@ ht-degree: 100%
    + [バルク指定とブロック](/help/metrics/bulking-and-blocking.md)
 + [エンゲージメント](/help/engagement.md)
 + トランジションプロセス - E メールプラットフォームの切り替え{#transition-process}
-   + [E メールプラットフォーム切り替え時、スムーズに移行する方法](/help/transition-process/switching-email-platforms.md)
+   + [電子メールプラットフォーム切り替え時のスムーズな移行方法](/help/transition-process/switching-email-platforms.md)
    + [インフラストラクチャ](/help/transition-process/infrastructure.md)
    + [ターゲティング設定条件](/help/transition-process/targeting-criteria.md)
-   + [IP ウォームアップ中の ISP 別考慮事項](/help/transition-process/isp-specific-considerations-during-ip-warming.md)
+   + [IP ウォーミング中の ISP 別考慮事項](/help/transition-process/isp-specific-considerations-during-ip-warming.md)
    + [ボリューム](/help/transition-process/volume.md)
 + 最初のインプレッション - リストの収集とようこそ E メール{#first-impressions}
    + [最初のインプレッション - リストの収集とようこそ E メール](/help/first-impressions/introduction.md)
@@ -45,7 +44,7 @@ ht-degree: 100%
    + [概要](/help/additional-resources/general-resources.md)
    + 汎用リソース {#generic-resources}
       + [スパムトラップに関するすべて](/help/additional-resources/all-about-spam-traps.md)
-      + [IP ウォーミングによる E メールの評判の向上](/help/additional-resources/increase-reputation-with-ip-warming.md)
+      + [IP ウォーミングによる電子メールの評判の向上](/help/additional-resources/increase-reputation-with-ip-warming.md)
       + [認証](/help/additional-resources/authentication.md)
       + [重複](/help/additional-resources/duplicates.md)
       + [再エンゲージメントのベストプラクティス](/help/additional-resources/re-engagement.md)
@@ -57,3 +56,6 @@ ht-degree: 100%
          + [SSL 証明書要求プロセス](/help/additional-resources/ac-ssl-certificate-request.md)
          + [新しいプラットフォームの開始](/help/additional-resources/ac-starting-new-platform.md)
          + [Campaign Classic - 技術的な推奨事項](/help/additional-resources/acc-technical-recommendations.md)
++ テクニカルノート（非表示）{#technotes}
+   + [Appleプライバシー](/help/technotes/apple-mail-privacy-faq.md)
+
