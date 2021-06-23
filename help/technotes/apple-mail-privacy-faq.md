@@ -1,18 +1,18 @@
 ---
-title: Apple Mailプライバシー保護FAQ（2021年6月24日）
-description: Apple Mailプライバシー保護FAQ（2021年6月24日）
+title: Apple Mailプライバシー保護に関するFAQ
+description: Apple Mailプライバシー保護に関するFAQ
 feature: 配信品質
 topics: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: fe42e3a1edfb48192fd1bb3b811247fcd528ab05
+source-git-commit: cc0f8f4d8a5f4584d30b281492c2f948624ce1c1
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
 
-# Apple Mailプライバシー保護FAQ（2021年6月24日）
+# Apple Mailプライバシー保護に関するFAQ
 
 このFAQは、iOS 15リリースに関するAppleの発表に応じて、[メールプライバシー保護](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/)を含む初期ガイダンスを提供します。 これらの変更は9月に予定されており、アドビでは、引き続きこのドキュメントを更新し、お客様にガイダンスを提供します。
 
