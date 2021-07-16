@@ -3,9 +3,9 @@ user-guide-title: 配信品質のベストプラクティスガイド
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: マーケティングプログラムを確実に成功させるための主要な配信品質用語、概念、およびアプローチについて説明します。
 source-git-commit: fb66dc0e4efc61b6303b7857b9c56b2c478642c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '169'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -56,6 +56,6 @@ ht-degree: 97%
          + [SSL 証明書要求プロセス](/help/additional-resources/ac-ssl-certificate-request.md)
          + [新しいプラットフォームの開始](/help/additional-resources/ac-starting-new-platform.md)
          + [Campaign Classic - 技術的な推奨事項](/help/additional-resources/acc-technical-recommendations.md)
-+ テクニカルノート（非表示）{#technotes}
-   + [Appleプライバシー](/help/technotes/apple-mail-privacy-faq.md)
++ テクニカルノート (hidden){#technotes}
+   + [Apple プライバシー](/help/technotes/apple-mail-privacy-faq.md)
 
