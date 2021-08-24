@@ -1,21 +1,19 @@
 ---
 title: リアルタイムブラックホールリスト
-description: スパマーが使用する可能性の高いIPアドレスとドメインのリストを管理する組織について説明します。
-feature: Additional resources
+description: スパム送信者が使用する可能性の高いIPアドレスとドメインのリストを管理する組織について説明します。
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 90%
+source-wordcount: '407'
+ht-degree: 92%
 
 ---
-
 
 # リアルタイムブラックホールリスト
 
@@ -25,7 +23,7 @@ ht-degree: 90%
 
 * IP アドレス別：スパムを送信しているかスパムを中継している可能性の高い IP アドレスをリストアップします。
 * 送信者ドメイン別：スパムを送信しているか誤って設定された送信者ドメイン（バウンスメールアドレスのフルドメイン）をリストアップします。
-* Web ドメイン別：スパムコンテンツに含まれているリンクや画像の URL にあるドメイン（登録機関に登録されている高レベルのドメイン）をリストアップします。Adobeソリューションでは、一般的に、考慮されるドメインは、追跡に使用されるアドレスです。
+* Web ドメイン別：スパムコンテンツに含まれているリンクや画像の URL にあるドメイン（登録機関に登録されている高レベルのドメイン）をリストアップします。Adobeソリューションでは、通常、考慮すべきドメインは、トラッキングに使用されるアドレスです。
 
 次に、最も広く使用されている RBL のリストを示します。詳細なリストについては、[https://www.dnsstuff.com/](https://tools.dnsstuff.com/) を参照してください。
 
