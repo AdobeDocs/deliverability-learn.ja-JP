@@ -1,41 +1,39 @@
 ---
-title: Microsoft （Hotmail、Outlook、Windows Liveなど）
-description: 一般的に、Microsoftはリストの構成に応じて、2番目または3番目に大きいプロバイダで、他のISPとは少し異なるトラフィックを扱います。
-feature: ISPs
+title: Microsoft（Hotmail、Outlook、Windows Live など）
+description: Microsoftは、通常、リストの構成に応じて2番目または3番目に大きいプロバイダーで、他のISPとは少し異なるトラフィックを処理します。
 topics: Deliverability
 kt: 5319
 doc-type: article
 activity: understand
 team: TM
-translation-type: tm+mt
-source-git-commit: 992bfc9d0aff9daf29fa6878ead19372b065b436
+exl-id: d706cb90-828a-4ab3-8f93-c9bd71553d63
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 2%
 
 ---
 
-
 # [!DNL Microsoft] ([!DNL Hotmail], [!DNL Outlook], [!DNL Windows Live], etc.)
 
-[!DNL Microsoft] は、通常、リストの構成に応じて、2番目または3番目に大きいプロバイダです。他のISPとは少し異なるトラフィックを扱います。
+[!DNL Microsoft] は、通常、リストの構成に応じて2番目または3番目に大きいプロバイダーで、他のISPとは少し異なるトラフィックを処理します。
 
-主な特徴を次に示します。
+主な特徴は次のとおりです。
 
 ## 重要なデータ
 
-[!DNL Microsoft] フィードバックを求めて調査する送信者の評判、苦情、ユーザー関与、およびそれ自身の信頼できるユーザーのグループ(Sender Repution Data(SRD)とも呼ばれます)に焦点を当てます。
+[!DNL Microsoft] フィードバックを求めてポーリングする送信者のレピュテーション、苦情数、ユーザーエンゲージメント、および信頼できるユーザーのグループ（送信者レピュテーションデータまたはSRDとも呼ばれます）に焦点を当てます。
 
 ## 利用可能なデータ
 
-[!DNL Microsoft]の独自の送信者レポートツール [!DNL Smart Network Data Services] (SNDS)を使用すると、送信するメールの量、メールの受け入れ量、苦情やスパムのトラップに関する指標を確認できます。共有されるデータはサンプルで、正確な数値を反映していませんが、送信者としての[!DNL Microsoft]表示を表すのが最適です。 [!DNL Microsoft] は、信頼されるユーザーグループに関する情報をpublicで提供しませんが、そのデータは [!DNL Return Path Certification] プログラムを通じて追加料金で利用できます。
+[!DNL Microsoft]の独自の送信者レポートツール( [!DNL Smart Network Data Services] SNDS)を使用すると、送信するメールの量と受け入れられるメールの量、苦情やスパムトラップに関する指標を確認できます。共有されるデータはサンプルで、正確な数値は反映されませんが、[!DNL Microsoft]が送信者としてどのように見るかを表すのが最適です。 [!DNL Microsoft] では、信頼されたユーザーグループに関する情報は公に提供されませんが、そのデータは、プログラムを通じ [!DNL Return Path Certification] て追加料金で利用できます。
 
-## 送信者のレピュテーション
+## 送信者の評価
 
-[!DNL Microsoft] は、評判の評価やフィルタリングの判断において、IPの送信に焦点を当ててきました。また、送信ドメインの機能を拡張する作業も積極的に行っています。 どちらも、苦情やスパムのトラップなど、従来の評判に影響を与える人々が主に活動しています。 配信品質は、特定の定量的および定性的なプログラム要件を持つリターンパス証明プログラムの影響を大きく受ける場合もあります。
+[!DNL Microsoft] は、従来、レピュテーション評価やフィルタリングの判断でIPを送信することに重点を置いてきました。また、送信ドメイン機能の拡張にも積極的に取り組んでいます。 どちらも、苦情やスパムトラップなど、従来の評判インフルエンサーによって主に動かされています。 配信品質は、特定の定量的および定性的なプログラム要件を持つReturn Path Certificationプログラムの影響を大きく受ける場合もあります。
 
 ## Insights
 
-[!DNL Microsoft] すべての受信ドメインを組み合わせて、送信の評価を確立し、追跡します。例えば、[!DNL Hotmail]、[!DNL Outlook]、MSN、[!DNL Windows Live]、および会社のOffice 365がホストする電子メールが含まれます。 [!DNL Microsoft] は、ボリュームの変動に特に敏感な場合があるので、ボリュームに基づく急激な変化を許可するのではなく、大きなSENDからの増減に対して特定の方法を適用することを検討してください。
+[!DNL Microsoft] は、すべての受信ドメインを組み合わせて、送信レピュテーションを確立し、追跡します。これには、[!DNL Hotmail]、[!DNL Outlook]、MSN、[!DNL Windows Live]などのほか、会社のOffice 365でホストされている電子メールも含まれます。 [!DNL Microsoft] は、特にボリュームの変動に敏感な場合があるので、ボリュームに基づく急激な変化を可能にするのではなく、大きな送り口から上昇および下降する特定の戦略を適用することを検討してください。
 
-[!DNL Microsoft] は、IPの暖機中の最初の日には特に厳しく、通常、ほとんどのメールが最初にフィルタリングされることを意味します。ほとんどのISPは、有罪が確定するまで送信者を無罪と見なします。 [!DNL Microsoft] その逆で、自分が無実だと証明するまで、自分を有罪と考える。
+[!DNL Microsoft] は、IPウォーミングの初期日にも特に厳格です。これは、通常、ほとんどのメールが最初にフィルタリングされることを意味します。多くのISPは、有罪が証明されるまで送信者を無罪と見なします。 [!DNL Microsoft] その反対で、自分が無罪だと証明するまで、自分を有罪と考える。
