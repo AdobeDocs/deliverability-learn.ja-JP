@@ -1,27 +1,25 @@
 ---
 title: インターネットサービスプロバイダーの詳細
-description: ISPは同じではありません。 ユーザーの受信トレイに通知する電子メールや、スパムフォルダーにフィルターされた電子メール、まったく通知されない電子メールを決定する際に、様々な事項に焦点を当てます。 いくつかのISP間の重要な違いを簡単に見ていきます。 すべてのISPの完全なリストを意図したものではなく、あらゆる違いをカバーするものでもありません。
-feature: ISPs
+description: ISPが同じではない。 ユーザーの受信ボックスにどのEメールを送信するか、およびスパムフォルダーにフィルターされたEメールを送信するか、まったく送信しないかを決定する際に、様々な点に焦点を当てます。 いくつかのISP間の重要な違いについて簡単に説明します。 すべてのISPの完全なリストや、考えられるすべての違いをカバーするものではありません。
 topics: Deliverability
 kt: null
 doc-type: article
 activity: understand
 team: TM
-translation-type: tm+mt
-source-git-commit: 992bfc9d0aff9daf29fa6878ead19372b065b436
+exl-id: cf0c9ccf-ae67-4f95-a8cf-1e23b657aa16
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 0%
+source-wordcount: '156'
+ht-degree: 14%
 
 ---
 
-
 # インターネットサービスプロバイダーの詳細
 
-ISPは同じではありません。 ユーザーの受信トレイに通知する電子メールや、スパムフォルダーにフィルターされた電子メール、まったく通知されない電子メールを決定する際に、様々な事項に焦点を当てます。
+ISPが同じではない。 ユーザーの受信ボックスにどのEメールを送信するか、およびスパムフォルダーにフィルターされたEメールを送信するか、まったく送信しないかを決定する際に、様々な点に焦点を当てます。
 
-いくつかのISP間の重要な違いを簡単に見ていきます。 すべてのISPの完全なリストを意図したものではなく、あらゆる違いをカバーするものでもありません。
+いくつかのISP間の重要な違いについて簡単に説明します。 すべてのISPの完全なリストや、考えられるすべての違いをカバーするものではありません。
 
 * [Gmail](./gmail.md)
-* [Microsoft （Hotmail、Outlook、Windows Liveなど）](./microsoft.md)
-* [Verizonメディアグループ（Yahoo、AOL、Verizonなど）](./verizon-media-group.md)
+* [Microsoft（Hotmail、Outlook、Windows Live など）](./microsoft.md)
+* [Verizon Media Group（Yahoo、AOL、Verizon など）](./verizon-media-group.md)
