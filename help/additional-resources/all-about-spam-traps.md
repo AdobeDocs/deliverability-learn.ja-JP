@@ -1,7 +1,6 @@
 ---
 title: スパムトラップに関するすべて
 description: 配信品質を管理する際に、スパムトラップを理解し、識別し、回避する方法を説明します。
-feature: 追加のリソース
 topics: Deliverability
 kt: null
 thumbnail: null
@@ -9,10 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 45cdcda0-70e4-47f4-8713-a834500e7881
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '442'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '440'
 ht-degree: 100%
 
 ---
