@@ -1,7 +1,6 @@
 ---
 title: 苦情
 description: 'ユーザーが、不要または予期しない E メールであることを指摘した場合に登録される、苦情について説明します。 '
-feature: Metrics
 topics: Deliverability
 kt: 7048
 thumbnail: kt7048.jpg
@@ -9,10 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 0343820d-f5af-4b8a-bcab-dbb47ae7aecb
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '291'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '290'
 ht-degree: 100%
 
 ---
