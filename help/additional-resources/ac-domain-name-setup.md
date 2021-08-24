@@ -1,7 +1,6 @@
 ---
 title: ドメイン名の設定
 description: サブドメインを Adobe Campaign に委任する方法を説明します。
-feature: 実際の利用
 topics: Deliverability
 kt: null
 thumbnail: null
@@ -9,10 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '2032'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '2028'
 ht-degree: 100%
 
 ---
@@ -136,7 +134,7 @@ Adobe Campaign Classic がクラウドでアドビによって完全にホスト
 
 | 委任されたサブドメイン | DNS 命令 |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.</br>`<subdomain>` NS b.ns.campaign.adobe.com.</br>`<subdomain>` NS c.ns.campaign.adobe.com.</br>`<subdomain>` NS d.ns.campaign.adobe.com. |
+| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.</br>`<subdomain>` NS b.ns.campaign.adobe.com.</br>`<subdomain>` NS c.ns.campaign.adobe.com.</br>`<subdomain>` NS d.ns.campaign.adobe.com |
 
 >[!NOTE]
 >
