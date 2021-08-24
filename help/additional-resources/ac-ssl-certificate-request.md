@@ -1,7 +1,6 @@
 ---
 title: SSL証明書要求プロセス
 description: DelegateにデリゲートしたサブドメインにSSL証明書をインストールする方法をAdobeします。
-feature: 実際の利用
 topics: Deliverability
 kt: null
 thumbnail: null
@@ -9,9 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: e3caa0e9fae0df983c05c7027406f9874174a8ba
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2266'
 ht-degree: 2%
 
 ---
@@ -132,7 +131,7 @@ CSRファイルをAdobeから受け取ったら、次の手順に従います。
 または、Linuxマシン上でローカルに*OpenSSL*&#x200B;コマンドを使用できます。 詳しくは、[この外部ページ](https://www.question-defense.com/2009/09/22/use-openssl-to-verify-the-contents-of-a-csr-before-submitting-for-a-ssl-certificate)を参照してください。
 1. すべてのチェックが正常に実行されたことを確認します。
 1. 正しいパラメーターとドメイン名が含まれていることを確認します。
-1. リクエストの送信時に指定した詳細と他のすべてのデータが一致することを確認します。
+1. その他のすべてのデータが、リクエストの送信時に指定した詳細と一致することを確認します。
 
 ### 手順3 - SSL証明書の生成
 
