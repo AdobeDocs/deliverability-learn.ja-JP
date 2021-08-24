@@ -1,17 +1,15 @@
 ---
 title: 配信品質のベストプラクティスの概要
 description: マーケティングプログラムを確実に成功させるための主要な配信品質用語、概念、およびアプローチについて説明します。
-feature: Deliverability
 kt: 5321
 thumbnail: kt5321.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '431'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '430'
 ht-degree: 100%
 
 ---
@@ -53,4 +51,4 @@ E メールの配信品質は、あらゆる送信者のマーケティングプ
 
 ## その他のリソース
 
-[付録：その他のリソース](/help/additional-resources/general-resources.md)
+[付録：追加のリソース](/help/additional-resources/general-resources.md)
