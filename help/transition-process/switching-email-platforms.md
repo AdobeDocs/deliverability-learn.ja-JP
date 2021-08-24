@@ -1,35 +1,33 @@
 ---
-title: 電子メールプラットフォームをスムーズにトランジションする方法。
-description: '電子メールサービスプロバイダー(ESP)を移動する場合、既存の確立済みIPアドレスにトランジションを設定することもできません。 新たに開始する際に、肯定的な評価を開発するためのベストプラクティスに従うことが重要です。 '
-feature: Deliverability
+title: 電子メールプラットフォーム切り替え時のスムーズな移行方法.
+description: '電子メールサービスプロバイダー(ESP)を移動する場合、既存の確立されたIPアドレスを移行することもできません。 新たに開始する際に、肯定的なレピュテーションを開発するためのベストプラクティスに従うことが重要です。 '
 topics: Deliverability
 kt: 5259
 thumbnail: kt5259.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 9e4c4c56a09fb505a431d3799104c2684aed4a70
+exl-id: 5444d576-5bc1-4fa6-9956-c63dc3c60440
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 0%
+source-wordcount: '212'
+ht-degree: 11%
 
 ---
 
+# 電子メールプラットフォーム切り替え時のスムーズな移行方法
 
-# 電子メールプラットフォームの切り替え時のスムーズなトランジション方法
+電子メールサービスプロバイダー(ESP)を移動する場合、既存の確立されたIPアドレスを移行することもできません。 新たに開始する際に、肯定的なレピュテーションを開発するためのベストプラクティスに従うことが重要です。 使用する新しいIPアドレスにはまだレピュテーションがないので、ISPはメールを完全に信頼できず、顧客に配信できる内容に注意する必要があります。
 
-電子メールサービスプロバイダー(ESP)を移動する場合、既存の確立済みIPアドレスにトランジションを設定することもできません。 新たに開始する際に、肯定的な評価を開発するためのベストプラクティスに従うことが重要です。 使用する新しいIPアドレスは評価を受けていないため、ISPはメールの送信を完全に信頼できず、顧客への配信を許可する内容には注意が必要です。
+肯定的な評判を確立することは、プロセスです。 しかし、設定後は、小さなマイナス指標は、あなたやメール配信に与える影響を少なくします。
 
-肯定的な評価を確立することは、プロセスです。 ただし、この機能が確立されると、小さな否定的な指標がユーザーやメール配信に与える影響は小さくなります。
+![移行プロセス](../assets/transition-process.png)
 
-![トランジション過程](../assets/transition-process.png)
+IPアドレスとドメインをウォームアップする時間は異なる場合がありますが、一般的な送信者は、最大8週間のベンチマークまでが、最大で第1層のISP（Gmail、Microsoft、Verizon/Yahoo/AOLなど）での評判を確立するのに一般的です。
 
-IPアドレスとドメインを暖める時間は異なる場合がありますが、一般的な送信者は、最大8週間のベンチマークまでが、最大で第1層のISP（Gmail、Microsoft、Verizon/Yahoo/AOLなど）での評価を確立するのに一般的です。
+次の節では、適切にオンボーディングするために焦点を当てるいくつかの主要な領域を調査します。
 
-次の節では、適切に搭載するための重要な領域を調べます。
-
-1. [インフラ](/help/transition-process/infrastructure.md)
-2. [ターゲット条件](/help/transition-process/targeting-criteria.md)
-3. [IP暖機中のISP固有の考慮事項](/help/transition-process/isp-specific-considerations-during-ip-warming.md)
+1. [インフラストラクチャ](/help/transition-process/infrastructure.md)
+2. [ターゲティング設定条件](/help/transition-process/targeting-criteria.md)
+3. [IP ウォーミング中の ISP 別考慮事項](/help/transition-process/isp-specific-considerations-during-ip-warming.md)
 4. [ボリューム](/help/transition-process/volume.md)
