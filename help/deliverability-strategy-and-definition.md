@@ -1,7 +1,6 @@
 ---
 title: 配信品質の戦略と配信品質の定義方法
 description: 配信品質の定義、配信品質が重要な理由および配信品質の主要な指標について説明します。
-feature: Deliverability
 topics: Deliverability
 kt: 5255
 thumbnail: kt5255.jpg
@@ -9,10 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 5285eda9-5099-48d5-b150-ce2c376ee549
-translation-type: ht
-source-git-commit: e433002423bd1ab2f4a89425198c16160dae0719
-workflow-type: ht
-source-wordcount: '844'
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+workflow-type: tm+mt
+source-wordcount: '843'
 ht-degree: 100%
 
 ---
