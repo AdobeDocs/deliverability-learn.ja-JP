@@ -2,15 +2,13 @@
 title: SSL証明書要求プロセス
 description: DelegateにデリゲートしたサブドメインにSSL証明書をインストールする方法をAdobeします。
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2265'
 ht-degree: 2%
 
 ---
@@ -209,7 +207,7 @@ SSL証明書が正しくインストールされていない場合は、次の�
 
 >[!NOTE]
 >
->Campaign Classicの場合、更新するURLは主に[デプロイウィザード](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard)と[外部アカウント](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/external-accounts.html#installing-campaign-classic)（トラッキング、ミラーページ、パブリックリソースドメイン）にあります。 Campaign Standardについては、[ブランディング設定](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity)を参照してください。
+>Campaign Classicの場合、更新するURLは主に[デプロイウィザード](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard)と[外部アカウント](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html)（トラッキング、ミラーページ、パブリックリソースドメイン）にあります。 Campaign Standardについては、[ブランディング設定](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity)を参照してください。
 
 設定が更新されると、HTTPではなくHTTPS URLを使用して新しい電子メールが送信されます。 URLがセキュリティで保護されたことを確認するには、次のテストをすばやく実行できます。
 
