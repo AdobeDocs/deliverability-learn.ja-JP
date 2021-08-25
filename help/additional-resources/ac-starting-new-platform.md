@@ -2,13 +2,11 @@
 title: 新しいプラットフォームの開始
 description: Adobe Campaignで新しいプラットフォームを開始する際の配信品質の管理について説明します。
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 6c9ade01-3052-4311-af80-888294820024
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 59%
