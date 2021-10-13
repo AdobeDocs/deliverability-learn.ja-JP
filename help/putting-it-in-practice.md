@@ -1,6 +1,6 @@
 ---
 title: 実際の利用
-description: 送信の永続性とは、ISPのレピュテーションを維持するために、一貫した送信量と戦略を確立するプロセスです。
+description: 永続的な送信とは、ISP のレピュテーションを維持するために、一貫した送信量と戦略を確立するプロセスです。
 topics: Deliverability
 kt: 5264
 thumbnail: kt5264.jpg
@@ -17,13 +17,13 @@ ht-degree: 7%
 
 # 実際の利用
 
-このガイドでは、配信品質に関する多くのニュアンスと、ベストプラクティスに従っています。
+As we’ve covered in this guide, there are many nuances to deliverability and following best practices.
 
-成功の鍵となる柱は4つあります。
+成功の鍵となる柱は 4 つあります。
 
-1. 新規登録時に適切な期待値を設定し、不正なアドレスを防ぐ良好な登録プロセスを用意します。
+1. Set proper expectations during sign-up and have a good sign-up process that prevents bad addresses.
 2. 関連性の高いタイムリーなコンテンツを提供する。
-3. 不良になるアドレスを削除して、リストを管理します。
+3. 不良になったアドレスを削除して、リストを管理します。
 4. 監視、テスト、調整を行います。
 
-不明な点や問題に関するサポートが必要な場合は、担当のAdobe配信品質コンサルタントまたは配信品質の専門家にお問い合わせください。
+不明な点や問題に関するサポートが必要な場合は、Adobeの配信品質コンサルタントまたは配信品質の専門家にお問い合わせください。

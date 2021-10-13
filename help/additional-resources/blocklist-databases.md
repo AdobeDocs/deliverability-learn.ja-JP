@@ -1,6 +1,6 @@
 ---
 title: リアルタイムブラックホールリスト
-description: スパム送信者が使用する可能性の高いIPアドレスとドメインのリストを管理する組織について説明します。
+description: スパム送信者が使用する可能性の高い IP アドレスとドメインのリストを管理する組織について説明します。
 topics: Deliverability
 doc-type: article
 activity: understand

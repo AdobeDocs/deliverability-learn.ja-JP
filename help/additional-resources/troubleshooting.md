@@ -1,6 +1,6 @@
 ---
 title: 配信品質のトラブルシューティング
-description: 配信品質の問題を特定し、対処する方法について説明します。
+description: 配信品質の問題を特定して対処する方法を説明します。
 topics: Deliverability
 doc-type: article
 activity: understand
@@ -19,7 +19,7 @@ ht-degree: 91%
 
 ## 配信品質の問題を特定 {#identify-deliverability-issue}
 
-考えられる問題を特定するために、[そのページ](/help/ongoing-monitoring.md)に記載されている要素が注意を引く可能性があります。
+考えられる問題を特定するために、[ そのページ ](/help/ongoing-monitoring.md) に記載されている要素に注意が必要になる場合があります。
 
 <!--
 Mailing or campaign metrics: unsubscribe, abuse complaint and/or bounce rates are higher than usual.

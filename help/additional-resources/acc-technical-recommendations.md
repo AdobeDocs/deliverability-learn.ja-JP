@@ -29,17 +29,17 @@ Adobe Campaign は、IP アドレスに対してリバース DNS が提供され
 
 >[!NOTE]
 >
->[この外部ツール](https://mxtoolbox.com/SuperTool.aspx)を使用して、ドメインの設定を検証できます。
+>[ この外部ツール ](https://mxtoolbox.com/SuperTool.aspx) を使用して、ドメインの設定を確認できます。
 
 ### MX ルール {#mx-rules}
 
 MX（Mail eXchanger）ルールは、送信サーバーと受信サーバーの間の通信を管理するルールです。
 
-より正確に言えば、Adobe Campaign MTA(Message Transfer Agent)がEメールを個々のEメールドメインまたはISP（例えば、hotmail.com、comcast.net）に送信する速度を制御するために使用されます。 これらのルールは、通常、ISPによって公開された制限に基づいています（例えば、各SMTP接続あたり20件を超えるメッセージを含めないでください）。
+より正確に言えば、Adobe Campaign MTA(Message Transfer Agent) が E メールを個々の E メールドメインまたは ISP（例えば、hotmail.com、comcast.net）に送信する速度を制御するために使用されます。 これらのルールは、通常、ISP によって公開された制限（例えば、各 SMTP 接続あたり 20 を超えるメッセージを含めない）に基づいています。
 
 >[!NOTE]
 >
->Adobe Campaign ClassicでのMX管理について詳しくは、[この節](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration)を参照してください。
+>Adobe Campaign Classicでの MX 管理について詳しくは、[ この節 ](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration) を参照してください。
 
 ### TLS {#tls}
 
@@ -47,7 +47,7 @@ TLS（トランスポート層セキュリティ）は、暗号化プロトコ�
 
 ### 送信者のドメイン {#sender-domain}
 
-HELOコマンドに使用するドメインを定義するには、インスタンスの設定ファイル(conf/config-instance.xml)を編集し、「localDomain」属性を次のように定義します。
+HELO コマンドに使用するドメインを定義するには、インスタンスの設定ファイル (conf/config-instance.xml) を編集し、次のように「localDomain」属性を定義します。
 
 ```
 <serverConf>
@@ -57,32 +57,32 @@ HELOコマンドに使用するドメインを定義するには、インスタ�
 </serverConf>
 ```
 
-MAIL FROMドメインは、技術的なバウンスメッセージで使用されるドメインです。 このアドレスは、デプロイウィザードで、またはNmsEmail_DefaultErrorAddrオプションを使用して定義されます。
+MAIL FROM ドメインは、技術的なバウンスメッセージで使用されるドメインです。 このアドレスは、デプロイウィザードまたは NmsEmail_DefaultErrorAddr オプションで定義します。
 
-### SPFレコード {#dns-configuration}
+### SPF レコード {#dns-configuration}
 
-SPFレコードは、現在、DNSサーバー上でTXTタイプレコード（コード16）またはSPFタイプレコード（コード99）として定義できます。 SPFレコードは、文字列の形式を取ります。 次に例を示します。
+SPF レコードは、現在、DNS サーバー上で TXT タイプレコード（コード 16）または SPF タイプレコード（コード 99）として定義できます。 SPF レコードは、文字列の形式を取ります。 以下に例を示します。
 
 ```
 v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 ```
 
-は、ドメイン用のeメールを送信する権限を持つ2つのIPアドレス(12.34.56.78と12.34.56.79)を定義します。 **～** は、その他のアドレスをSoftFailと解釈する必要があることを意味します。
+は、ドメイン用の e メールを送信する権限を持つ 2 つの IP アドレス (12.34.56.78と12.34.56.79) を定義します。 **～** は、その他のアドレスは SoftFail と解釈する必要があることを意味します。
 
-Recommendations（SPFレコードを定義）:
+Recommendations（SPF レコードを定義）:
 
-* **～all**(SoftFail)または&#x200B;**-all**(Fail)を最後に追加すると、定義された以外のサーバーがすべて拒否されます。 これがなければ、サーバはこのドメインを（中立評価を使用して）偽装できます。
-* **ptr**&#x200B;を追加しないでください（openspf.orgでは、コストがかかり信頼性が低いとして、これを推奨しています）。
+* **～all** (SoftFail) または **-all** (Fail) を最後に追加すると、定義された以外のすべてのサーバーが拒否されます。 これがなければ、サーバはこのドメインを（中立的な評価を行って）偽装できる。
+* **ptr** を追加しないでください（openspf.org では、コストが高く信頼性が低いとして、この問題に対処することを推奨しています）。
 
 >[!NOTE]
 >
->SPFについて詳しくは、[この節](/help/additional-resources/authentication.md#spf)を参照してください。
+>SPF の詳細については、[ この節 ](/help/additional-resources/authentication.md#spf) を参照してください。
 
 ## 認証
 
 >[!NOTE]
 >
->様々な形式のEメール認証について詳しくは、[この節](/help/additional-resources/authentication.md)を参照してください。
+>様々な形式の E メール認証について詳しくは、[ この節 ](/help/additional-resources/authentication.md) を参照してください。
 
 ### DKIM {#dkim-acc}
 
@@ -90,17 +90,17 @@ Recommendations（SPFレコードを定義）:
 >
 >ホストインストールまたはハイブリッドインストールで [Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages) にアップグレードした場合、すべてのドメインのすべてのメッセージに対する DKIM の E メール認証署名は、Enhanced MTA がおこないます。
 
-Adobe Campaign Classicで[DKIM](/help/additional-resources/authentication.md#dkim)を使用するには、次の前提条件が必要です。
+[DKIM](/help/additional-resources/authentication.md#dkim) をAdobe Campaign Classicと共に使用するには、次の前提条件が必要です。
 
-**Adobe Campaignオプションの宣言**:Adobe Campaignでは、DKIM秘密鍵はDKIMセレクターとドメインに基づきます。同じドメイン／サブドメインに対して、セレクターの異なる複数の秘密鍵を作成することは、現時点ではできません。プラットフォームでも E メールでも、どのセレクタードメイン／サブドメインを認証に使用すべきかを定義することはできません。プラットフォームでは、その代わりに、秘密鍵のいずれか 1 つを選択します。つまり、認証は失敗する可能性が高くなります。
+**Adobe Campaignオプションの宣言**:Adobe Campaignでは、DKIM 秘密鍵は DKIM セレクターとドメインに基づきます。同じドメイン／サブドメインに対して、セレクターの異なる複数の秘密鍵を作成することは、現時点ではできません。プラットフォームでも E メールでも、どのセレクタードメイン／サブドメインを認証に使用すべきかを定義することはできません。プラットフォームでは、その代わりに、秘密鍵のいずれか 1 つを選択します。つまり、認証は失敗する可能性が高くなります。
 
-* お使いの Adobe Campaign インスタンスに DomainKeys を設定してある場合は、[ドメイン管理ルール](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)で **dkim** を選択するだけです。そうでない場合は、DomainKeys（DKIMに代わる）と同じ設定手順（秘密鍵/公開鍵）に従います。
+* お使いの Adobe Campaign インスタンスに DomainKeys を設定してある場合は、[ドメイン管理ルール](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)で **dkim** を選択するだけです。そうでない場合は、DomainKeys（DKIM に代わる）の場合と同じ設定手順（秘密鍵/公開鍵）に従います。
 * DKIM は DomainKeys の改良版なので、同じドメインに DomainKeys と DKIM の両方を有効にする必要はありません。
 * 現在 DKIM が有効になっているドメインは、AOL および Gmail です。
 
 ## フィードバックループ {#feedback-loop-acc}
 
-メッセージの送信に使用される IP アドレスの範囲に対して、特定の E メールアドレスを ISP レベルで宣言することにより、フィードバックループが機能します。ISP では、受信者からスパムとして報告されたメッセージを、バウンスメッセージの場合と同様の方法で、このメールボックスに送信します。苦情を訴えたユーザーへの今後の配信をブロックするように、プラットフォームを設定する必要があります。これらのユーザーが正しいオプトアウトリンクを使用しなかったとしても、そうしたユーザーにはもう連絡しないことが重要です。ISPがこれらの苦情に基づいて、IPアドレスを苦情に追加しブロックリストます。 ISP によっては、苦情率がおよそ 1％になると、IP アドレスがブロックリストに登録されます。
+メッセージの送信に使用される IP アドレスの範囲に対して、特定の E メールアドレスを ISP レベルで宣言することにより、フィードバックループが機能します。ISP では、受信者からスパムとして報告されたメッセージを、バウンスメッセージの場合と同様の方法で、このメールボックスに送信します。苦情を訴えたユーザーへの今後の配信をブロックするように、プラットフォームを設定する必要があります。これらのユーザーが正しいオプトアウトリンクを使用しなかったとしても、そうしたユーザーにはもう連絡しないことが重要です。ISP がこれらの苦情に基づいて、IP アドレスをそのに追加しブロックリストます。 ISP によっては、苦情率がおよそ 1％になると、IP アドレスがブロックリストに登録されます。
 
 フィードバックループメッセージの形式を定義する標準 [Abuse Feedback Reporting Format（ARF）](https://tools.ietf.org/html/rfc6650)が現在策定中です。
 
@@ -161,11 +161,11 @@ List-Unsubscribe: mailto: client@newsletter.example.com?subject=unsubscribe?body
 List-Unsubscribe: mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%
 ```
 
-Gmail、Outlook.com、およびMicrosoft Outlookはこの方法をサポートしており、インターフェイスで直接購読解除ボタンを使用できます。 この手法を利用すると、苦情率が下がります。
+Gmail、Outlook.com およびMicrosoft Outlook はこの方法をサポートしており、インターフェイスで直接購読解除ボタンを使用できます。 この手法を利用すると、苦情率が下がります。
 
-**List-Unsubscribe**&#x200B;は、次のいずれかの方法で実装できます。
+**List-Unsubscribe** は、次のいずれかの方法で実装できます。
 
-* 配信テンプレート](#adding-a-command-line-in-a-delivery-template)にコマンドラインを直接[追加
+* [ 配信テンプレートにコマンドラインを直接追加する ](#adding-a-command-line-in-a-delivery-template)
 * [タイポロジルールの作成](#creating-a-typology-rule)
 
 ### 配信テンプレートへのコマンドラインの追加 {#adding-a-command-line-in-a-delivery-template}
@@ -196,7 +196,7 @@ Gmail、Outlook.com、およびMicrosoft Outlookはこの方法をサポート�
 
 >[!NOTE]
 >
->Adobe Campaign Classicでタイポロジルールを作成する方法については、[この節](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules)を参照してください。
+>Adobe Campaign Classicでタイポロジルールを作成する方法については、[ この節 ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules) を参照してください。
 
 ## E メールの最適化 {#email-optimization}
 
