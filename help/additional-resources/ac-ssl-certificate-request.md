@@ -28,7 +28,7 @@ SSL(HTTPS)**を介してこれらのドメインを** 保護することをお�
 
 >[!CAUTION]
 >
->SSL 証明書をインストールする前に、[ このページ ](://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=ja#installing-ssl-certificate) に記載されている前提条件を確認してください。
+>SSL 証明書をインストールする前に、[ このページ ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=ja#installing-ssl-certificate) に記載されている前提条件を確認してください。
 >
 >Adobeは、最大 2048 ビットの証明書のみをサポートします。 4096 ビット証明書は、まだサポートされていません。
 
