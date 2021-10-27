@@ -7,9 +7,9 @@ activity: understand
 team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
 source-git-commit: 82f7254a9027f79d2af59aece81f032105c192d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2061'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -56,12 +56,12 @@ Adobe Campaign で使用するサブドメインを委任することで、ク�
 | DKIM（TXT） | DomainKeys Identified Mail | <i>client._domainkey.email.example.com</i></br>&quot;v=DKIM1; k=rsa;&quot; &quot;DKIMPUBLICKEY HERE&quot; |
 | ホストレコード（A） | ミラーページ、画像ホスティング、トラッキングリンク、すべての送信ドメイン | m.email.example.com IN A 123.111.100.99</br>t.email.example.com IN A 123.111.100.98</br>email.example.com IN A 123.111.100.97 |
 | 逆引き DNS（PTR） | クライアントの IP アドレスをクライアントブランドのホスト名にマップする | 18.101.100.192.in-addr.arpa ドメイン名ポインター r18.email.example.com |
-| CNAME | 別のドメイン名にエイリアスを指定する | t1.email.example.com は t1.email.example.campaign.adobe.com のエイリアス |
+| CNAME | 別のドメイン名にエイリアスを指定する | t1.email.example.com は t1.email.example.campaign.adobe.com |
 
 
-メール送信者を認証し、宛先の E メールシステムがドメインから送信されたメッセージを信頼するようにするには、ドメインベースのメッセージ認証、レポート、準拠 (DMARC) をお勧めします。
+メール送信者の認証を行って、ドメインから送信したメッセージが宛先のメールシステムに信頼されるようにするには、DMARC（ドメインベースのメッセージ認証、レポートおよび準拠）を推奨します。
 
-DMARC TXT レコードの例：
+DMARC TXT レコードの例を次に示します。
 
 ```
 _dmarc.email.example.com
@@ -69,7 +69,7 @@ _dmarc.email.example.com
 “v=DMARC1; p=none; rua=mailto:mailauth-reports@myemail.com” 
 ```
 
-DMARC を手動で実装するか、Adobeに問い合わせて、ブランドの DMARC の設定をサポートしてください。
+DMARC は手動で実装することもできますし、アドビに連絡してブランドの DMARC のセットアップをサポートしてもらうこともできます。
 
 ## 設定要件
 
@@ -144,7 +144,7 @@ Adobe Campaign Classic がクラウドでアドビによって完全にホスト
 
 | 委任されたサブドメイン | DNS 命令 |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.</br>`<subdomain>` NS b.ns.campaign.adobe.com.</br>`<subdomain>` NS c.ns.campaign.adobe.com.</br>`<subdomain>` NS d.ns.campaign.adobe.com |
+| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.</br>`<subdomain>` NS b.ns.campaign.adobe.com.</br>`<subdomain>` NS c.ns.campaign.adobe.com.</br>`<subdomain>` NS d.ns.campaign.adobe.com. |
 
 >[!NOTE]
 >
