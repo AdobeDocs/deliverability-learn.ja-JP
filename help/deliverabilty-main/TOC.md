@@ -3,9 +3,9 @@ user-guide-title: 配信品質のベストプラクティスガイド
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: マーケティングプログラムを確実に成功させるための主要な配信品質用語、概念、およびアプローチについて説明します。
 source-git-commit: 3e933104107cd4f62eab99c66957ccd9acb51409
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '169'
+ht-degree: 100%
 
 ---
 
@@ -50,11 +50,11 @@ ht-degree: 0%
       + [再エンゲージメントのベストプラクティス](/help/additional-resources/re-engagement.md)
       + [リアルタイムブラックホールリスト](/help/additional-resources/blocklist-databases.md)
       + [トラブルシューティング](/help/additional-resources/troubleshooting.md)
-   + [!DNL Adobe Campaign] {#campaign} のリソース
+   + [!DNL Adobe Campaign] {#campaign}のリソース
       + [ドメイン名の設定](/help/additional-resources/ac-domain-name-setup.md)
       + [SSL 証明書要求プロセス](/help/additional-resources/ac-ssl-certificate-request.md)
       + [新しいプラットフォームの開始](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic - 技術的な推奨事項](/help/additional-resources/acc-technical-recommendations.md)
    + テクニカルノート{#technotes}
-      + [Appleプライバシーに関する FAQ](/help/technotes/apple-mail-privacy-faq.md)
+      + [Apple プライバシーに関する FAQ](/help/technotes/apple-mail-privacy-faq.md)
       + [BIMI の実装](/help/technotes/implement-bimi.md)
