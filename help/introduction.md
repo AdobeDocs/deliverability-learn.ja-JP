@@ -8,7 +8,7 @@ activity: understand
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
 source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -31,8 +31,8 @@ E メールの配信品質は、あらゆる送信者のマーケティングプ
 1. [配信品質の戦略と定義](/help/deliverability-strategy-and-definition.md)
 2. [配信品質の指標](/help/metrics/metrics-overview.md)
 3. [エンゲージメント](/help/engagement.md)
-4. [トランジションプロセス - E メールプラットフォームの切り替え](/help/transition-process/switching-email-platforms.md)
-5. [最初のインプレッション - リストの収集とようこそ E メール](/help/first-impressions/address-collection-and-list-growth.md)
+4. [移行プロセス - メールプラットフォームの切り替え](/help/transition-process/switching-email-platforms.md)
+5. [ファーストインプレッション - リスト収集とようこそメール](/help/first-impressions/address-collection-and-list-growth.md)
 6. [最適な配信品質を実現するためのコンテンツのベストプラクティス](/help/content-best-practices-for-optimal-delivery.md)
 7. [送信者の永続性](/help/sender-permanence.md)
 8. [インターネットサービスプロバイダーの詳細](/help/internet-service-provider-specifics/overview.md)
@@ -51,4 +51,4 @@ E メールの配信品質は、あらゆる送信者のマーケティングプ
 
 ## その他のリソース
 
-[付録：追加のリソース](/help/additional-resources/general-resources.md)
+[付録：その他のリソース](/help/additional-resources/general-resources.md)
