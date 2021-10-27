@@ -7,7 +7,7 @@ activity: understand
 team: ACS
 exl-id: b553a13e-2055-4abc-b784-fd52792380d0
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
 ht-degree: 100%
 
@@ -28,9 +28,9 @@ In the Adobe Deliverability Consulting and Deliverability Operations teams, we h
 最初は、独自の専用 IP（インターネットプロトコル）アドレスが割り当てられます。電子メール送信のコンテキストでは、IP アドレスは、顧客に電子メールメッセージを配信するために使用されるルートです。IP アドレスとドメインは、ネットワークで送信者を受信側 ISP に対して識別するために使用されます。アドビは、送信量、電子メールプログラム、データセグメント化の方法、契約に基づいて、適切な数の電子メール送信用 IP アドレスを割り当てます。
 
 **関連トピック：**
-* [電子メールプラットフォーム切り替え時のスムーズな移行方法](../../help/transition-process/switching-email-platforms.md)
+* [メールプラットフォームの切り替え時に移行をスムーズに行う方法](../../help/transition-process/switching-email-platforms.md)
 * [IP 戦略](../../help/transition-process/infrastructure.md#ip-strategy)
-* [IP ウォーミング中の ISP 別考慮事項](../../help/transition-process/isp-specific-considerations-during-ip-warming.md)
+* [IP ウォーミング時の ISP 固有の考慮事項](../../help/transition-process/isp-specific-considerations-during-ip-warming.md)
 
 ## IP ウォーミングを行う理由 {#why-ip-warming}
 
