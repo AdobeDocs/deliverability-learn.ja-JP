@@ -17,17 +17,17 @@ ht-degree: 22%
 
 # ターゲティング設定条件
 
-新しいトラフィックを送信する場合は、IP ウォーミングの初期段階で、関与の最も高いユーザーをターゲットにします。 This helps establish a positive reputation from the get-go to effectively build trust before rolling in your less engaged audiences. Here’s a basic formula for engagement:
+新しいトラフィックを送信する場合は、IP ウォーミングの初期段階で、最も関与したユーザーをターゲットにするだけです。 これは、あまり関与していないオーディエンスにローリングする前に、get-go から肯定的な評判を確立し、信頼を効果的に構築するのに役立ちます。 次に、エンゲージメントの基本的な式を示します。
 
 ![エンゲージメントの数式](../assets/formula-for-enagement.png)
 
-通常、エンゲージメント率は特定の期間に基づきます。 この指標は、数式が全体レベルで適用されるか、特定のメーリングタイプまたはキャンペーンに適用されるかによって、大幅に異なる場合があります。 送信者と ISP はそれぞれ異なり、通常はカスタマイズされたプランが必要なので、Adobeの配信品質コンサルタントと協力して、特定のターゲット条件を指定する必要があります。
+通常、エンゲージメント率は特定の期間に基づきます。 この指標は、数式が全体レベルで適用されるか、特定のメーリングタイプまたはキャンペーンに適用されるかによって、大幅に異なる場合があります。 送信者と ISP はそれぞれ異なり、通常はカスタマイズされたプランが必要なので、特定のターゲット条件は、Adobeの配信品質コンサルタントと協力して提供する必要があります。
 
 ## 製品固有のリソース
 
 **Analytics**
 
-* [エンゲージメント率とリテンション率を高める方法（チュートリアル）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *コホートを使用して行動を通じて関与しているオーディエンスを特定し、モバイルアプリの定着を促す原因を把握します。Segment IQ のデータサイエンスアルゴリズムを使用して、セグメント間の相違点と類似点を把握します。*
+* [エンゲージメント率とリテンション率を高める方法（チュートリアル）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *コホートを使用して行動を通じてエンゲージしたオーディエンスを特定し、モバイルアプリで定着度を高める原因を把握します。 Segment IQ のデータサイエンスアルゴリズムを使用して、セグメント間の相違点と類似点を把握します。*
 
 **Campaign Standard**
 

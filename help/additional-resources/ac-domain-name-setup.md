@@ -7,7 +7,7 @@ activity: understand
 team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
 source-git-commit: 82f7254a9027f79d2af59aece81f032105c192d5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2061'
 ht-degree: 100%
 
@@ -144,7 +144,7 @@ Adobe Campaign Classic がクラウドでアドビによって完全にホスト
 
 | 委任されたサブドメイン | DNS 命令 |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.</br>`<subdomain>` NS b.ns.campaign.adobe.com.</br>`<subdomain>` NS c.ns.campaign.adobe.com.</br>`<subdomain>` NS d.ns.campaign.adobe.com. |
+| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.</br>`<subdomain>` NS b.ns.campaign.adobe.com.</br>`<subdomain>` NS c.ns.campaign.adobe.com.</br>`<subdomain>` NS d.ns.campaign.adobe.com |
 
 >[!NOTE]
 >

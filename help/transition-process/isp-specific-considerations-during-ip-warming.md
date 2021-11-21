@@ -1,6 +1,6 @@
 ---
-title: IP ウォーミング中の ISP 別考慮事項
-description: ISP には、様々なルールやトラフィックの見方があります。 これには、最も関与度の高いユーザーのみをターゲットにするカスタマイズされたプランが必要です。
+title: IP ウォーミング時の ISP 固有の考慮事項
+description: ISP は、異なるルールを持ち、トラフィックを見る方法が異なります。 そのためには、最も関与度の高いユーザーのみをターゲットにするカスタマイズされたプランが必要です。
 topics: Deliverability
 kt: 7054
 thumbnail: kt7054.jpg
@@ -10,16 +10,16 @@ team: ACS
 exl-id: 7d61c81c-aa40-47a6-9869-1953a6ad22b2
 source-git-commit: 4d82aa498ce155919dde24aa695a8848351763a6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '159'
+ht-degree: 16%
 
 ---
 
-# IP ウォーミング中の ISP 別考慮事項
+# IP ウォーミング時の ISP 固有の考慮事項
 
-ISP には、様々なルールやトラフィックの見方があります。 例えば、Gmail は、他のすべての評判対策に加えて、エンゲージメント（開封数およびクリック数）を非常に厳密に調べるので、最も洗練された ISP の 1 つです。 これには、最も関与度の高いユーザーをターゲットにするカスタマイズされたプランが必要です。 他の ISP でも同じことが必要な場合があります。 特定のプランについては、担当のAdobe配信品質コンサルタントにお問い合わせください。
+ISP は、異なるルールを持ち、トラフィックを見る方法が異なります。 例えば、Gmail は、他のすべてのレピュテーション対策に加えて、エンゲージメント（開封数およびクリック数）を非常に厳密に調べるので、最も洗練された ISP の 1 つです。 そのためには、最も関与度の高いユーザーをターゲットにしたカスタマイズされたプランが必要です。 他の ISP も同じことを必要とする場合があります。 特定のプランについては、担当のAdobe配信品質コンサルタントにお問い合わせください。
 
-次に選択したプロバイダーのグループ間の重要な違いについて詳しくは、[ インターネットサービスプロバイダーの詳細 ](/help/internet-service-provider-specifics/overview.md) の節を参照してください。
+詳しくは、 [インターネットサービスプロバイダーの詳細](/help/internet-service-provider-specifics/overview.md) 次の選択したプロバイダーグループの重要な違いの詳細については、「 」セクションを参照してください。
 
 * [Gmail](/help/internet-service-provider-specifics/gmail.md)
 * [Microsoft（Hotmail、Outlook、Windows Live など）](/help/internet-service-provider-specifics/microsoft.md)
@@ -27,4 +27,4 @@ ISP には、様々なルールやトラフィックの見方があります。 
 
 ## その他のリソース
 
-* [ この節 ](/help/additional-resources/increase-reputation-with-ip-warming.md) で IP ウォーミングで E メールの評判を高める方法について詳しく説明します。
+* IP ウォーミングを使用した E メールの評判の向上に関する詳細 [この節](/help/additional-resources/increase-reputation-with-ip-warming.md).

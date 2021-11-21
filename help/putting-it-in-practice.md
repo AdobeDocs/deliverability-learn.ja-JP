@@ -17,13 +17,13 @@ ht-degree: 7%
 
 # 実際の利用
 
-As we’ve covered in this guide, there are many nuances to deliverability and following best practices.
+このガイドで説明したように、配信品質には多くのニュアンスがあり、ベストプラクティスに従っています。
 
 成功の鍵となる柱は 4 つあります。
 
-1. Set proper expectations during sign-up and have a good sign-up process that prevents bad addresses.
+1. サインアップ中に適切な期待値を設定し、正しくないアドレスを防ぐための適切なサインアッププロセスを用意する。
 2. 関連性の高いタイムリーなコンテンツを提供する。
-3. 不良になったアドレスを削除して、リストを管理します。
+3. 不良になったアドレスを削除して、リストを維持します。
 4. 監視、テスト、調整を行います。
 
-不明な点や問題に関するサポートが必要な場合は、Adobeの配信品質コンサルタントまたは配信品質の専門家にお問い合わせください。
+不明な点や問題に関するサポートが必要な場合は、Adobe配信品質コンサルタントまたは配信品質のエキスパートにお問い合わせください。
