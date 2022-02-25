@@ -1,13 +1,13 @@
 ---
 title: Verizon Media Group（Yahoo、AOL、Verizon など）
-description: '[!DNL Verizon Media Group] は、通常、ほとんどの B2C リストで上位 3 つのドメインの 1 つです。 レピュテーションの問題が発生した場合、通常はスロットルまたはバルクメールを送信するので、これらはある程度一意的に動作します。'
+description: '"[!DNL Verizon Media Group] は、通常、ほとんどの B2C リストで上位 3 つのドメインの 1 つです。 評判の問題が発生した場合、通常はスロットルまたはバルクメールを送信するので、彼らはいくぶんユニークな振る舞いをします。'
 topics: Deliverability
 kt: 5320
 doc-type: article
 activity: understand
 team: TM
 exl-id: 43e6d3cb-23c3-4076-8026-a1a08e76bd1b
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: a5c86d5e6f310534787f07a04971722dbc9bb33b
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 3%
