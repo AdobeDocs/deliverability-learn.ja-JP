@@ -3,7 +3,7 @@ user-guide-title: 配信品質のベストプラクティスガイド
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: マーケティングプログラムを確実に成功させるための主要な配信品質用語、概念、およびアプローチについて説明します。
 source-git-commit: 3616470b31f45d589d323a6b90c7fd5df3b467b7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 100%
 
