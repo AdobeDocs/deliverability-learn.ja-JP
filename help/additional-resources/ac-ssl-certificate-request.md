@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: b89bdd05d6b96af8c5520a4c500be76db46ea820
 workflow-type: tm+mt
-source-wordcount: '2265'
+source-wordcount: '2253'
 ht-degree: 3%
 
 ---
@@ -126,7 +126,7 @@ CSR（証明書署名要求）ファイルを取得するには、次の手順�
 CSR ファイルをAdobeから受け取ったら、次の手順に従います。
 
 1. CSR ファイルテキストを、https://www.sslshopper.com/csr-decoder.htmlのようなオンラインデコーダーにコピー&amp;ペーストします。 <!--https://www.certlogik.com/decoder/,--> またはhttps://www.entrust.net/ssl-technical/csr-viewer.cfm。
-または、 *OpenSSL* コマンドをローカルに Linux マシン上に置く。 詳しくは、 [この外部ページ](https://www.question-defense.com/2009/09/22/use-openssl-to-verify-the-contents-of-a-csr-before-submitting-for-a-ssl-certificate).
+または、 *OpenSSL* コマンドをローカルに Linux マシン上に置く。
 1. すべてのチェックが正常に行われたことを確認します。
 1. 正しいパラメーターとドメイン名が含まれていることを確認します。
 1. その他すべてのデータが、リクエストの送信時に指定した詳細と一致することを確認します。
@@ -149,7 +149,7 @@ CSR ファイルを指定したら、CSR ファイルを使用して、適切な
 
 ### 手順 4 - SSL 証明書を検証する
 
-SSL 証明書が生成されたら、Adobeに送信する前に検証する必要があります。 これをおこなうには、以下の手順に従います。
+SSL 証明書が生成されたら、Adobeに送信する前に検証する必要があります。 これを行うには、以下の手順に従います。
 
 1. 証明書の拡張子が.pem であることを確認します。 該当しない場合は、PEM 形式に変換します。 変換処理を実行するには、 *OpenSSL*.
 1. 証明書が次の語句で始まっていることを確認します。 **「 — 証明書を開始 — 」**.
@@ -207,7 +207,7 @@ SSL 証明書が正しくインストールされていない場合は、次の�
 
 >[!NOTE]
 >
->Campaign Classicの場合、更新する URL は主に [デプロイウィザード](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) そして [外部アカウント](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html) （トラッキング、ミラーページ、パブリックリソースドメイン）。 Campaign Standardについては、 [ブランディング設定](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
+>Campaign Classicの場合、更新する URL は主に [デプロイウィザード](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) そして [外部アカウント](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=ja) （トラッキング、ミラーページ、パブリックリソースドメイン）。 Campaign Standardについては、 [ブランディング設定](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
 
 設定が更新されると、新しい E メールは HTTP ではなく HTTPS URL で送信されます。 URL がセキュリティで保護されたことを確認するには、次のテストをすばやく実行できます。
 
