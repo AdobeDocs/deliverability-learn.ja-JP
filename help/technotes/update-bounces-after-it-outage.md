@@ -2,9 +2,7 @@
 title: Italia Online の停止後にバウンスの選定を更新
 description: Italia Online の停止後にバウンスの選定を更新する方法を説明します。
 feature: Deliverability
-hide: true
-hidefromtoc: true
-source-git-commit: dfa9b3c9537847c79e612bdcfcacc8e0dccd01ea
+source-git-commit: 4494363c060b7e2e1efde46f7ab8260fa900ffd7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 17%
