@@ -2,7 +2,7 @@
 title: Italia Online の停止後にバウンスの選定を更新
 description: Italia Online の停止後にバウンスの選定を更新する方法を説明します。
 feature: Deliverability
-source-git-commit: 4494363c060b7e2e1efde46f7ab8260fa900ffd7
+source-git-commit: 489a153c72b364bd59b3bace5aa9206d4d888c38
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 17%
@@ -39,7 +39,7 @@ Adobe Campaignは、標準のバウンス処理ロジックに従って、これ
 この問題の影響を受けた受信者を見つける、または他の ISP で問題が再び発生した場合は、以下の手順を参照してください。
 
 * Campaign Classicv7 および Campaign v8 については、 [このページ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
-* Campaign Standardについては、 [このページ](https://experienceleague.corp.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
+* Campaign Standardについては、 [このページ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
 
 
