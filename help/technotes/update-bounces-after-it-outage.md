@@ -2,10 +2,11 @@
 title: Italia Online の停止後にバウンスの選定を更新
 description: Italia Online の停止後にバウンスの選定を更新する方法を説明します。
 feature: Deliverability
-source-git-commit: 489a153c72b364bd59b3bace5aa9206d4d888c38
+exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
+source-git-commit: e4efde4b7caac1bcf11d24632ec9982f98f958a2
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 17%
+source-wordcount: '423'
+ht-degree: 15%
 
 ---
 
@@ -34,6 +35,8 @@ ISP の機能停止が発生した場合のほとんどと同様に、Campaign �
 
 ## 更新処理{#outage-update}
 
+### Adobe Campaign{#ac-update}
+
 Adobe Campaignは、標準のバウンス処理ロジックに従って、これらの受信者を強制隔離リストに自動的に追加し、**[!UICONTROL ステータス]**&#x200B;を&#x200B;**[!UICONTROL 強制隔離]**&#x200B;に設定しました。 この問題を修正するには、Campaign の強制隔離テーブルを更新する必要があります。それには、該当する受信者を特定して削除するか、**[!UICONTROL ステータス]**&#x200B;を&#x200B;**[!UICONTROL 有効]**&#x200B;に変更して、夜間のクリーンアップワークフローで削除する必要があります。
 
 この問題の影響を受けた受信者を見つける、または他の ISP で問題が再び発生した場合は、以下の手順を参照してください。
@@ -41,5 +44,11 @@ Adobe Campaignは、標準のバウンス処理ロジックに従って、これ
 * Campaign Classicv7 および Campaign v8 については、 [このページ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 * Campaign Standardについては、 [このページ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
+### Adobe Journey Optimizer{#ajo-update}
 
+標準のバウンス処理ロジックに従い、Adobe Journey Optimizerは、これらの電子メールアドレスを **[!UICONTROL 理由]** 設定 **[!UICONTROL 無効な受信者]**. これを修正するには、これらの電子メールアドレスを見つけて削除し、抑制リストを更新する必要があります。
+
+特定されたアドレスは、 **[!UICONTROL 削除]** 」ボタンをクリックします。 その後、これらのアドレスを今後の E メールキャンペーンに含めることができます。
+
+詳しくは、 [この節](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}.
 
