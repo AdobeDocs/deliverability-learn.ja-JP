@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: b89bdd05d6b96af8c5520a4c500be76db46ea820
+source-git-commit: 57016f89df54d5c74755a6a108a92db45153ec18
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2252'
 ht-degree: 3%
 
 ---
@@ -70,7 +70,7 @@ E メール送信用にドメインをAdobeにデリゲートしたら ( [ドメ
 ドメイン名と機能（トラッキング、ミラーページ、Web アプリなど）を を保護します。
 >[!NOTE]
 >
->Adobeは、関連付けるドメイン名や関数を定義する際に役立ちます。 詳しくは、担当のAdobeカスタマーサクセスマネージャーにお問い合わせください。
+>Adobeは、関連付けるドメイン名や関数を定義する際に役立ちます。 詳しくは、担当のAdobeアカウントチームにお問い合わせください。
 
 ### 手順 1 - CSR ファイルを取得する
 
@@ -160,7 +160,7 @@ SSL 証明書が生成されたら、Adobeに送信する前に検証する必�
 
 ### 手順 5 - SSL 証明書のインストールを要求する
 
-* 次にアクセスできる [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)を使用する場合は、 [このページ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#installing-ssl-certificate) 証明書をCampaign コントロールパネルにアップロード
+* 次にアクセスできる [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja)を使用する場合は、 [このページ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=ja#installing-ssl-certificate) 証明書をCampaign コントロールパネルにアップロード
 
 * それ以外の場合は、https://adminconsole.adobe.com/から別のサポートチケットを作成し、Adobeに証明書をAdobeサーバーにインストールするよう要求します。
 
@@ -199,7 +199,7 @@ SSL 証明書が正しくインストールされていない場合は、次の�
 
 * サポートチケットを作成して、証明書の有効期限の 2 週間前以降に更新された証明書をリクエストします。 CSR の詳細が変更されていない限り、追加の CSR をリクエストする必要はありません。
 
-* 次にアクセスできる [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)AWS環境で環境がAdobeによってホストされている場合、Campaign コントロールパネルを使用して、証明書の期限が切れる前に証明書を更新できます。 詳しくは、[この節](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)を参照してください。
+* 次にアクセスできる [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja)AWS環境で環境がAdobeによってホストされている場合、Campaign コントロールパネルを使用して、証明書の期限が切れる前に証明書を更新できます。 詳しくは、[この節](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)を参照してください。
 
 ### 手順 8 — 特定の設定を更新する {#update-configuration}
 
