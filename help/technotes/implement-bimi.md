@@ -3,7 +3,7 @@ title: メッセージ識別 (BIMI) のための Gmail のブランド指標の�
 description: BIMI の実装方法を学ぶ
 topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 05f6cd331f4e610e2442d43405333823644d349e
+source-git-commit: 7b8fbb09883b34b66c2729b6b5cfa1292ae1814e
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
@@ -22,7 +22,7 @@ BIMI は、配信品質や評判を直接改善しません。 これは、受�
 
 ## どう見える？
 
-様々なプロバイダーによる実装の例や、にロゴを表示する各プロバイダーの詳細を確認できます。 [BIMI グループのページ](https://bimigroup.org/where-is-my-bimi-logo-displayed/).
+様々なプロバイダーによる実装の例や、にロゴを表示する各プロバイダーの詳細を確認できます。 [BIMI グループのページ](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"}.
 
 ## BIMI グループは誰ですか？
 
@@ -32,7 +32,7 @@ BIMI グループは、業界の様々な分野の複数の関係者で構成さ
 
 ## BIMI を支えているのは誰ですか？
 
-BIMI をサポートするメールボックスプロバイダのリストは、着実に増加しています。 最新のリストが見つかります [ここ](https://bimigroup.org/bimi-infographic/) BIMI を考えるプロバイダーとサポートプロバイダーの両方に対して。
+BIMI をサポートするメールボックスプロバイダのリストは、着実に増加しています。 最新のリストが見つかります [ここ](https://bimigroup.org/bimi-infographic/){target="_blank"} BIMI を考えるプロバイダーとサポートプロバイダーの両方に対して。
 
 2023 年 4 月以降、リストには、Gmail、Yahoo、La Poste、Fastmail、Onet.pl および Zone、スパム対策アプライアンスとしての Proofpoint、Apple Mail が含まれます (iOS 16 以降 )。
 
@@ -65,7 +65,7 @@ DMARC は、メールボックスプロバイダーが失敗した E メール�
 
 ### ブランドロゴの作成 {#create-brand-logo}
 
-ロゴの作成は、100%の要件に従う必要があります。 必ず [BIMI グループのガイドライン](https://bimigroup.org/creating-bimi-svg-logo-files/).
+ロゴの作成は、100%の要件に従う必要があります。 必ず [BIMI グループのガイドライン](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
 
 技術的な要件の他に、正方形のロゴを持つ、背景にべた塗りのなど、実用的な推奨事項もあります。 これらのレコメンデーションは、最適なビジュアライゼーションを提供します。
 準拠していない場合、ロゴが表示されない可能性があります。
@@ -102,10 +102,10 @@ VMC の努力や費用を経ても、この部分は取り除かれません。 
 
 ## ヒントとテクニック
 
-* BIMI グループは、BIMI 用の便利な検証ツールを提供しています。 すべてが設定され、準備が整っているか、ロゴが準備されているかを確認する場合は、に移動します。 [このリンク](https://bimigroup.org/bimi-generator/). 後者の場合は、 **[!UICONTROL BIMI を生成]** プレースホルダードメインを入力し、正しいロゴ URL を入力します。 ロゴが準拠しているかどうかをインスペクターが知らせます。
+* BIMI グループは、BIMI 用の便利な検証ツールを提供しています。 すべてが設定され、準備が整っているか、ロゴが準備されているかを確認する場合は、に移動します。 [このリンク](https://bimigroup.org/bimi-generator/){target="_blank"}. 後者の場合は、 **[!UICONTROL BIMI を生成]** プレースホルダードメインを入力し、正しいロゴ URL を入力します。 ロゴが準拠しているかどうかをインスペクターが知らせます。
 
 * VMC なしで安全に開始できます。BIMI レコードに VMC URL が含まれていないのにロゴが Yahoo に既に表示されている場合、評判に悪影響はありません。
 
 * 組織レベルでの DMARC の実装は大きな取り組みです。 一部の企業は、ブランドが完全な DMARC の採用を達成するのを支援するために特化しています。
 
-* よくある質問の広範なリストが公開されています [ここ](https://bimigroup.org/faqs-for-senders-esps/).
+* よくある質問の広範なリストが公開されています [ここ](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}.
