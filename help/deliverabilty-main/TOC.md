@@ -3,9 +3,9 @@ user-guide-title: 配信品質のベストプラクティスガイド
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: マーケティングプログラムを確実に成功させるための主要な配信品質用語、概念、およびアプローチについて説明します。
 source-git-commit: 05604fff57bbe64a02e97a27369c4aff6c999216
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,5 +57,5 @@ ht-degree: 96%
       + [Campaign Classic - 技術的な推奨事項](/help/additional-resources/acc-technical-recommendations.md)
    + テクニカルノート {#technotes}
       + [BIMI の実装](/help/technotes/implement-bimi.md)
-      + [Italia Online の停止後にバウンスを更新](/help/technotes/update-bounces-after-it-outage.md)
+      + [Italia Online 停止後のバウンスの更新](/help/technotes/update-bounces-after-it-outage.md)
 
