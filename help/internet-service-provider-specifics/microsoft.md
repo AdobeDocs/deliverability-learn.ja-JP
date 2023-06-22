@@ -2,12 +2,12 @@
 title: Microsoft（Hotmail、Outlook、Windows Live など）
 description: Microsoftは、通常、リストの構成に応じて 2 番目または 3 番目に大きいプロバイダーで、他の ISP とは少し異なるトラフィックを処理します。
 topics: Deliverability
-kt: 5319
+jira: KT-5319
 doc-type: article
 activity: understand
 team: TM
 exl-id: d706cb90-828a-4ab3-8f93-c9bd71553d63
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 2%

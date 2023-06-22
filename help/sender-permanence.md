@@ -2,13 +2,13 @@
 title: 送信者の永続性
 description: 永続的な送信とは、ISP のレピュテーションを維持するために、一貫した送信量と戦略を確立するプロセスです。
 topics: Deliverability
-kt: 5261
+jira: KT-5261
 thumbnail: kt5261.jpg
 doc-type: article
 activity: understand
 team: TM
 exl-id: f57de522-1361-43a3-8f8b-f9a191986529
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 5%

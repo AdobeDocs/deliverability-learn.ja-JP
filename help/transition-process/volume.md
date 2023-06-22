@@ -2,16 +2,16 @@
 title: ボリューム — スムーズな移行方法のヒント
 description: 送信するメールの量は、肯定的な評判を確立する上で重要です。 スムーズに移行するために実行できる操作を学習します。
 topics: Deliverability
-kt: 7055
+jira: KT-7055
 thumbnail: kt7055.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 **Campaign**
 
 * でAdobe Campaignを使用して新しいプラットフォームを開始する際の配信品質の管理の詳細 [この節](/help/additional-resources/ac-starting-new-platform.md).
-* でAdobe Campaign Classicで複数のウェーブを使用して送信する方法を説明します。 [この節](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
+* でAdobe Campaign Classicで複数のウェーブを使用して送信する方法を説明します。 [この節](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=ja#sending-using-multiple-waves).
 * でサブドメインをAdobe Campaign Classicまたは Standard に完全にデリゲートする方法を説明します。 [この節](/help/additional-resources/ac-domain-name-setup.md).
 * [Campaign コントロールパネル:完全なサブドメインデリゲーション（チュートリアル）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *サブドメインをAdobe Campaign Classicに完全にデリゲートする方法を説明します。*
 * [Campaign コントロールパネル:完全なサブドメインデリゲーション（チュートリアル）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *サブドメインをAdobe Campaign Standardに完全にデリゲートする方法を説明します。*
