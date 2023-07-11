@@ -2,8 +2,10 @@
 title: メッセージ識別 (BIMI) のための Gmail のブランド指標の実装
 description: BIMI の実装方法を学ぶ
 topics: Deliverability
+role: Admin
+level: Beginner
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: aca2bfff9f0315b735cf0a97f2177083c58e0875
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '1064'
 ht-degree: 0%

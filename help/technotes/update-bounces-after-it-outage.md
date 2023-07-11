@@ -5,14 +5,16 @@ feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
 hidefromtoc: true
-source-git-commit: aca77fb9326e34455a6fec7ffc9a7ad8e1750467
+role: Admin
+level: Beginner
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
 
-# Italia Online の停止後に誤ったハードバウンスを更新する {#update-bounce-italia}
+# Italia Online 停止後の誤ったハードバウンスの更新 {#update-bounce-italia}
 
 ## コンテキスト{#outage-context}
 
