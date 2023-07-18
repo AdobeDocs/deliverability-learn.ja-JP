@@ -127,11 +127,11 @@ nlserver inMail -instance:instance -verbose.
 * インスタンスごとに各メールボックスが選択されるようにします。
 * 関係するメッセージだけを処理するようにインスタンスを設定します。インスタンス情報は、Adobe Campaign から送信されるメッセージの Message-ID ヘッダーに含まれているので、フィードバックループメッセージにも含まれています。インスタンス設定ファイルの **checkInstanceName** パラメーターを指定するだけです（デフォルトでは、インスタンスは検証されず、その結果、特定のアドレスが誤って強制隔離される可能性があります）。
 
-   ```
-   <serverConf>
-     <inMail checkInstanceName="true"/>
-   </serverConf>
-   ```
+  ```
+  <serverConf>
+    <inMail checkInstanceName="true"/>
+  </serverConf>
+  ```
 
 Adobe Campaign の配信品質サービスは、以下の ISP のフィードバックループサービスへのサブスクリプションを管理します。AOL、BlueTie、Comcast、Cox、EarthLink、FastMail、Gmail、Hotmail、HostedEmail、Libero、Mail.ru、MailTrust、OpenSRS、QQ、RoadRunner、Synacor、Telenor、Terra、UnitedOnline、USA、XS4ALL、Yahoo、Yandex、Zoho。
 

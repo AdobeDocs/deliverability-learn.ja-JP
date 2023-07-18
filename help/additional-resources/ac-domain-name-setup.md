@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ドメイン名の委任によって、ドメイン名（技術的には DNS ゾーン）の所有者はその一部（技術的には、その下にある DNS ゾーンで、サブゾーンと呼ばれることもあります）を別のエンティティに委任できます。基本的に、ゾーン「example.com」を扱う顧客は「marketing.example.com」というサブゾーンを Adobe Campaign に委任できます。
 
-つまり、Adobe Campaign の DNS サーバーは、そのゾーンに対してのみ完全な権限を持ち、トップレベルのドメインに対しては権限を持ちません。Adobe Campaign の DNS サーバーは、そのゾーン内のドメイン名（「www.example.com」ではなく「t.marketing.example.com」など）に関するクエリに対して権限のある回答を提供します。
+つまり、Adobe Campaign の DNS サーバーは、そのゾーンに対してのみ完全な権限を持ち、最上位レベルのドメインに対しては権限を持ちません。Adobe Campaign の DNS サーバーは、そのゾーン内のドメイン名（「www.example.com」ではなく「t.marketing.example.com」など）に関するクエリに対して権限のある回答を提供します。
 
 Adobe Campaign で使用するサブドメインを委任することで、クライアントは、社内電子メール用ドメインの DNS の保守と管理を継続しながら、電子メールマーケティングにおいての業界標準の配信品質要件を満たすために必要な、DNS インフラストラクチャの維持をアドビに依存できます。サブドメインの委任では次のことが可能です。
 
@@ -117,7 +117,6 @@ Adobe Campaign アプリケーションから、ブランド URL（ミラーペ�
 >* Adobe Campaign から電子メールを送信する際、「送信者アドレス」メールボックスは監視されず、マーケティングユーザーはこのメールボックスにアクセスできません。Adobe Campaign には、このメールボックスで受信した電子メールを自動返信または自動転送する機能もありません。
 >* Campaign の送信者／送信者アドレスとエラーのアドレスは「abuse」や「postmaster」にはできません。
 
-
 ## サブドメインの委任
 
 Adobe Campaign プラットフォームに使用するサブドメインを委任するには、4 つのネームサーバー（NS）レコードを作成する必要があります。これにより、サブドメインをアドビに適切に委任できます。サブドメインの委任と各 DNS 命令の例を以下に示します。「emails.customer.com」を委任するサブドメインに置き換えてください。サブドメインは一意で、既に他のパーティ（既存の ESP や MSP など）で使用されていない必要があります。
@@ -144,7 +143,7 @@ Adobe Campaign Classic がクラウドでアドビによって完全にホスト
 
 | 委任されたサブドメイン | DNS 命令 |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.</br>`<subdomain>` NS b.ns.campaign.adobe.com.</br>`<subdomain>` NS c.ns.campaign.adobe.com.</br>`<subdomain>` NS d.ns.campaign.adobe.com |
+| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.</br>`<subdomain>` NS b.ns.campaign.adobe.com.</br>`<subdomain>` NS c.ns.campaign.adobe.com.</br>`<subdomain>` NS d.ns.campaign.adobe.com. |
 
 >[!NOTE]
 >

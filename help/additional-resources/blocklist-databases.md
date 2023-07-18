@@ -27,31 +27,31 @@ ht-degree: 90%
 
 * **Spamhaus**
 
-   [https://www.spamhaus.org/](https://www.spamhaus.org/) を参照してください。
+  [https://www.spamhaus.org/](https://www.spamhaus.org/) を参照してください。
 
-   データベースのほうが重要です。このリストで分類されているのは、一般に深刻な状況です。このような状況が発生した場合は、ただちに対応し、商用サービス、配信品質サービスおよび[アドビカスタマーケア](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)に警告を出す必要があります。
+  データベースのほうが重要です。このリストで分類されているのは、一般に深刻な状況です。このような状況が発生した場合は、ただちに対応し、商用サービス、配信品質サービスおよび[アドビカスタマーケア](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)に警告を出す必要があります。
 
 * **SpamCop**
 
-   [https://www.spamcop.net/](https://www.spamcop.net/) を参照してください。
+  [https://www.spamcop.net/](https://www.spamcop.net/) を参照してください。
 
-   最も有名なデータベースの 1 つです。お使いの IP アドレスのいずれかがこのリストに載っている場合は、一般に、送信したメッセージが SpamCop ユーザーによりスパムであると宣言されたか、SpamCop ハニーポットにメッセージを送信したことがあるという意味です。
+  最も有名なデータベースの 1 つです。お使いの IP アドレスのいずれかがこのリストに載っている場合は、一般に、送信したメッセージが SpamCop ユーザーによりスパムであると宣言されたか、SpamCop ハニーポットにメッセージを送信したことがあるという意味です。
 
 * **URIBL**
 
-   [https://www.uribl.com/](https://www.uribl.com/) を参照してください。
+  [https://www.uribl.com/](https://www.uribl.com/) を参照してください。
 
-   このリストでは、スパムとして宣言されたメッセージで定期的に見られるドメインを特定しています。お使いのドメインがこのリストに載った場合は、配信品質に重大な影響が及ぶおそれがあります。配信品質サービスと[アドビカスタマーケア](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)にただちに知らせる必要があります。
+  このリストでは、スパムとして宣言されたメッセージで定期的に見られるドメインを特定しています。お使いのドメインがこのリストに載った場合は、配信品質に重大な影響が及ぶおそれがあります。配信品質サービスと[アドビカスタマーケア](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)にただちに知らせる必要があります。
 
 * **SURBL**
 
-   参照： [https://surbl.org/](https://surbl.org/)
+  参照： [https://surbl.org/](https://surbl.org/)
 
-   SURBL では、スパムで定期的に見られる Web サイトを特定しています。お使いのドメインがこのリストに載った場合は、配信品質に重大な影響が及ぶおそれがあります。配信品質サービスと[アドビカスタマーケア](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)にただちに知らせてください。
+  SURBL では、スパムで定期的に見られる Web サイトを特定しています。お使いのドメインがこのリストに載った場合は、配信品質に重大な影響が及ぶおそれがあります。配信品質サービスと[アドビカスタマーケア](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)にただちに知らせてください。
 
 * **iX Manitu**
 
-   IP アドレスのリストで、ドイツで広く使用されています。[https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/) を参照してください。
+  IP アドレスのリストで、ドイツで広く使用されています。[https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/) を参照してください。
 
 <!--* SORBS
 

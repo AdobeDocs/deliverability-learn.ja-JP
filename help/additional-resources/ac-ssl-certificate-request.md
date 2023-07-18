@@ -9,7 +9,7 @@ exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
 source-git-commit: 57016f89df54d5c74755a6a108a92db45153ec18
 workflow-type: tm+mt
 source-wordcount: '2252'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -76,7 +76,7 @@ E メール送信用にドメインをAdobeにデリゲートしたら ( [ドメ
 
 CSR（証明書署名要求）ファイルを取得するには、次の手順に従います。
 
-* 次にアクセスできる [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja)を使用する場合は、 [このページ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates) をクリックして、CSR ファイルをCampaign コントロールパネルから生成しダウンロードします。
+* 次にアクセスできる [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja)を使用する場合は、 [このページ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=ja#subdomains-and-certificates) をクリックして、CSR ファイルをCampaign コントロールパネルから生成しダウンロードします。
 
 * それ以外の場合は、 https://adminconsole.adobe.com/でサポートチケットを作成し、必要なサブドメインに対して、Adobeカスタマーケアから CSR ファイルを取得します。
 

@@ -9,7 +9,7 @@ exl-id: 6c9ade01-3052-4311-af80-888294820024
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
 source-wordcount: '617'
-ht-degree: 59%
+ht-degree: 62%
 
 ---
 
@@ -34,7 +34,7 @@ ISP は、当然ながら、E メールを送信するのに使用したこと�
 * この情報がある場合、**無効なアドレスを強制隔離テーブルにインポート**します。
 プラットフォームの開始は、多くの場合、アドレスのリストを初めて使用するときや、アドレスが完全修飾でない可能性があるときに発生します。無効なアドレスまたはハニーポットアドレスに送信すると、プラットフォームのレピュテーション低下の一因となります。
 
-   * 無効なアドレスのリストがある場合は、初めて送信する前に、強制隔離テーブルにインポートすることが最善です。 強制隔離テーブルは、 **[!UICONTROL 管理/キャンペーン管理/配信不能件数の管理/配信不能件数およびアドレス]** (Campaign Classic) および **[!UICONTROL 管理/チャネル/強制隔離/アドレス]** (Campaign Standard) メニュー。
+   * 無効なアドレスのリストがある場合は、初めて送信する前に、強制隔離テーブルにインポートすることが最善です。 強制隔離テーブルは、 **[!UICONTROL 管理/Campaign Management/配信不能件数の管理/配信不能件数およびアドレス]** (Campaign Classic) および **[!UICONTROL 管理/チャネル/強制隔離/アドレス]** (Campaign Standard) メニュー。
 
    * 同様に、無効なアドレスを再評価する場合は、時間と共に不適切なアドレスの使用を減らすために、プラットフォームのレピュテーションが確立されたらおこない、少しずつ時間をかけて再評価することを強くお勧めします。
 
@@ -55,12 +55,12 @@ ISP は、当然ながら、E メールを送信するのに使用したこと�
 **Adobe Campaign Classic**
 
 * [強制隔離による配信の最適化](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
-* [プラットフォーム全体の強制隔離アドレスの識別](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#identifying-quarantined-addresses-for-the-entire-platform)
-* [複数のウェーブを使用した送信](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)
-* [配信の監視](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages)
+* [プラットフォーム全体の強制隔離アドレスを識別](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#identifying-quarantined-addresses-for-the-entire-platform)
+* [複数のウェーブを使用した送信](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=ja#sending-using-multiple-waves)
+* [配信の監視](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=ja#sending-messages)
 
 **Adobe Campaign Standard**
 
 * [強制隔離による配信の最適化](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
-* [プラットフォーム全体の強制隔離アドレスの識別](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)
-* [配信の監視](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html)
+* [プラットフォーム全体の強制隔離アドレスを識別](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=ja)
+* [配信の監視](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=ja)
