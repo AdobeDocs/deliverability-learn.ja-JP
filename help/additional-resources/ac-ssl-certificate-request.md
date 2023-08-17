@@ -36,25 +36,25 @@ E メール送信用にドメインをAdobeにデリゲートしたら ( [ドメ
 
 | 用語 | 説明 |
 |--- |--- |
-| CA （認証局） | DigiCert、Symantec など、組織または個人の ID を確認した後に電子証明書を発行する SSL 証明書プロバイダー。<ul><li>信頼された CA は、通常、ルート証明書を発行するサードパーティ CA と見なされます。</li><li>証明書を使用している同じ組織または会社が証明書に署名している場合、証明書が自己署名証明書などの SSL 証明書であっても、信頼されていない CA と分類されます。</li></ul> |
+| CA （認証局） | DigiCert、Symantec など、組織または個人の ID を確認した後に電子証明書を発行する SSL 証明書プロバイダー。<ul><li>信頼された CA は、通常、ルート証明書を発行するサードパーティ CA と見なされます。</li><li>証明書を使用している同じ組織または会社が証明書に署名している場合、自己署名証明書などの SSL 証明書であっても、その証明書は信頼されていない CA と分類されます。</li></ul> |
 | チェーン証明書 | ルート証明書と 1 つ以上の中間証明書を含む証明書は、チェーン（またはチェーン）証明書と呼ばれます。 |
 | CSR （証明書署名要求） | SSL 証明書の申請時に証明機関に提供される、エンコードされたテキストのブロックです。 通常、証明書がインストールされているサーバーで生成されます。 |
 | DER(Distinguished Encoding Rules) | 証明書拡張のタイプ。 .der 拡張子は、バイナリ DER でエンコードされた証明書に使用されます。 これらのファイルでは、 .cer または.crt 拡張子もサポートされている場合があります。 |
 | EV（拡張検証）証明書 | EV 証明書は、フィッシング攻撃を防ぐように設計された新しい種類の証明書です。 お客様のビジネスと、証明書を注文する人の拡張検証が必要です。 |
 | 高保証証明書 | ドメイン名の所有権と有効なビジネス登録を確認した後、CA が高保証証明書を発行します。 |
 | 中間 CA | チェーン証明書に含まれる中間証明書の証明機関。 |
-| 中間証明書 | 証明機関は、ツリー構造の形式で証明書を発行します。 ルート証明書は、ツリーの最上位の証明書です。 証明書とルート証明書の間の証明書は、チェーンまたは中間証明書と呼ばれます。 |
+| 中間証明書 | 認証局は、ツリー構造の形式で証明書を発行します。 ルート証明書は、ツリーの最上位の証明書です。 証明書とルート証明書の間の証明書は、チェーンまたは中間証明書と呼ばれます。 |
 | 低アシュランス証明書 | 低保証証明書（ドメイン検証済み証明書とも呼ばれます）には、証明書のドメイン名のみが含まれます（ビジネス名や組織名は含まれません）。 |
-| PEM （プライバシー拡張メール） | ASCII(Base64) データを含む.pem 拡張子の証明書。 このような証明書は、「 - - - - - - BEGIN CERTIFICATE - - - — 」行で始まります。 |
-| ルート証明書 | 証明機関は、ツリー構造の形式で証明書を発行します。 ルート証明書は、ツリーの最上位の証明書です。 |
+| PEM （プライバシー拡張メール） | ASCII(Base64) データを含む、.pem 拡張子を持つ証明書。 このような証明書は、「 - - - - - - BEGIN CERTIFICATE - - - — 」行で始まります。 |
+| ルート証明書 | 認証局は、ツリー構造の形式で証明書を発行します。 ルート証明書は、ツリーの最上位の証明書です。 |
 | SAN （件名の代替名） | 件名の代替名は、追加のホスト名（サイト、IP アドレス、共通名など） これは、単一の SSL 証明書の一部として署名する必要があります。 |
 | 自己署名証明書 | 信頼された証明機関ではなく、作成者が署名した証明書です。 自己署名証明書は、CA によって署名された証明書と同じレベルの暗号化を有効にすることができますが、次の 2 つの大きな欠点があります。<ul><li>訪問者の接続がハイジャックされ、攻撃者が送信されたすべてのデータを表示できるようになる（その結果、接続を暗号化する目的がなくなる）可能性があります</li><li> 信頼された証明書とは異なり、証明書を失効させることはできません。</li></ul> |
 | SSL (Secure Sockets Layer) | Web サーバとブラウザとの間に暗号化されたリンクを確立するための標準的なセキュリティテクノロジ。 |
-| ワイルドカード証明書 | ワイルドカード証明書により、1 つのドメイン名（*.adobe.com など）で任意の数の第 1 レベルサブドメインを保護できます。 |
+| ワイルドカード証明書 | ワイルドカード証明書により、1 つのドメイン名で保護できる第 1 レベルのサブドメインの数に制限はありません (*.adobe.comなど )。 |
 
 ## 主な手順
 
-1. 証明書署名要求 (CSR) ファイルを要求し、必要な情報（国、都道府県、市区町村、組織名、組織単位名など）を Adobeに
+1. 証明書署名要求 (CSR) ファイルを要求し、必要な情報（国、都道府県、市区町村、組織名、組織単位名など）を をAdobeに追加します。
 1. Adobeで生成された CSR ファイルを検証し、指定したすべての情報が正しいことを確認します。
 1. CSR の詳細を使用して、信頼された証明機関によって署名された証明書を生成します<!--taking care of asking for using the subjectAltName SSL extension (SAN) if it is for several domain names, and get/purchase the resulting certificate (ideally) in PEM format for Apache server-->.
 1. SSL 証明書を検証し、CSR と一致することを確認します。
@@ -67,7 +67,7 @@ E メール送信用にドメインをAdobeにデリゲートしたら ( [ドメ
 
 ### 前提条件
 
-ドメイン名と機能（トラッキング、ミラーページ、Web アプリなど）を を保護します。
+ドメイン名と機能（トラッキング、ミラーページ、Web アプリなど）を をセキュアに設定します。
 >[!NOTE]
 >
 >Adobeは、関連付けるドメイン名や関数を定義する際に役立ちます。 詳しくは、担当のAdobeアカウントチームにお問い合わせください。
@@ -76,7 +76,7 @@ E メール送信用にドメインをAdobeにデリゲートしたら ( [ドメ
 
 CSR（証明書署名要求）ファイルを取得するには、次の手順に従います。
 
-* 次にアクセスできる [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja)を使用する場合は、 [このページ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=ja#subdomains-and-certificates) をクリックして、CSR ファイルをCampaign コントロールパネルから生成しダウンロードします。
+* 次にアクセスできる場合： [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja)を使用する場合は、 [このページ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=ja#subdomains-and-certificates) をクリックして、CSR ファイルをCampaign コントロールパネルから生成しダウンロードします。
 
 * それ以外の場合は、 https://adminconsole.adobe.com/でサポートチケットを作成し、必要なサブドメインに対して、Adobeカスタマーケアから CSR ファイルを取得します。
 
@@ -92,13 +92,13 @@ CSR（証明書署名要求）ファイルを取得するには、次の手順�
 >
 >以下の表に示すすべてのフィールドに入力する必要があります。 そうしないと、CSR リクエストを処理できません。
 
-**情報チームの支援を受けるためのAdobe:**
+**Adobe・チームの支援を得るための情報：**
 
 | 提供する情報 | 値の例 | 注釈 |
 |--- |--- |--- |
 | クライアント名 | My Company Inc. | 組織の名前。このフィールドは、Adobeがリクエストの追跡に使用します（CSR/SSL 証明書には含まれません）。 |
-| Adobe Campaign環境 URL | https://client-mid-prod1.campaign.adobe.com | Adobe Campaignインスタンス URL。 |
-| 共通名 [CN] | t.subdomain.customer.com | 関連するドメインのいずれでもかまいませんが、通常はトラッキングドメインです。 |
+| Adobe Campaign環境 URL | https://client-mid-prod1.campaign.adobe.com | Adobe Campaignインスタンスの URL。 |
+| 共通名 [CN] | t.subdomain.customer.com | 関連するドメインのいずれかを指定できますが、通常はトラッキングドメインです。 |
 | 件名の代替名 [SAN] | t.subdomain.customer.com | トラッキングサブドメインを SAN として含めてください。 |
 | 件名の代替名 [SAN] | m.subdomain.customer.com |
 | 件名の代替名 [SAN] | res.subdomain.customer.com |
@@ -156,11 +156,11 @@ SSL 証明書が生成されたら、Adobeに送信する前に検証する必�
 1. 証明書テキストをオンラインデコーダー (https://www.sslshopper.com/certificate-decoder.htmlやhttps://www.entrust.net/ssl-technical/csr-viewer.cfmなど ) にコピーします。
 または、 *OpenSSL* コマンドをローカルに Linux マシン上に置く。 詳しくは、 [この外部ページ](https://www.shellhacks.com/decode-ssl-certificate/).
 1. 共通名、SAN、発行者、有効期間を含む証明書が正しく解決されていることを確認します。
-1. SSL 証明書の検証が成功した場合は、次を使用して、証明書が CSR と一致することを確認します。 [このウェブサイト](https://www.sslshopper.com/certificate-key-matcher.html):選択 **CSR と証明書が一致するかどうかを確認します**&#x200B;をクリックし、該当するフィールドに証明書と CSR を入力します。 一致する必要があります。
+1. SSL 証明書の検証が成功した場合は、次を使用して、証明書が CSR と一致することを確認します。 [このウェブサイト](https://www.sslshopper.com/certificate-key-matcher.html)：選択 **CSR と証明書が一致するかどうかを確認します**&#x200B;をクリックし、該当するフィールドに証明書と CSR を入力します。 一致する必要があります。
 
 ### 手順 5 - SSL 証明書のインストールを要求する
 
-* 次にアクセスできる [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja)を使用する場合は、 [このページ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=ja#installing-ssl-certificate) 証明書をCampaign コントロールパネルにアップロード
+* 次にアクセスできる場合： [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja)を使用する場合は、 [このページ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=ja#installing-ssl-certificate) 証明書をCampaign コントロールパネルにアップロード。
 
 * それ以外の場合は、https://adminconsole.adobe.com/から別のサポートチケットを作成し、Adobeに証明書をAdobeサーバーにインストールするよう要求します。
 
@@ -178,7 +178,7 @@ SSL インストールチケットを閉じる前に、以下のテストを実�
 
 ブラウザーで次の URL に移動します（「subdomain.customer.com」をサブドメインに置き換えます）。
 
-* https://subdomain.customer.com/r/test [web アプリケーション](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html) サブドメインのみ — 電子メールのサブドメインには適用されません。
+* https://subdomain.customer.com/r/test ( の [web アプリケーション](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html) サブドメインのみ — 電子メールのサブドメインには適用されません。
 * https://t.subdomain.customer.com/r/test
 * https://m.subdomain.customer.com/r/test
 * https://res.subdomain.customer.com/r/test
@@ -191,15 +191,15 @@ SSL 証明書が正しくインストールされていない場合は、次の�
 
 ![](../../help/assets/ssl-google-unsuccessful-result.png)
 
-### 手順 7 — 証明書の有効期間の確認
+### 手順 7 — 証明書の有効期間を確認する
 
 ブラウザーで証明書の有効期間を確認できます。 例えば、Google Chrome で、 **セキュア** > **証明書**.
 
-有効期間を確認するのは、お客様の責任です。 Adobeでは、証明書の有効期限を監視するプロセスを実装することをお勧めします。 SSL 証明書の有効期限が次の期間に切れた場合の影響の詳細を説明します [この記事](https://www.thesslstore.com/blog/what-happens-when-your-ssl-certificate-expires/).
+有効期間を確認するのは、お客様の責任です。 Adobeでは、証明書の有効期限を監視するプロセスを実装することをお勧めします。 SSL 証明書の有効期限が次の期間で切れた場合の影響の詳細を説明します [この記事](https://www.thesslstore.com/blog/what-happens-when-your-ssl-certificate-expires/).
 
 * サポートチケットを作成して、証明書の有効期限の 2 週間前以降に更新された証明書をリクエストします。 CSR の詳細が変更されていない限り、追加の CSR をリクエストする必要はありません。
 
-* 次にアクセスできる [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja)AWS環境で環境がAdobeによってホストされている場合、Campaign コントロールパネルを使用して、証明書の期限が切れる前に証明書を更新できます。 詳しくは、[この節](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)を参照してください。
+* 次にアクセスできる場合： [Campaign コントロールパネル](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja)AWS環境で環境がAdobeによってホストされている場合、Campaign コントロールパネルを使用して、証明書の期限が切れる前に証明書を更新できます。 詳しくは、[この節](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)を参照してください。
 
 ### 手順 8 — 特定の設定を更新する {#update-configuration}
 
@@ -207,7 +207,7 @@ SSL 証明書が正しくインストールされていない場合は、次の�
 
 >[!NOTE]
 >
->Campaign Classicの場合、更新する URL は主に [デプロイウィザード](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) そして [外部アカウント](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=ja) （トラッキング、ミラーページ、パブリックリソースドメイン）。 Campaign Standardについては、 [ブランディング設定](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
+>Campaign Classicの場合、更新する URL は主に [デプロイウィザード](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) また、 [外部アカウント](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=ja) （トラッキング、ミラーページ、パブリックリソースドメイン）。 Campaign Standardについては、 [ブランディング設定](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
 
 設定が更新されると、新しい E メールは HTTP ではなく HTTPS URL で送信されます。 URL がセキュリティで保護されたことを確認するには、次のテストをすばやく実行できます。
 

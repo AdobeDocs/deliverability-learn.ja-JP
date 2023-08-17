@@ -19,7 +19,7 @@ ht-degree: 33%
 
 配信品質に関する最近の更新の詳細については、次のテクニカルノートを参照してください。
 
-* [メッセージ識別 (BIMI) のための Gmail のブランド指標の実装](../technotes/implement-bimi.md)
+* [メッセージ識別 (BIMI) のための Gmail のブランドインジケーターの実装](../technotes/implement-bimi.md)
 
 ## 汎用リソース
 

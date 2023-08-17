@@ -26,14 +26,14 @@ ht-degree: 2%
 スムーズに移行する方法に関するヒントとヒントを次に示します。
 
 * **権限** は、成功した電子メールプログラムの基盤です。
-* **低速**  — 送信量が少ない状態から始め、送信者の評判を高めるにつれて増加します。
+* **低速および遅い**  — 送信量が少ない状態から始め、送信者の評判を高めるにつれて増加します。
 * A **タンデム郵送戦略** を使用すると、E メールカレンダーを中断することなく、現在の ESP を使用して巻き下げながら、Campaign のボリュームを増やすことができます。
 * **エンゲージメントの問題**  — 電子メールを定期的に開封し、クリックする購読者から始めます。
 * **計画に従う**  — アドビの推奨事項は、数百人の Campaign クライアントが電子メールプログラムを強化するのに役立ちました。
-* **返信メールアカウントを監視する**. noreply@xyz.comを使用したり応答しなかったりするのは、顧客にとって悪い経験です。
-* 非アクティブなアドレスは、配信品質に悪影響を与える可能性があります。 **現在のプラットフォームでの再アクティブ化と再権限設定**&#x200B;新しい IP ではなく
+* **返信メールアカウントを監視する**. noreply@xyz.comを使用したり応答しなかったりするのは、お客様にとって悪い経験です。
+* 非アクティブなアドレスは、配信品質に悪影響を与える可能性があります。 **現在のプラットフォームでの再アクティブ化と再権限設定**&#x200B;新しい IP ではなく、
 * **ドメイン**  — 会社の実際のドメインのサブドメインである送信ドメインを使用します
-   * 例えば、会社のドメインが xyz.com の場合、email.xyz.com は xyzemail.com よりも ISP に対する信頼性が高くなります
+   * 例えば、会社のドメインがxyz.comの場合、email.xyz.comはxyzemail.comよりも多くの信頼性を ISP に提供します
 * **透明**  — メールドメインの登録の詳細は公開されている必要があり、非公開にする必要はありません。
 
 多くの状況で、トランザクションメールは、従来のプロモーションウォーミングアプローチに従っていません。 トランザクションメールのボリュームを制御するのは、その性質上明らかに困難です。これは、通常、E メールのタッチをトリガーするユーザー操作が必要になるからです。 正式な計画を立てずに、トランザクションメールを簡単に移行できる場合もあります。 時間の経過と共に各メッセージタイプを移行し、ボリュームを徐々に増やす方が良い場合もあります。 例えば、次のように移行するとします。
@@ -50,8 +50,8 @@ ht-degree: 2%
 * でAdobe Campaignを使用して新しいプラットフォームを開始する際の配信品質の管理の詳細 [この節](/help/additional-resources/ac-starting-new-platform.md).
 * でAdobe Campaign Classicで複数のウェーブを使用して送信する方法を説明します。 [この節](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=ja#sending-using-multiple-waves).
 * でサブドメインをAdobe Campaign Classicまたは Standard に完全にデリゲートする方法を説明します。 [この節](/help/additional-resources/ac-domain-name-setup.md).
-* [Campaign コントロールパネル:完全なサブドメインデリゲーション（チュートリアル）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *サブドメインをAdobe Campaign Classicに完全にデリゲートする方法を説明します。*
-* [Campaign コントロールパネル:完全なサブドメインデリゲーション（チュートリアル）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *サブドメインをAdobe Campaign Standardに完全にデリゲートする方法を説明します。*
+* [Campaign コントロールパネル：完全なサブドメインデリゲーション（チュートリアル）](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *サブドメインをAdobe Campaign Classicに完全にデリゲートする方法を説明します。*
+* [Campaign コントロールパネル：完全なサブドメインデリゲーション（チュートリアル）](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *サブドメインをAdobe Campaign Standardに完全にデリゲートする方法を説明します。*
 
 ## その他のリソース
 

@@ -1,6 +1,6 @@
 ---
 title: Verizon Media Group（Yahoo、AOL、Verizon など）
-description: '"[!DNL Verizon Media Group] は、通常、ほとんどの B2C リストで上位 3 つのドメインの 1 つです。 評判の問題が発生した場合、通常はスロットルまたはバルクメールを送信するので、彼らはいくぶんユニークな振る舞いをします。'
+description: '"[!DNL Verizon Media Group] は、通常、ほとんどの B2C リストで上位 3 つのドメインの 1 つです。 評判の問題が発生した場合、通常はスロットルまたはバルクメールを送信するので、彼らはいくぶんユニークな振る舞いをします。」'
 topics: Deliverability
 jira: KT-5320
 doc-type: article
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 [!DNL Verizon Media Group] (VMG) は、コンテンツと URL フィルタリングとスパム苦情の組み合わせを使用して、独自のスパムフィルターを構築し、維持しています。 Gmail と共に、E メールをドメインおよび IP アドレスでフィルタリングする ISP を採用する初期の方法の 1 つです。
 
-## 使用可能にするデータ
+## 使用可能にするデータの種類
 
 VMG には、苦情情報を送信者に送り返すために使用される FBL があります。 また、今後、さらに多くのデータを追加していく予定です。
 
