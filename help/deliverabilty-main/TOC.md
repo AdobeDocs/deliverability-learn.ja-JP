@@ -5,9 +5,10 @@ user-guide-description: マーケティングプログラムを確実に成功�
 feature: Deliverability
 role: Leader, User
 level: Beginner
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
-workflow-type: tm+mt
-source-wordcount: '172'
+auto-video-transcripts: true
+source-git-commit: be28ecdbcd064e2bcca739db492064869ddbb59a
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -24,16 +25,16 @@ ht-degree: 100%
    + [スパムトラップ](/help/metrics/spam-traps.md)
    + [バルク指定とブロック](/help/metrics/bulking-and-blocking.md)
 + [エンゲージメント](/help/engagement.md)
-+ トランジションプロセス - E メールプラットフォームの切り替え {#transition-process}
++ トランジションプロセス -メールプラットフォームの切り替え {#transition-process}
    + [電子メールプラットフォーム切り替え時のスムーズな移行方法](/help/transition-process/switching-email-platforms.md)
    + [インフラストラクチャ](/help/transition-process/infrastructure.md)
    + [ターゲティング設定条件](/help/transition-process/targeting-criteria.md)
    + [IP ウォーミング中の ISP 別考慮事項](/help/transition-process/isp-specific-considerations-during-ip-warming.md)
    + [ボリューム](/help/transition-process/volume.md)
-+ 最初のインプレッション - リストの収集とようこそ E メール {#first-impressions}
-   + [最初のインプレッション - リストの収集とようこそ E メール](/help/first-impressions/introduction.md)
++ 最初のインプレッション - リストの収集とウェルカムメール {#first-impressions}
+   + [最初のインプレッション - リストの収集とウェルカムメール](/help/first-impressions/introduction.md)
    + [アドレス収集とリスト拡大](/help/first-impressions/address-collection-and-list-growth.md)
-   + [ようこそ E メール](/help/first-impressions/welcome-emails.md)
+   + [ウェルカムメール](/help/first-impressions/welcome-emails.md)
 + [最適な配信品質を実現するためのコンテンツのベストプラクティス](/help/content-best-practices-for-optimal-delivery.md)
 + [送信者の永続性](/help/sender-permanence.md)
 + インターネットサービスプロバイダーの詳細 {#internet-service-provider-specifics}
