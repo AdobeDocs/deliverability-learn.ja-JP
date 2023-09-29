@@ -4,10 +4,11 @@ description: BIMI の実装方法を学ぶ
 topics: Deliverability
 role: Admin
 level: Beginner
+jira: KT-14079
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+source-git-commit: d23a0477b908427c4e9d889d5d9ed896a6ac8322
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -68,6 +69,8 @@ DMARC は、メールボックスプロバイダーが失敗した E メール�
 ### ブランドロゴの作成 {#create-brand-logo}
 
 ロゴの作成は、100%の要件に従う必要があります。 必ず [BIMI グループのガイドライン](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
+
+コンテンツ配信ネットワーク (CDN) が使用され、メールボックスプロバイダーがロゴ（ボット保護など）を取得できないようにする保護が使用されている場合、ロゴは安全な場所 (HTTPS) に保存する必要があります。
 
 技術的な要件の他に、正方形のロゴを持つ、背景にべた塗りのなど、実用的な推奨事項もあります。 これらのレコメンデーションは、最適なビジュアライゼーションを提供します。
 準拠していない場合、ロゴが表示されない可能性があります。
