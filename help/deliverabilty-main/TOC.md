@@ -6,10 +6,10 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: 3be4372aa06d7ef2d1ba2282043d277c4817f9c8
+source-git-commit: 7d8c1229b421471f7908c1e13bb80af5b14e42ff
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 98%
+source-wordcount: '178'
+ht-degree: 96%
 
 ---
 
@@ -46,6 +46,7 @@ ht-degree: 98%
 + [実際の利用](/help/putting-it-in-practice.md)
 + 付録：追加のリソース {#additional-resources}
    + [概要](/help/additional-resources/general-resources.md)
+   + [Yahoo と Gmail の更新](/help/guidence-around-changes-to-google-and-yahoo.md)
    + 汎用リソース {#generic-resources}
       + [スパムトラップに関するすべて](/help/additional-resources/all-about-spam-traps.md)
       + [IP ウォーミングによる電子メールの評判の向上](/help/additional-resources/increase-reputation-with-ip-warming.md)
@@ -58,7 +59,7 @@ ht-degree: 98%
       + [ドメイン名の設定](/help/additional-resources/ac-domain-name-setup.md)
       + [SSL 証明書要求プロセス](/help/additional-resources/ac-ssl-certificate-request.md)
       + [新しいプラットフォームの開始](/help/additional-resources/ac-starting-new-platform.md)
-      + [Campaign Classic - 技術的な推奨事項](/help/additional-resources/acc-technical-recommendations.md)
+      + [Campaign Classic - 技術的なレコメンデーション](/help/additional-resources/acc-technical-recommendations.md)
    + テクニカルノート {#technotes}
       + [DMARC の実装](/help/technotes/implement-dmarc.md)
       + [BIMI の実装](/help/technotes/implement-bimi.md)
