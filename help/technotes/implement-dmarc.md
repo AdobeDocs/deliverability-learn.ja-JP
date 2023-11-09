@@ -4,10 +4,11 @@ description: BIMI の実装方法を学ぶ
 topics: Deliverability
 role: Admin
 level: Beginner
-source-git-commit: 5ac5bc90b5a9bf3ce9b390821476c7222983b818
+exl-id: f1c14b10-6191-4202-9825-23f948714f1e
+source-git-commit: bd8cee606c9dcb1593ad3ec45c578f59f8e968f2
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 1%
+source-wordcount: '1258'
+ht-degree: 8%
 
 ---
 
@@ -45,9 +46,9 @@ DMARC はオプションです。必須ではありませんが、無料です�
 
 DMARC はオプションなので、ESP のプラットフォームではデフォルトで設定されません。 DMARC レコードを機能させるには、ドメインの DNS に DMARC レコードを作成する必要があります。 また、DMARC レポートを組織内のどこに送信するかを示すために、選択した電子メールアドレスが必要です。 ベストプラクティスとして、DMARC の潜在的な影響を DMARC が把握できるように、DMARC ポリシーを p=none から p=quarantine にエスカレートし、p=reject にエスカレートすることで、DMARC の実装を徐々に展開することをお勧めします。
 
-1. 受け取り、使用したフィードバックを分析します (p=none)。これは、認証に失敗したメッセージに対して何のアクションも実行せず、送信者に電子メールレポートを送信するように受信者に指示します。 また、正当なメッセージが認証に失敗する場合は、SPF/DKIM の問題を確認して修正します。
+1. 受け取り、使用したフィードバックを分析します (p=none)。これは、認証に失敗したメッセージに対して何のアクションも実行せず、送信者に電子メールレポートを送信するように受信者に指示します。 また、正当なメッセージが認証に失敗する場合は、SPF／DKIM の問題を確認および修正します。
 1. SPF と DKIM がすべての正当な E メールの認証を渡しているかどうかを確認し、ポリシーを (p=quarantine) に移動します。これは、受信側の E メールサーバーに、認証に失敗した E メールを強制隔離するよう指示します（通常は、スパムフォルダーにメッセージを配置します）。
-1. ポリシーを (p=reject) に調整します。 p= reject ポリシーは、認証に失敗したドメインの E メールを受信者に対して完全に拒否（バウンス）するように指示します。 このポリシーを有効にすると、ドメインで 100%認証された電子メールのみがインボックスに配置される可能性もあります。
+1. ポリシーを (p=reject) に調整します。 p= reject ポリシーは、認証に失敗したドメインのメールを完全に拒否（バウンス）するよう受信者に指示します。このポリシーを有効にすると、ドメインで 100％認証された電子メールのみがインボックスにも配置される可能性があります。
 
    >[!NOTE]
    >
@@ -90,6 +91,10 @@ DMARC レコードには、DMARC タグと呼ばれる複数のコンポーネ�
 | aspf | オプション | Strict (s) または Relaxed (r) のいずれかです。 緩和された配置とは、ReturnPath ドメインが From Address のサブドメインになることを意味します。 厳密に整列すると、Return-Path ドメインは From アドレスと完全に一致する必要があります。 | aspf=r | r |
 
 ## DMARC &amp; Adobe Campaign {#campaign}
+
+>[!NOTE]
+>
+>Campaign インスタンスがAWSでホストされている場合は、Campaign コントロールパネルを使用してサブドメインに DMARC を実装できます。 [Campaign コントロールパネルを使用した DMARC レコードの実装方法を説明します](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
 
 DMARC エラーの一般的な原因は、「From」と「Errors-To」または「Return-Path」アドレスの間のずれです。 この問題を回避するには、DMARC を設定する際に、配信テンプレートの「From」および「Errors-To」アドレス設定を再度確認することをお勧めします。
 
