@@ -7,10 +7,10 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: 00b4b4c3396fc4a71484cd12e8c89cd8371ad1ce
+source-git-commit: f6eaeb2a992cccb4afcd8fb61f2f71685b3a35e8
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 0%
+source-wordcount: '1315'
+ht-degree: 1%
 
 ---
 
@@ -48,7 +48,7 @@ DMARC は現在、Adobeで完全にサポートされていますが、必須で
 注意すべき点は [!DNL Google] および [!DNL Yahoo] はどちらも、「1-Click」という名前の「http/URL」オプションを参照しているので、意図的なものです。 技術的には、元の「http/URL」オプションを使用して、受信者を Web サイトにリダイレクトできます。 それは～の焦点ではない [!DNL Yahoo] および [!DNL Google]この 2 人は、更新された RFC8058 を参照し、Web サイトの代わりに HTTPSPOSTリクエストを使用して配信停止を処理し、「1-Click」にすることに重点を置いています。
 Marketo Engageの場合、Adobeは既に「mailto」オプションを有効にしており、現在「http/URL」オプションをサポートしていません。 今後の更新。
 Adobe CampaignとAdobe Journey OptimizerのAdobeでは、「mailto」と「1-Click」の両方のオプションを使用することをお勧めします。
-list-unsubscribe の実装方法の詳細については、こちらでAdobe Campaign Classic、こちらでAdobe Campaign Standard、こちらでAdobe Journey Optimizerを確認するか、いつでもAdobeカスタマーサポートチームにお問い合わせください。
+list-unsubscribe の実装方法について詳しくは、 [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for Adobe Campaign Classic, [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"} for Adobe Campaign Standard, and [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} Adobe Journey Optimizerの場合や、いつでもAdobeカスタマーサポートチームにお問い合わせください。
 list-unsubscribe ヘッダーの必要性は、トランザクション E メールには適用されません。 「放棄された買い物かご」などのトリガーされたメッセージや、購読者が生成しなかった類似の通信は、 [!DNL Google] および [!DNL Yahoo] リスト配信停止が必要になります。
 
 ## 配信停止を 2 日以内に処理：
