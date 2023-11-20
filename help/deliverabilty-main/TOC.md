@@ -6,7 +6,7 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: 7d8c1229b421471f7908c1e13bb80af5b14e42ff
+source-git-commit: acf2686d59bc27063a255a02de52cbaa3734d5ed
 workflow-type: ht
 source-wordcount: '178'
 ht-degree: 100%
@@ -46,7 +46,7 @@ ht-degree: 100%
 + [実際の利用](/help/putting-it-in-practice.md)
 + 付録：追加のリソース {#additional-resources}
    + [概要](/help/additional-resources/general-resources.md)
-   + [Yahoo と Gmail のアップデート](/help/guidence-around-changes-to-google-and-yahoo.md)
+   + [Yahoo と Gmail のアップデート](/help/guidance-around-changes-to-google-and-yahoo.md)
    + 汎用リソース {#generic-resources}
       + [スパムトラップに関するすべて](/help/additional-resources/all-about-spam-traps.md)
       + [IP ウォーミングによる電子メールの評判の向上](/help/additional-resources/increase-reputation-with-ip-warming.md)
