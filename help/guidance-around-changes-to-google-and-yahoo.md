@@ -7,10 +7,10 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: 0aeff034f6ca2a3dce065240384d1b0e7922fa31
+source-git-commit: 304c09426f9fd149f8fd0e89a50030819a772e71
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 95%
+source-wordcount: '1341'
+ht-degree: 96%
 
 ---
 
@@ -48,8 +48,19 @@ DMARC は現在アドビで完全にサポートされていますが、必須�
 [!DNL Google] と [!DNL Yahoo] は両社とも意図的に、「http/URL」オプションを「ワンクリック」という名前で参照していることに注意することが重要です。技術的には、元の「http/URL」オプションでは、受信者を web サイトにリダイレクトできました。これは、[!DNL Yahoo] と [!DNL Google] の焦点ではありません。両社は更新された RFC8058 を参照しています。この RFC8058 は、web サイトではなく HTTPS POST リクエストを介して登録解除を処理し、「ワンクリック」にすることにフォーカスしています。
 Marketo Engage の場合、アドビは既に「mailto」オプションを有効にしていますが、現在「http/URL」オプションはサポートしていません。それに関するさらなる更新は、今後予定されています。
 Adobe Campaign および Adobe Journey Optimizer の場合、アドビでは「mailto」オプションと「ワンクリック」オプションの両方を使用することをお勧めします。
-list-unsubscribe の実装方法について詳しくは、 [ここ] (https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for Adobe Campaign Classic, [here] (https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} for Adobe Campaign Standard, and [here] (https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} Adobe Journey Optimizerの場合や、いつでもAdobeカスタマーサポートチームにお問い合わせください。
-list-unsubscribe ヘッダーの必要性は、トランザクションメールには適用されません。トリガーされたメッセージ（放棄された買い物かごなど）や、サブスクライバーによって生成されない類似の通信は、[!DNL Google] や [!DNL Yahoo] などのメールボックスプロバイダーによってマーケティングと見なされ、list-unsubscribe が必要になることに注意してください。![画像](https://git.corp.adobe.com/storage/user/38257/files/a2da6bdb-524d-46a7-b765-718c1fe407b0)
+
+
+list-unsubscribe の実装方法について詳しくは、 [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"}
+
+Adobe Campaign Classic [ここ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"}
+
+Adobe Campaign Standard、および [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"}
+
+Adobe Journey Optimizerの場合や、いつでもAdobeカスタマーサポートチームにお問い合わせください。
+
+list-unsubscribe ヘッダーの必要性は、トランザクションメールには適用されません。トリガーされたメッセージ（放棄された買い物かごなど）や、サブスクライバーによって生成されない類似の通信は、[!DNL Google] や [!DNL Yahoo] などのメールボックスプロバイダーによってマーケティングと見なされ、list-unsubscribe が必要になることに注意してください。
+
+![画像](https://git.corp.adobe.com/storage/user/38257/files/a2da6bdb-524d-46a7-b765-718c1fe407b0)
 
 ## 2 日以内での登録解除プロセス：
 
