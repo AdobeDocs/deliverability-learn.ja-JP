@@ -7,10 +7,10 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: d237d0dd921d84461a4edd47d8da501c23576d58
+source-git-commit: 059e57ac5b40c8e7c8562d0dca5c51de01c6b041
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 76%
+source-wordcount: '1329'
+ht-degree: 74%
 
 ---
 
@@ -51,10 +51,16 @@ DMARC の詳細と、Marketo Engage に対する実装方法については、[�
 Marketo Engageの場合、Adobeは既に「mailto」オプションを有効にしており、現在「http/URL」オプションをサポートしていません。 それに関するさらなる更新は、今後予定されています。
 Adobe CampaignとAdobe Journey OptimizerのAdobeでは、「mailto」と「1-Click」の両方のオプションを使用することをお勧めします。
 
-list-unsubscribe の実装方法の詳細情報が必要な場合、 については、[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"} for **[!DNL Adobe Campaign Classic]**, [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"} for **[!DNL Adobe Campaign Standard]**, and [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"}を確認するか、いつでもアドビカスタマーサポートチームにお問い合わせください。
-**[!DNL Adobe Journey Optimizer]**
-
 list-unsubscribe ヘッダーの必要性は、トランザクションメールには適用されません。トリガーされたメッセージ（放棄された買い物かごなど）や、サブスクライバーによって生成されない類似の通信は、[!DNL Google] や [!DNL Yahoo] などのメールボックスプロバイダーによってマーケティングと見なされ、list-unsubscribe が必要になることに注意してください。
+
+>[!INFO]
+> ソリューションに list-unsubscribe を実装する方法の詳細については、以下を確認してください。
+> * [!DNL Adobe Campaign Classic]: [技術的なレコメンデーション](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"}
+>* [!DNL Adobe Campaign Standard]: [List-Unsubscribe ヘッダーとは何ですか。 ACS でこれを実装する方法は？](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"}
+>* [!DNL Adobe Journey Optimizer]: [メールオプトアウトの管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"}
+>
+> または、いつでもAdobeカスタマーサポートチームに連絡してください。
+
 
 ## 2 日以内での登録解除プロセス：
 
