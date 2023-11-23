@@ -7,13 +7,13 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: 059e57ac5b40c8e7c8562d0dca5c51de01c6b041
+exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
+source-git-commit: be133b442284b39daa8e2dd276c2942402b4936d
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 74%
 
 ---
-
 
 # [!DNL Google] と [!DNL Yahoo] で発表された変更に関するガイダンス
 
@@ -42,7 +42,7 @@ Adobeの E メール配信品質の専門家は、必要ないように、これ
 [!DNL Google] と [!DNL Yahoo] の両社はどちらも、お客様にメールの送信に使用するドメインの DMARC レコードをリクエストします。現在、p=reject または p=quarantine の設定は必要ないので、p=none（一般的に「監視」設定と呼ばれる）の設定は、完全に受け入れ可能です。 これによって、メールの処理方法が変わることはありません。DMARC を使用しない場合と同様に、通常どおりに処理されます。これを設定することは、DMARC で自分自身を保護するための最初の手順であり、[!DNL Google] や [!DNL Yahoo] へのメールの送信を支援するという新しい利点に加えて、メールエコシステム内の任意の場所に認証の問題があるかどうかを確認するのにも役立ちます。
 DMARC は現在アドビで完全にサポートされていますが、必須ではありません。無料の DMARC チェッカーを使用して、サブドメインに DMARC が設定されているかどうかを確認します。設定されてない場合は、アドビのサポートチームにお問い合わせの上、その設定を取得するための最適な方法を確認してください。
 
-DMARC の詳細と、Marketo Engage に対する実装方法については、[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=ja){target="_blank"} for Adobe Campaign and Adobe Journey Optimizer Adobe or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html?lang=ja){target="_blank"}を参照してください。
+DMARC の詳細と、Marketo Engage に対する実装方法については、[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=ja){target="_blank"} for Adobe Campaign or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html?lang=ja){target="_blank"}を参照してください。
 
 ## ワンクリック（リスト）登録解除：
 
