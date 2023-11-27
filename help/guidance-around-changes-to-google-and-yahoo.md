@@ -9,7 +9,7 @@ jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
 source-git-commit: be133b442284b39daa8e2dd276c2942402b4936d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 100%
 
