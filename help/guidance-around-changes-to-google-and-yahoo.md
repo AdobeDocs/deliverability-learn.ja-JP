@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 16ff60cdcb1ca1558b8021d27b235b6977c2f40a
+source-git-commit: 60c3e42c480ec4d438c51753bc6c37a01b1550e7
 workflow-type: tm+mt
-source-wordcount: '1565'
-ht-degree: 82%
+source-wordcount: '1564'
+ht-degree: 81%
 
 ---
 
@@ -89,7 +89,7 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 * スパム率を低く維持すると、時折急増するユーザーフィードバックに対する送信者の回復力が高まります。
 * 同様に、スパム率を高く維持すると、スパムの分類が増加します。スパム率の改善がスパムの分類に積極的に反映されるまでには時間がかかる場合があります。
 
-[!DNL Yahoo] は、苦情のしきい値も 0.30％の範囲内になると述べています。
+[!DNL Yahoo] は、苦情数のしきい値も 0.30%の範囲になると述べています。
 
 [!DNL Google] と [!DNL Yahoo] の目標は、たった 1 日の悪い日や苦情の一時的急増を引き起こす 1 つの誤りによって送信者を処罰することではありません。代わりに、長期間にわたって苦情率が高い送信者や、不適切な送信動作のパターンに焦点を当てています。
 
