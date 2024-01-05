@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: c1aebdc34c3cc38325e9160360f7847f276bd53e
+source-git-commit: 2de69c2def1abfc4107feb80ad973f689af8b27e
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 85%
+source-wordcount: '1755'
+ht-degree: 83%
 
 ---
 
@@ -59,7 +59,7 @@ DMARC の詳細と、Marketo Engage に対する実装方法については、[�
 
 [!DNL Yahoo] では、現時点では「mailto」オプションを引き続き使用するものの、今後は「投稿」オプションも必要になると述べています。
 
-アドビでは、「mailto」と「投稿／ワンクリック」list-unsubscribe オプションの両方を使用することをお勧めします。アドビは、これらの要件を満たすユーザーをサポートするために、すべてのメール送信プラットフォームで「投稿」サポートを有効にすることに取り組んでおり、これに関連するさらなる更新を行う予定です。
+アドビでは、「mailto」と「投稿／ワンクリック」list-unsubscribe オプションの両方を使用することをお勧めします。Adobeは、これらの要件を満たすユーザーをサポートするために、すべての電子メール送信プラットフォームで「投稿」サポートを有効にする作業を進めています。詳細は以下を参照してください。
 
 list-unsubscribe ヘッダーの必要性は、トランザクションメールには適用されません。トリガーされたメッセージ（放棄された買い物かごなど）や、サブスクライバーによって生成されない類似の通信は、[!DNL Google] や [!DNL Yahoo] などのメールボックスプロバイダーによってマーケティングと見なされ、list-unsubscribe が必要になることに注意してください。
 
