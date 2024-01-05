@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 60c3e42c480ec4d438c51753bc6c37a01b1550e7
+source-git-commit: 1f2a6c7b53a5f5110250c8aecac349c5b72feb6b
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 100%
+source-wordcount: '1759'
+ht-degree: 85%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 ## DMARC：
 
-[!DNL Google] と [!DNL Yahoo] の両社はどちらも、お客様にメールの送信に使用するドメインの DMARC レコードをリクエストします。現在、p=reject または p=quarantine 設定は必要ないので、一般に「監視」設定と呼ばれる p=none の設定が完全に許容されます。これによって、メールの処理方法が変わることはありません。DMARC を使用しない場合と同様に、通常どおりに処理されます。これを設定することは、DMARC で自分自身を保護するための最初の手順であり、[!DNL Google] や [!DNL Yahoo] へのメールの送信を支援するという新しい利点に加えて、メールエコシステム内の任意の場所に認証の問題があるかどうかを確認するのにも役立ちます。
+[!DNL Google] と [!DNL Yahoo] の両社はどちらも、お客様にメールの送信に使用するドメインの DMARC レコードをリクエストします。現在、p=reject または p=quarantine の設定は必要ないので、p=none（一般的に「監視」設定と呼ばれる）の設定は、今のところ完全に受け入れ可能です。 これによって、メールの処理方法が変わることはありません。DMARC を使用しない場合と同様に、通常どおりに処理されます。これを設定することは、DMARC で自分自身を保護するための最初の手順であり、[!DNL Google] や [!DNL Yahoo] へのメールの送信を支援するという新しい利点に加えて、メールエコシステム内の任意の場所に認証の問題があるかどうかを確認するのにも役立ちます。
 
 DMARC のルールは変更されていません。つまり、DMARC を防止するように設定していない限り、親ドメイン（adobe.com など）の DMARC レコードが継承され、サブドメイン（email.adobe.com など）が対象になります。様々なビジネス上の理由で追加する必要がある場合を除き、サブドメインに異なる DMARC レコードは必要ありません。
 
@@ -66,12 +66,12 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 [!DNL Google] と [!DNL Yahoo] は両社とも、受信者が登録解除し、後日再登録する場合があることを認識しています。両社とも、これらの状況をどのように識別するかという秘密のソースを共有するつもりはありませんが、このような場合に送信者に誤ってペナルティを課すことを回避する方法に取り組んでいます。
 
 >[!INFO]
-> ソリューションに list-unsubscribe を実装する方法について詳しくは、以下を確認してください。
-> * [!DNL Adobe Campaign Classic]: [技術的なレコメンデーション](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"}
->* [!DNL Adobe Campaign Standard]: [List-Unsubscribe ヘッダーとは何ですか？これを ACS に実装するにはどうすればよいですか？](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"}
->* [!DNL Adobe Journey Optimizer]: [メールオプトアウトの管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"}
+> Adobeは、以下の要件を満たすユーザーをサポートするために、すべての電子メール送信プラットフォームで「投稿」サポートを有効にする作業を進めています。
+> * [!DNL Adobe Campaign Classic V7/V8]：今日のPOST1 — クリックを完全にサポートします。 ステップバイステップ設定の更新が公開されます [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"} 1 月中旬までに
+>* [!DNL Adobe Campaign Standard]:POST1 — クリックをサポートするように更新中です。 近日中に更新を確認してください。 設定手順が提供されます [ここ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"}
+>* [!DNL Adobe Journey Optimizer]：今日のPOST1 — クリックを完全にサポートします。 ステップバイステップ設定の更新が公開されます [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"} 1 月中旬までに
 >
-> または、いつでもアドビカスタマーサポートチームにお問い合わせください。
+> Marketo:POST1 クリックをサポートするように更新中です。 準備が整うと、必要に応じて自動適用されます。
 
 
 ## 2 日以内での登録解除プロセス：
@@ -94,6 +94,22 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 [!DNL Google] と [!DNL Yahoo] の目標は、たった 1 日の悪い日や苦情の一時的急増を引き起こす 1 つの誤りによって送信者を処罰することではありません。代わりに、長期間にわたって苦情率が高い送信者や、不適切な送信動作のパターンに焦点を当てています。
 
 苦情率の監視や、苦情を減らすための戦略にサポートが必要な場合は、アドビ配信品質コンサルタントにご相談いただくか、配信品質コンサルタントがまだいない場合はアカウントチームに配信品質コンサルタントの追加についてご相談ください。
+
+## どのタイムラインを見ているのか？
+
+10 月の初回発表以降、タイムラインの更新が予定されています。 最新のタイムラインは次のようになります。
+
+[!DNL Gmail]：
+
+2024 年 2 月 — コンプライアンス違反の警告を提供する一時的なバウンスが開始されます。 まだ準拠していない場合、短い遅延の後もメールは通常どおり配信されます。 完全に準拠している場合、一時的なバウンスはなく、何も気付きません。
+
+2024 年 4 月 — List-Unsubscribe 1-Click 以外のすべてに準拠していない送信者に対して、ブロックが開始されます。 時間の経過と共にブロック率が増加するので、準拠していない E メールの一部のみが最初にブロックされます。
+
+2024 年 6 月 1 日 — List-Unsubscribe 1-Click を含む、完全に準拠していない送信者はブロックされます。
+
+[!DNL Yahoo]：
+
+正確な日付を指定していませんが、「実施のロールアウトは 2024 年 2 月に始まります。 実施は徐々に展開される」と述べた。
 
 ## マーケターに与える影響
 
