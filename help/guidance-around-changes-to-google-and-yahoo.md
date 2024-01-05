@@ -8,7 +8,7 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 69c95855786408f32de2f72e7f1deb122fb369ea
+source-git-commit: c1aebdc34c3cc38325e9160360f7847f276bd53e
 workflow-type: tm+mt
 source-wordcount: '1758'
 ht-degree: 85%
@@ -68,9 +68,10 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 >[!INFO]
 > Adobeは、以下の要件を満たすユーザーをサポートするために、すべての電子メール送信プラットフォームで「投稿」サポートを有効にする作業を進めています。
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]：今日のPOST1 — クリックを完全にサポートします。 ステップバイステップ設定の更新が公開されます [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"} 1 月中旬までに
->* [!DNL Adobe Campaign Standard]:POST1 — クリックをサポートするように更新中です。 近日中に更新を確認してください。 設定手順が提供されます [ここ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"}
->* [!DNL Adobe Journey Optimizer]：今日のPOST1 — クリックを完全にサポートします。 ステップバイステップ設定の更新が公開されます [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"} 1 月中旬までに
+> 
+> * [!DNL Adobe Campaign Classic V7/V8]：今日のPOST1 — クリックを完全にサポートします。 ステップバイステップ設定の更新が公開されます [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"} 1 月中旬まで
+>* [!DNL Adobe Campaign Standard]:POST1 — クリックをサポートするように更新中です。 近日中に更新を確認してください。 設定手順が提供されます [ここ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"}.
+>* [!DNL Adobe Journey Optimizer]：今日のPOST1 — クリックを完全にサポートします。 ステップバイステップ設定の更新が公開されます [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"} 1 月中旬まで
 > * [!DNL Marketo]:POST1 — クリックをサポートするように更新中です。 準備が整うと、必要に応じて自動適用されます。
 
 
@@ -99,7 +100,7 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 
 10 月の初回発表以降、タイムラインの更新が予定されています。 最新のタイムラインは次のようになります。
 
-## [!DNL Gmail]：
+[!DNL Gmail]：
 
 2024 年 2 月 — コンプライアンス違反の警告を提供する一時的なバウンスが開始されます。 まだ準拠していない場合、短い遅延の後もメールは通常どおり配信されます。 完全に準拠している場合、一時的なバウンスはなく、何も気付きません。
 
@@ -107,7 +108,7 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 
 2024 年 6 月 1 日 — List-Unsubscribe 1-Click を含む、完全に準拠していない送信者はブロックされます。
 
-## [!DNL Yahoo]：
+[!DNL Yahoo]：
 
 正確な日付を指定していませんが、「実施のロールアウトは 2024 年 2 月に始まります。 実施は徐々に展開される」と述べた。
 
