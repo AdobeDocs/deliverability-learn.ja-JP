@@ -9,9 +9,9 @@ jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
 source-git-commit: 2de69c2def1abfc4107feb80ad973f689af8b27e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1755'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 83%
 
 ## DMARC：
 
-[!DNL Google] と [!DNL Yahoo] の両社はどちらも、お客様にメールの送信に使用するドメインの DMARC レコードをリクエストします。現在、p=reject または p=quarantine の設定は必要ないので、p=none（一般的に「監視」設定と呼ばれる）の設定は、今のところ完全に受け入れ可能です。 これによって、メールの処理方法が変わることはありません。DMARC を使用しない場合と同様に、通常どおりに処理されます。これを設定することは、DMARC で自分自身を保護するための最初の手順であり、[!DNL Google] や [!DNL Yahoo] へのメールの送信を支援するという新しい利点に加えて、メールエコシステム内の任意の場所に認証の問題があるかどうかを確認するのにも役立ちます。
+[!DNL Google] と [!DNL Yahoo] の両社はどちらも、お客様にメールの送信に使用するドメインの DMARC レコードをリクエストします。現在、p=reject または p=quarantine 設定は必要ありません。そのため、現時点では、一般に「モニタリング」設定と呼ばれる p=none の設定が完全に許容されます。これによって、メールの処理方法が変わることはありません。DMARC を使用しない場合と同様に、通常どおりに処理されます。これを設定することは、DMARC で自分自身を保護するための最初の手順であり、[!DNL Google] や [!DNL Yahoo] へのメールの送信を支援するという新しい利点に加えて、メールエコシステム内の任意の場所に認証の問題があるかどうかを確認するのにも役立ちます。
 
 DMARC のルールは変更されていません。つまり、DMARC を防止するように設定していない限り、親ドメイン（adobe.com など）の DMARC レコードが継承され、サブドメイン（email.adobe.com など）が対象になります。様々なビジネス上の理由で追加する必要がある場合を除き、サブドメインに異なる DMARC レコードは必要ありません。
 
@@ -59,20 +59,20 @@ DMARC の詳細と、Marketo Engage に対する実装方法については、[�
 
 [!DNL Yahoo] では、現時点では「mailto」オプションを引き続き使用するものの、今後は「投稿」オプションも必要になると述べています。
 
-アドビでは、「mailto」と「投稿／ワンクリック」list-unsubscribe オプションの両方を使用することをお勧めします。Adobeは、これらの要件を満たすユーザーをサポートするために、すべての電子メール送信プラットフォームで「投稿」サポートを有効にする作業を進めています。詳細は以下を参照してください。
+アドビでは、「mailto」と「投稿／ワンクリック」list-unsubscribe オプションの両方を使用することをお勧めします。アドビは、これらの要件を満たすユーザーをサポートするために、すべてのメール送信プラットフォームで「投稿」サポートを有効にすることに取り組んでいます。詳しくは、以下を参照してください。
 
 list-unsubscribe ヘッダーの必要性は、トランザクションメールには適用されません。トリガーされたメッセージ（放棄された買い物かごなど）や、サブスクライバーによって生成されない類似の通信は、[!DNL Google] や [!DNL Yahoo] などのメールボックスプロバイダーによってマーケティングと見なされ、list-unsubscribe が必要になることに注意してください。
 
 [!DNL Google] と [!DNL Yahoo] は両社とも、受信者が登録解除し、後日再登録する場合があることを認識しています。両社とも、これらの状況をどのように識別するかという秘密のソースを共有するつもりはありませんが、このような場合に送信者に誤ってペナルティを課すことを回避する方法に取り組んでいます。
 
 >[!INFO]
-> Adobeは、以下の要件を満たすユーザーをサポートするために、すべての電子メール送信プラットフォームで「投稿」サポートを有効にする作業を進めています。
+> アドビは、これらの要件を満たすユーザーをサポートするために、すべてのメール送信プラットフォームで「投稿」サポートを有効にすることに取り組んでいます。
 > 
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]：今日のPOST1 — クリックを完全にサポートします。 ステップバイステップ設定の更新が公開されます [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"} 1 月中旬まで
->* [!DNL Adobe Campaign Standard]:POST1 — クリックをサポートするように更新中です。 近日中に更新を確認してください。 設定手順が提供されます [ここ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"}.
->* [!DNL Adobe Journey Optimizer]：今日のPOST1 — クリックを完全にサポートします。 ステップバイステップ設定の更新が公開されます [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"} 1 月中旬まで
-> * [!DNL Marketo]:POST1 — クリックをサポートするように更新中です。 準備が整うと、必要に応じて自動適用されます。
+> * [!DNL Adobe Campaign Classic V7/V8]：現在、ワンクリック投稿を完全にサポートしています。段階的な設定の更新は、1 月中旬までに[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"}で公開されます。
+>* [!DNL Adobe Campaign Standard]：ワンクリック投稿をサポートするために更新されています。近日中に更新を確認してください。設定手順は、[こちら](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"}で説明されます。
+>* [!DNL Adobe Journey Optimizer]：現在、ワンクリック投稿を完全にサポートしています。段階的な設定の更新は、1 月中旬までに[こちら](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"}で公開されます。
+> * [!DNL Marketo]：ワンクリック投稿をサポートするために更新されています。準備が整うと、必要に応じて自動適用されます。
 
 
 ## 2 日以内での登録解除プロセス：
@@ -96,21 +96,21 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 
 苦情率の監視や、苦情を減らすための戦略にサポートが必要な場合は、アドビ配信品質コンサルタントにご相談いただくか、配信品質コンサルタントがまだいない場合はアカウントチームに配信品質コンサルタントの追加についてご相談ください。
 
-## どのタイムラインを見ているのか？
+## 確認しているタイムライン
 
-10 月の初回発表以降、タイムラインの更新が予定されています。 最新のタイムラインは次のようになります。
+10 月の初回発表以降、タイムラインの更新が行われています。最新のタイムラインは次のようになります。
 
 [!DNL Gmail]：
 
-2024 年 2 月 — コンプライアンス違反の警告を提供する一時的なバウンスが開始されます。 まだ準拠していない場合、短い遅延の後もメールは通常どおり配信されます。 完全に準拠している場合、一時的なバウンスはなく、何も気付きません。
+2024年2月 - コンプライアンス違反の警告を提供するために設計された、一時的なバウンスが開始されます。お客様がまだ準拠していない場合、メールは少し遅れてから通常どおり配信されます。完全に準拠している場合、一時的なバウンスは発生せず、お客様には何の影響もありません。
 
-2024 年 4 月 — List-Unsubscribe 1-Click 以外のすべてに準拠していない送信者に対して、ブロックが開始されます。 時間の経過と共にブロック率が増加するので、準拠していない E メールの一部のみが最初にブロックされます。
+2024年4月 - ワンクリックリスト登録解除を除くすべてに準拠していない送信者に対して、ブロックが開始されます。最初は準拠していないメールの一部のみがブロックされ、時間の経過と共にブロック対象の割合が増加します。
 
-2024 年 6 月 1 日 — List-Unsubscribe 1-Click を含む、完全に準拠していない送信者はブロックされます。
+2024年6月1日（PT）- ワンクリックリスト登録解除など、完全に準拠していない送信者はブロックされます。
 
 [!DNL Yahoo]：
 
-正確な日付を指定していませんが、「実施のロールアウトは 2024 年 2 月に始まります。 実施は徐々に展開される」と述べた。
+正確な日付を指定していませんが、「適用のロールアウトは 2024年2月に開始します。適用は徐々にロールアウトされます」と述べています。
 
 ## マーケターに与える影響
 
