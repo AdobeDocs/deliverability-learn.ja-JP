@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: caff9c7d77aed62c9d055fbca370aa756e4bf28b
+source-git-commit: c99e860507df99fdd4e4fad567eb5e9433ab56ef
 workflow-type: tm+mt
 source-wordcount: '1753'
 ht-degree: 60%
@@ -175,12 +175,12 @@ Gmail、Outlook.comおよびMicrosoft Outlook はこの方法をサポートし�
 
 この追加はメールごとにおこなうこともできますし、既存の配信テンプレートでおこなうこともできます。また、この機能を組み込んだ配信テンプレートを新しく作成することもできます。
 
-1. List-Unsubscribe: <mailto:unsubscribe@domain.com>
+* List-Unsubscribe: <mailto:unsubscribe@domain.com>
 ユーザーが購読解除リンクをクリックすると、デフォルトの E メールクライアントが開きます。 このタイポロジルールは、メールの作成に使用されるタイポロジに追加する必要があります。
 
-2. List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
+* List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
 ユーザーが購読解除リンクをクリックすると、購読解除フォームにリダイレクトされます。
-   ![画像](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
+  ![画像](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
 
 
 ### タイポロジルールの作成 {#creating-a-typology-rule}
@@ -199,18 +199,18 @@ Gmail、Outlook.comおよびMicrosoft Outlook はこの方法をサポートし�
 
 2024 年 6 月 1 日以降、Yahoo および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 ワンクリックリスト配信停止要件の送信者に準拠するには、次の要件を満たす必要があります。
 
-1. &quot;List-Unsubscribe-Post: List-Unsubscribe=One-Click&quot;に追加します。
-2. URI 配信停止リンクを含める
-3. Adobe Campaignがサポートするレシーバーからの HTTPPOST応答の受信をサポートします。
+* &quot;List-Unsubscribe-Post: List-Unsubscribe=One-Click&quot;に追加します。
+* URI 配信停止リンクを含める
+* Adobe Campaignがサポートするレシーバーからの HTTPPOST応答の受信をサポートします。
 
 One-Click List-Unsubscribe を直接設定するには：
 
 * 次の「受信者の購読解除 (no-click)」Web アプリケーションを追加します。 
-1. リソース/オンライン/Web アプリケーションに移動します。
-2. 「受信者の購読解除 (no-click)」XML をアップロード
+* リソース/オンライン/Web アプリケーションに移動します。
+* 「受信者の購読解除 (no-click)」XML をアップロード
 * List-Unsubscribe および List-Unsubscribe-Post の設定
-1. 配信プロパティの「 SMTP 」セクションに移動します。
-2. 「 Additional SMTP Headers 」で、コマンドラインにを入力します（各ヘッダーは別々の行に記述する必要があります）。
+* 配信プロパティの「 SMTP 」セクションに移動します。
+* 「 Additional SMTP Headers 」で、コマンドラインにを入力します（各ヘッダーは別々の行に記述する必要があります）。
 
 List-Unsubscribe-Post: List-Unsubscribe=One-Click List-Unsubscribe: &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
 
