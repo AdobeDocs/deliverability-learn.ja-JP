@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 81f7f1b98a1393e265d6881b889fe2aa2ea35e02
+source-git-commit: 9ef6a2d18a7ab580822ca6a0ff8d485354ff71d4
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 60%
@@ -203,8 +203,9 @@ Gmail、Outlook.comおよびMicrosoft Outlook はこの方法をサポートし�
 
 One-Click List-Unsubscribe を直接設定するには：
 
-・次の「Unsubscribe recipients no-click」Web アプリケーションに追加します。 1; Resources / Online / Web Applications に移動します。 2; Unsubscribe recipients no-click XML ・ Configure List-Unsubscribe and List-Unsubscribe-Post 1；配信プロパティの SMTP セクションに移動します。
-2; [ 追加の SMTP ヘッダー ] で、コマンドラインにを入力します（各ヘッダーは別々の行に記述する必要があります）。
+* 以下の「受信者を購読解除 (no-click)」Web アプリケーションに追加します。 1*リソース/オンライン/Web アプリケーションに移動します。 2* 「購読解除 (unsubscribe) 受信者を購読解除 (no-click)」XML をアップロードします。
+* List-Unsubscribe および List-Unsubscribe-Post を設定します。 1*配信プロパティの「SMTP」セクションに移動します。
+2* 「Additional SMTP Headers」で、コマンドラインにを入力します（各ヘッダーは別々の行に記述する必要があります）。
 
 List-Unsubscribe-Post: List-Unsubscribe=One-Click List-Unsubscribe: &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
 
