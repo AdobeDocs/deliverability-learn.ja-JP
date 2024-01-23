@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 1f3391430fa5a86973b8a1bd811b856dea23402e
+source-git-commit: 22e47edbef3f8388e4cd3a01524091458d27ed43
 workflow-type: tm+mt
-source-wordcount: '1753'
-ht-degree: 60%
+source-wordcount: '1743'
+ht-degree: 61%
 
 ---
 
@@ -212,8 +212,11 @@ One-Click List-Unsubscribe を直接設定するには：
 * 配信プロパティの「 SMTP 」セクションに移動します。
 * 「 Additional SMTP Headers 」で、コマンドラインにを入力します（各ヘッダーは別々の行に記述する必要があります）。
 
-,,, List-Unsubscribe-Post: List-Unsubscribe=One-Click List-Unsubscribe: &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
-,,,,
+```
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https//domain.com/webApp/unsubNoClick?id=<%= recipient.cryptidcamp %>>, <mailto: %=errorAddress%?
+subject=unsubscribe%=message.mimeMessageId%>
+```
 
 上記の例では、One-Click をサポートする ISP で One-Click List-Unsubscribe を有効にします。一方、URL list-unsubscribe をサポートしていない受信者は、引き続き E メールで配信停止を要求できます。
 
