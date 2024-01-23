@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 6653260e6bb3fc379529ea4081eeae0a8f7f4eb9
+source-git-commit: bce61a5643877fed2bc88717b0beb7dd123c7430
 workflow-type: tm+mt
-source-wordcount: '1757'
-ht-degree: 60%
+source-wordcount: '1885'
+ht-degree: 56%
 
 ---
 
@@ -223,8 +223,134 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### ワンクリック List-Unsubscribe をサポートするタイポロジルールを作成する：
 
-1 *新しいタイポロジルールを作成するナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
-![画像](https://git.corp.adobe.com/storage/user/38257/files/b8d48b7f-0f33-4118-b61d-e60351c68260)
+* 新しいタイポロジルールの作成
+* ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
+
+* タイポロジルールの設定に進みます。
+* ルールタイプ：コントロール
+* チャネル： E メール
+* フェーズ：パーソナライゼーションの開始時
+* レベル：選択した項目
+* アクティブ
+
+* タイポロジルールの JavaScript をコード化します。
+
+>[!NOTE]
+>
+>以下で説明するコードは、例としてのみ参照する必要があります。
+>
+
+この例では、次の方法を詳しく説明します。
+* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto：パラメーターを追加して、次と置き換えます。 &lt;mailto..>, <http:…>
+* List-Unsubscribe-Post ヘッダーにを追加する
+
+投稿 URL の例では var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;を使用しています。他のパラメーター（ &amp;service = ...など）を追加できます。
+
+```
+// Function to add or replace a header in the provided headers 
+function addHeader(headers, header, value)  { 
+    
+  // Create the new header line 
+  var headerLine = header + ": " + value; 
+    
+  // Create a regular expression to find the specified header 
+  var regExp = new RegExp(header + ":(.*)$", "i") 
+    
+  // Split the headers into individual lines 
+  var headerLines = headers.split("\n"); 
+    
+  // Loop through each line 
+  for (var i=0; i < headerLines.length; i++) { 
+      
+    // Check if the specified header exists 
+    var match = headerLines[i].match(regExp) 
+      
+    // If it exists 
+    if ( match != null ) { 
+        
+      // Replace the existing header line 
+      headerLines[i] = headerLine; 
+        
+      // Return the modified headers 
+      return headerLines.join("\n"); 
+    } 
+  } 
+    
+  // If the header does not exist, add the new header line 
+  headerLines.push(headerLine); 
+    
+  // Return the modified headers 
+  return headerLines.join("\n"); 
+} 
+  
+// Function to get the value of a specified header from the provided headers 
+function getHeader(headers, header) { 
+    
+  // Create a regular expression to find the specified header 
+  var regExp = new RegExp(header + ":(.*)$", "i") 
+    
+  // Split the headers into individual lines 
+  var headerLines = headers.split("\n"); 
+    
+  // Loop each line 
+  for each (line in headerLines) { 
+      
+    // Check if the specified header exists 
+    var match = line.match(regExp); 
+      
+    // If it exists 
+    if ( match != null ) { 
+        
+      // Return the header value, removing leading whitespace 
+      return match[1].replace(/^\s*/, ""); 
+    } 
+  } 
+    
+  // If the header does not exist, return an empty string 
+  return ""; 
+} 
+  
+  
+// Define the unsubscribe URL 
+var headerUnsubUrl = "http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"; 
+  
+// Get the value of the List-Unsubscribe header 
+var headerUnsub = getHeader(delivery.mailParameters.headers, "List-Unsubscribe"); 
+  
+// If the List-Unsubscribe header does not exist 
+if ( headerUnsub === "" ) { 
+  // Add the List-Unsubscribe header 
+  delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe", "<"+headerUnsubUrl+">"); 
+} 
+// If the List-Unsubscribe header exists and contains 'mailto' 
+else if(headerUnsub.search('mailto')){ 
+  // Replace the existing List-Unsubscribe header 
+  delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe", "<"+headerUnsubUrl+">"); 
+} 
+  
+// Get the value of the List-Unsubscribe-Post header 
+var headerUnsubPost = getHeader(delivery.mailParameters.headers, "List-Unsubscribe-Post"); 
+  
+// If the List-Unsubscribe-Post header does not exist 
+if ( headerUnsubPost === "" ) { 
+  // Add the List-Unsubscribe-Post header 
+  delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe-Post", "List-Unsubscribe=One-Click"); 
+} 
+  
+// Return true to indicate success 
+return true; 
+![image](https://git.corp.adobe.com/storage/user/38257/files/19aa6e14-0a23-4332-b21b-546da77995d6)
+```
+
+* 新しいルールをタイポロジに追加します（デフォルトのタイポロジは ok です）。
+
+* 新しい配信を準備します（配信プロパティの追加の SMTP ヘッダーが空であることを確認します）。
+
+* 配信の準備中に、新しいタイポロジルールが適用されていることを確認します。
+
+* List-Unsubscribe が存在することを検証します。
+
+
 
 
 ## E メールの最適化 {#email-optimization}
