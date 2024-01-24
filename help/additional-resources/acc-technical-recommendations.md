@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 443f8e0c68705e481e7a3b2dbc6d3618d20e6f32
+source-git-commit: f9dc4fb190557e2698891853965936ef32124f4a
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 56%
@@ -207,7 +207,8 @@ One-Click List-Unsubscribe を直接設定するには：
 
 * 次の「受信者の購読解除 (no-click)」Web アプリケーションを追加します。 
 * リソース/オンライン/Web アプリケーションに移動します。
-* 「受信者の購読解除 (no-click)」XML をアップロード
+* 「受信者の購読解除 (no-click)」をアップロード [XML](/help/assets/WebAppUnsubNoClick.xml)
+
 * List-Unsubscribe および List-Unsubscribe-Post の設定
 * 配信プロパティの「 SMTP 」セクションに移動します。
 * 「 Additional SMTP Headers 」で、コマンドラインにを入力します（各ヘッダーは別々の行に記述する必要があります）。
