@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 8cd825d24a77570ed54e3d4988100b25cd0a2eda
+source-git-commit: b192fc5a3287f4e20269f668ff71f328edf94482
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 56%
@@ -224,10 +224,12 @@ subject=unsubscribe%=message.mimeMessageId%>
 ### ワンクリック List-Unsubscribe をサポートするタイポロジルールを作成する：
 
 新しいタイポロジルールの作成
+
 * ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
   ![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules1.png)
 
 タイポロジルールの設定に進みます。
+
 * ルールタイプ：コントロール
 * チャネル： E メール
 * フェーズ：パーソナライゼーションの開始時
@@ -349,19 +351,20 @@ return true;
 ![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules3.png)
 
 新しいルールをタイポロジに追加します（デフォルトのタイポロジは ok です）。
+
 ![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
 
 新しい配信を準備します（配信プロパティの追加の SMTP ヘッダーが空であることを確認します）。
+
 ![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
 
 配信の準備中に、新しいタイポロジルールが適用されていることを確認します。
+
 ![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
 
 List-Unsubscribe が存在することを検証します。
+
 ![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
-
-
-
 
 ## E メールの最適化 {#email-optimization}
 
