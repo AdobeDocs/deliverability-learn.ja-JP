@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 780d5f2e18c1090a43e2b3b9c85b7245bc8c51e0
+source-git-commit: 5315c15149deb007460dc848426e1f727937041c
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 56%
@@ -244,7 +244,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 * URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto：パラメーターを追加して、次と置き換えます。 &lt;mailto..>, <http:…>
 * List-Unsubscribe-Post ヘッダーにを追加する
 
-投稿 URL の例では var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;を使用しています。他のパラメーター（ &amp;service = ...など）を追加できます。
+投稿 URL の例では、var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;を使用します。他のパラメーター（ &amp;service = ...など）を追加できます。
 
 ```
 // Function to add or replace a header in the provided headers 
