@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: e310c94334dae232f6f31cc5e188906862f563bd
+source-git-commit: 9175a3ded10ce4ea06712855ae3d2119f945c389
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 56%
@@ -225,8 +225,9 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 新しいタイポロジルールの作成
 
-* ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
-  ![typologyrues1](/help/assets/CreatingTypologyRules1.png)
+ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
+
+![typologyrues1](/help/assets/CreatingTypologyRules1.png)
 
 タイポロジルールの設定に進みます。
 
