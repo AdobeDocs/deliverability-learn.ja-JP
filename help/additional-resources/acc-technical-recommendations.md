@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b192fc5a3287f4e20269f668ff71f328edf94482
+source-git-commit: e310c94334dae232f6f31cc5e188906862f563bd
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1901'
 ht-degree: 56%
 
 ---
@@ -226,7 +226,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 新しいタイポロジルールの作成
 
 * ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
-  ![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules1.png)
+  ![typologyrues1](/help/assets/CreatingTypologyRules1.png)
 
 タイポロジルールの設定に進みます。
 
