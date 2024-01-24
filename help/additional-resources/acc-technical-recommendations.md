@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 0f61e0c36f979372f05772ad5a37114dcb05e8e5
+source-git-commit: 443f8e0c68705e481e7a3b2dbc6d3618d20e6f32
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1895'
 ht-degree: 56%
 
 ---
@@ -237,7 +237,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 * レベル：選択した項目
 * アクティブ
 
-![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules2.png)
+![画像](/help/assets/CreatingTypologyRules2.png)
 
 タイポロジルールの JavaScript をコード化します。
 
@@ -349,23 +349,23 @@ if ( headerUnsubPost === "" ) {
 return true; 
 ```
 
-![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules3.png)
+![画像](/help/assets/CreatingTypologyRules3.png)
 
 新しいルールをタイポロジに追加します（デフォルトのタイポロジは ok です）。
 
-![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
+![画像](/help/assets/CreatingTypologyRules4.png)
 
 新しい配信を準備します（配信プロパティの追加の SMTP ヘッダーが空であることを確認します）。
 
-![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
+![画像](/help/assets/CreatingTypologyRules5.png)
 
 配信の準備中に、新しいタイポロジルールが適用されていることを確認します。
 
-![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+![画像](/help/assets/CreatingTypologyRules6.png)
 
 List-Unsubscribe が存在することを検証します。
 
-![画像](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+![画像](/help/assets/CreatingTypologyRules7.png)
 
 ## E メールの最適化 {#email-optimization}
 
