@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 2eceddf12ce2baea1113d2688f9f8e75f7d31923
+source-git-commit: b9c8beefe577c8c0943bab31323d5778f1930606
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 56%
@@ -245,15 +245,13 @@ subject=unsubscribe%=message.mimeMessageId%>
 >[!NOTE]
 >
 >以下で説明するコードは、例としてのみ参照する必要があります。
+>この例では、次の方法を詳しく説明します。
+>* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto：パラメーターを追加して、次と置き換えます。 &lt;mailto..>, <http://…>
+>* List-Unsubscribe-Post ヘッダーにを追加する
+>次の POST URL の例では、var headerUnsubUrl = &quot;http;//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;；を使用しています。
+>* 他のパラメーター（&amp;service = ...など）を追加できます。
 >
 
-この例では、次の方法を詳しく説明します。
-* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto：パラメーターを追加して、次と置き換えます。 &lt;mailto..>, <http://…>
-* List-Unsubscribe-Post ヘッダーにを追加する
-
-次の POST URL の例では、var headerUnsubUrl = &quot;http;//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;；を使用しています。
-
-他のパラメーター（&amp;service = ...など）を追加できます。
 
 ```
 // Function to add or replace a header in the provided headers 
