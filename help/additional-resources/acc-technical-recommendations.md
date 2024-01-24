@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f9dc4fb190557e2698891853965936ef32124f4a
+source-git-commit: 2eceddf12ce2baea1113d2688f9f8e75f7d31923
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 56%
@@ -207,7 +207,7 @@ One-Click List-Unsubscribe を直接設定するには：
 
 * 次の「受信者の購読解除 (no-click)」Web アプリケーションを追加します。 
 * リソース/オンライン/Web アプリケーションに移動します。
-* 「受信者の購読解除 (no-click)」をアップロード [XML](/help/assets/WebAppUnsubNoClick.xml)
+* 「受信者の購読解除 (no-click)」をアップロード [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
 
 * List-Unsubscribe および List-Unsubscribe-Post の設定
 * 配信プロパティの「 SMTP 」セクションに移動します。
@@ -224,13 +224,13 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### ワンクリック List-Unsubscribe をサポートするタイポロジルールを作成する：
 
-新しいタイポロジルールの作成
+新しいタイポロジルールを作成します。
 
-ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
+* ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
 
 ![画像](/help/assets/CreatingTypologyRules1.png)
 
-タイポロジルールの設定に進みます。
+次の手順で、タイポロジルールを設定します。
 
 * ルールタイプ：コントロール
 * チャネル： E メール
