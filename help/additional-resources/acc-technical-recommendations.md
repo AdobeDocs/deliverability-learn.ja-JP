@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b9c8beefe577c8c0943bab31323d5778f1930606
+source-git-commit: 097f41c29e189c2a8abf79e65ec322d39a2213db
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1891'
 ht-degree: 56%
 
 ---
@@ -180,7 +180,7 @@ Gmail、Outlook.comおよびMicrosoft Outlook はこの方法をサポートし�
 
 * List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
 ユーザーが購読解除リンクをクリックすると、購読解除フォームにリダイレクトされます。
-  ![画像](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
+  ![画像](/help/assets/ListUnsubscribe1.png)
 
 
 ### タイポロジルールの作成 {#creating-a-typology-rule}
@@ -228,7 +228,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 * ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
 
-![画像](/help/assets/CreatingTypologyRules1.png)
+![画像](/help/assets/CreatingTypologyRules1.png){width="50%"}{hight="50%"}
 
 次の手順で、タイポロジルールを設定します。
 
@@ -248,7 +248,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 >この例では、次の方法を詳しく説明します。
 >* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto：パラメーターを追加して、次と置き換えます。 &lt;mailto..>, <http://…>
 >* List-Unsubscribe-Post ヘッダーにを追加する
->次の POST URL の例では、var headerUnsubUrl = &quot;http;//campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;；を使用しています。
+>投稿 URL の例では、var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;を使用します。
 >* 他のパラメーター（&amp;service = ...など）を追加できます。
 >
 
