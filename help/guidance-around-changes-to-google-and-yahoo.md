@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 2de69c2def1abfc4107feb80ad973f689af8b27e
-workflow-type: ht
-source-wordcount: '1755'
-ht-degree: 100%
+source-git-commit: 73d0722bb0b40ea9cad9d50a805396fdfac27c49
+workflow-type: tm+mt
+source-wordcount: '1762'
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ DMARC のルールは変更されていません。つまり、DMARC を防止�
 
 DMARC は現在アドビで完全にサポートされていますが、必須ではありません。無料の DMARC チェッカーを使用して、サブドメインに DMARC が設定されているかどうかを確認します。設定されてない場合は、アドビのサポートチームにお問い合わせの上、その設定を取得するための最適な方法を確認してください。
 
-DMARC の詳細と、Marketo Engage に対する実装方法については、[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=ja){target="_blank"} for Adobe Campaign or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html?lang=ja){target="_blank"}を参照してください。
+DMARC の詳細と、Marketo Engage に対する実装方法については、[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=ja){target="_blank"} for Adobe Campaign, [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/dmarc-record-update.html?lang=en){target="_blank"} for AJO, or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html?lang=ja){target="_blank"}を参照してください。
 
 ## ワンクリック（リスト）登録解除：
 
@@ -69,9 +69,9 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 > アドビは、これらの要件を満たすユーザーをサポートするために、すべてのメール送信プラットフォームで「投稿」サポートを有効にすることに取り組んでいます。
 > 
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]：現在、ワンクリック投稿を完全にサポートしています。段階的な設定の更新は、1 月中旬までに[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"}で公開されます。
->* [!DNL Adobe Campaign Standard]：ワンクリック投稿をサポートするために更新されています。近日中に更新を確認してください。設定手順は、[こちら](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"}で説明されます。
->* [!DNL Adobe Journey Optimizer]：現在、ワンクリック投稿を完全にサポートしています。段階的な設定の更新は、1 月中旬までに[こちら](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"}で公開されます。
+> * [!DNL Adobe Campaign Classic V7/V8]：完全にサポートPOST1 — クリック今日、手順が見つかります [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"} 1 月中旬まで
+>* [!DNL Adobe Campaign Standard]:2 月下旬までにPOST1 回のクリックをサポートするように更新中です。 設定手順が提供されます [ここ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"} 準備が整いました。
+>* [!DNL Adobe Journey Optimizer]：今日のPOST1 回のクリックをサポートしますが、主な改善がいくつかおこなわれています。 ステップバイステップ設定の更新が公開されます [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"} 準備が整いました。
 > * [!DNL Marketo]：ワンクリック投稿をサポートするために更新されています。準備が整うと、必要に応じて自動適用されます。
 
 
@@ -110,7 +110,9 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 
 [!DNL Yahoo]：
 
-正確な日付を指定していませんが、「適用のロールアウトは 2024年2月に開始します。適用は徐々にロールアウトされます」と述べています。
+2024 年 2 月 — 1-Click List-Unsubscribe 以外のすべての要件に対する実施の段階的な展開は、2024 年 2 月に開始されます。
+
+2024 年 6 月 — 1-Click List-Unsubscribe の実施は 2024 年 6 月に開始されます。
 
 ## マーケターに与える影響
 
