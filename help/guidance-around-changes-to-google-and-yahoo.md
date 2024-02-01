@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 73d0722bb0b40ea9cad9d50a805396fdfac27c49
+source-git-commit: ef6152550bf56395dd9e57e1286b1bebf141128c
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1760'
 ht-degree: 95%
 
 ---
@@ -69,7 +69,7 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 > アドビは、これらの要件を満たすユーザーをサポートするために、すべてのメール送信プラットフォームで「投稿」サポートを有効にすることに取り組んでいます。
 > 
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]：完全にサポートPOST1 — クリック今日、手順が見つかります [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"} 1 月中旬まで
+> * [!DNL Adobe Campaign Classic V7/V8]：完全にサポートPOST1 — クリック今日、手順が見つかります [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"}.
 >* [!DNL Adobe Campaign Standard]:2 月下旬までにPOST1 回のクリックをサポートするように更新中です。 設定手順が提供されます [ここ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"} 準備が整いました。
 >* [!DNL Adobe Journey Optimizer]：今日のPOST1 回のクリックをサポートしますが、主な改善がいくつかおこなわれています。 ステップバイステップ設定の更新が公開されます [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"} 準備が整いました。
 > * [!DNL Marketo]：ワンクリック投稿をサポートするために更新されています。準備が整うと、必要に応じて自動適用されます。
