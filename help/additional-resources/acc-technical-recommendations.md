@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f8aaa0c21daf93953fb0daa6a5d9262c8d1654a0
+source-git-commit: c14b1eecbe522c650a8be376f8f133901497216a
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1894'
 ht-degree: 56%
 
 ---
@@ -175,10 +175,10 @@ Gmail、Outlook.comおよびMicrosoft Outlook はこの方法をサポートし�
 
 この追加はメールごとにおこなうこともできますし、既存の配信テンプレートでおこなうこともできます。また、この機能を組み込んだ配信テンプレートを新しく作成することもできます。
 
-1. List-Unsubscribe: <mailto:unsubscribe@domain.com>
+    1.List-Unsubscribe: mailto:unsubscribe@domain.com
 ユーザーが購読解除リンクをクリックすると、デフォルトの E メールクライアントが開きます。 このタイポロジルールは、メールの作成に使用されるタイポロジに追加する必要があります。
 
-2. List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
+    2. List-Unsubscribe: https://domain.com/unsubscribe.jsp
 ユーザーが購読解除リンクをクリックすると、購読解除フォームにリダイレクトされます。
 
 ![画像](/help/assets/UTF-8-1.png)
@@ -246,7 +246,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 >
 >以下で説明するコードは、例としてのみ参照する必要があります。
 >この例では、次の方法を詳しく説明します。
->* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto：パラメーターを追加して、次と置き換えます。 &lt;mailto..>, <http://…>
+>* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto：パラメーターを追加して、次と置き換えます。 &lt;mailto..>>, http://...
 >* List-Unsubscribe-Post ヘッダーにを追加する
 >投稿 URL の例では、var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;を使用します。
 >* 他のパラメーター（&amp;service = ...など）を追加できます。
