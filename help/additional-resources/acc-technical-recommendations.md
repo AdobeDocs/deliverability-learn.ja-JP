@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 8fe2a9de16a7856c66a643ce7aaf22bae016246e
+source-git-commit: 5afc345e1cc8e47153db6b5f98e06d8ad0fb4d48
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 55%
@@ -175,9 +175,9 @@ Gmail、Outlook.comおよびMicrosoft Outlook はこの方法をサポートし�
 
 この追加はメールごとにおこなうこともできますし、既存の配信テンプレートでおこなうこともできます。また、この機能を組み込んだ配信テンプレートを新しく作成することもできます。
 
-1.List-Unsubscribe: mailto:unsubscribe@domain.comユーザーが購読解除リンクをクリックすると、デフォルトの電子メールクライアントが開きます。 このタイポロジルールは、メールの作成に使用されるタイポロジに追加する必要があります。
+* List-Unsubscribe: mailto:unsubscribe@domain.comユーザーが購読解除リンクをクリックすると、デフォルトの電子メールクライアントが開きます。 このタイポロジルールは、メールの作成に使用されるタイポロジに追加する必要があります。
 
-2.List-Unsubscribe: https://domain.com/unsubscribe.jspユーザーが購読解除リンクをクリックすると、購読解除フォームにリダイレクトされます。
+* List-Unsubscribe: https://domain.com/unsubscribe.jspユーザーが購読解除リンクをクリックすると、購読解除フォームにリダイレクトされます。
 
 ![画像](/help/assets/UTF-8-1.png)
 
