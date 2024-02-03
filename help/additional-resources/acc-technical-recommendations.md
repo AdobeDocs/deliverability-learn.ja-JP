@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 5cd9a1d2296041b11c966cafdfd6b75a71286c3f
+source-git-commit: 5ce1c499d897ccbec7713ef2ad03ef0a810971b4
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 55%
@@ -224,14 +224,14 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### ワンクリック List-Unsubscribe をサポートするタイポロジルールを作成する：
 
-1. **新しいタイポロジルールを作成します。**
+* **新しいタイポロジルールを作成します。**
 
    * ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
 
 ![画像](/help/assets/CreatingTypologyRules1.png)
 
 
-2. **次の手順で、タイポロジルールを設定します。**
+* **次の手順で、タイポロジルールを設定します。**
 
    * ルールタイプ：コントロール
    * チャネル： E メール
@@ -353,22 +353,22 @@ return true;
 ![画像](/help/assets/CreatingTypologyRules3.png)
 
 
-3. **新しいルールをタイポロジに追加して E メールに追加します（デフォルトのタイポロジは ok です）。**
+* **新しいルールをタイポロジに追加して E メールに追加します（デフォルトのタイポロジは ok です）。**
 
 ![画像](/help/assets/CreatingTypologyRules4.png)
 
 
-4. **新しい配信を準備します（配信プロパティの追加の SMTP ヘッダーが空であることを確認します）。**
+* **新しい配信を準備します（配信プロパティの追加の SMTP ヘッダーが空であることを確認します）。**
 
 ![画像](/help/assets/CreatingTypologyRules5.png)
 
 
-5. **配信の準備中に、新しいタイポロジルールが適用されていることを確認します。**
+* **配信の準備中に、新しいタイポロジルールが適用されていることを確認します。**
 
 ![画像](/help/assets/CreatingTypologyRules6.png)
 
 
-6. **List-Unsubscribe が存在することを検証します。**
+* **List-Unsubscribe が存在することを検証します。**
 
 ![画像](/help/assets/CreatingTypologyRules7.png)
 
