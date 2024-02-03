@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 5ce1c499d897ccbec7713ef2ad03ef0a810971b4
+source-git-commit: 98ec94935810c060ec0ad7c70336276104072ee3
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 55%
@@ -224,7 +224,7 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### ワンクリック List-Unsubscribe をサポートするタイポロジルールを作成する：
 
-* **新しいタイポロジルールを作成します。**
+1. **新しいタイポロジルールを作成します。**
 
    * ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
 
