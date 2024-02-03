@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: d9b3505de11cc7c50db2a318274b73a758348578
+source-git-commit: 5cd9a1d2296041b11c966cafdfd6b75a71286c3f
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 55%
@@ -224,31 +224,33 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### ワンクリック List-Unsubscribe をサポートするタイポロジルールを作成する：
 
-新しいタイポロジルールを作成します。
+1. **新しいタイポロジルールを作成します。**
 
-* ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
+   * ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
 
 ![画像](/help/assets/CreatingTypologyRules1.png)
 
-次の手順で、タイポロジルールを設定します。
 
-* ルールタイプ：コントロール
-* チャネル： E メール
-* フェーズ：パーソナライゼーションの開始時
-* レベル：選択した項目
-* アクティブ
+2. **次の手順で、タイポロジルールを設定します。**
+
+   * ルールタイプ：コントロール
+   * チャネル： E メール
+   * フェーズ：パーソナライゼーションの開始時
+   * レベル：選択
+   * アクティブ
 
 ![画像](/help/assets/CreatingTypologyRules2.png)
 
-タイポロジルールの JavaScript をコード化します。
+
+**タイポロジルールの JavaScript をコード化します。**
 
 >[!NOTE]
 >
 >以下で説明するコードは、例としてのみ参照する必要があります。
 >この例では、次の方法を詳しく説明します。
->* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto：パラメーターを追加して、次と置き換えます。 &lt;mailto..>>, http://...
+>* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto：パラメーターを追加して、次と置き換えます。 &lt;mailto..>>, https://...
 >* List-Unsubscribe-Post ヘッダーにを追加する
->投稿 URL の例では、var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;を使用します。
+>投稿 URL の例では、var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;÷を使用します。
 >* 他のパラメーター（&amp;service = ...など）を追加できます。
 >
 
@@ -319,7 +321,7 @@ function getHeader(headers, header) {
   
   
 // Define the unsubscribe URL 
-var headerUnsubUrl = "http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"; 
+var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"; 
   
 // Get the value of the List-Unsubscribe header 
 var headerUnsub = getHeader(delivery.mailParameters.headers, "List-Unsubscribe"); 
@@ -350,21 +352,26 @@ return true;
 
 ![画像](/help/assets/CreatingTypologyRules3.png)
 
-新しいルールをタイポロジに追加します（デフォルトのタイポロジは ok です）。
+
+3. **新しいルールをタイポロジに追加して E メールに追加します（デフォルトのタイポロジは ok です）。**
 
 ![画像](/help/assets/CreatingTypologyRules4.png)
 
-新しい配信を準備します（配信プロパティの追加の SMTP ヘッダーが空であることを確認します）。
+
+4. **新しい配信を準備します（配信プロパティの追加の SMTP ヘッダーが空であることを確認します）。**
 
 ![画像](/help/assets/CreatingTypologyRules5.png)
 
-配信の準備中に、新しいタイポロジルールが適用されていることを確認します。
+
+5. **配信の準備中に、新しいタイポロジルールが適用されていることを確認します。**
 
 ![画像](/help/assets/CreatingTypologyRules6.png)
 
-List-Unsubscribe が存在することを検証します。
+
+6. **List-Unsubscribe が存在することを検証します。**
 
 ![画像](/help/assets/CreatingTypologyRules7.png)
+
 
 ## E メールの最適化 {#email-optimization}
 
