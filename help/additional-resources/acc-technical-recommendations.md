@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 98ec94935810c060ec0ad7c70336276104072ee3
+source-git-commit: 238c67562ebbe179b326e4093b90b0ee05a070ae
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1894'
 ht-degree: 55%
 
 ---
@@ -224,20 +224,20 @@ subject=unsubscribe%=message.mimeMessageId%>
 
 ### ワンクリック List-Unsubscribe をサポートするタイポロジルールを作成する：
 
-1. **新しいタイポロジルールを作成します。**
+**1.新しいタイポロジルールを作成します。**
 
-   * ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
+    *ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
 
 ![画像](/help/assets/CreatingTypologyRules1.png)
 
 
-* **次の手順で、タイポロジルールを設定します。**
+**2. **次の手順で、タイポロジルールを設定します。**
 
-   * ルールタイプ：コントロール
-   * チャネル： E メール
-   * フェーズ：パーソナライゼーションの開始時
-   * レベル：選択
-   * アクティブ
+    *ルールタイプ：コントロール
+    *チャネル： E メール
+    *フェーズ：パーソナライゼーションの開始時
+    *レベル：選択
+    *アクティブ
 
 ![画像](/help/assets/CreatingTypologyRules2.png)
 
