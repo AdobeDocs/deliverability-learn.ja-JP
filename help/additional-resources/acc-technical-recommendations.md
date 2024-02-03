@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 66526ebad0914ef9afa995f7d826e644c0350182
+source-git-commit: 3dc1d2f352346fa2ef7b5c883da6a3e243cb32c0
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1889'
 ht-degree: 56%
 
 ---
@@ -180,7 +180,7 @@ Gmail、Outlook.comおよびMicrosoft Outlook はこの方法をサポートし�
 
 * List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
 ユーザーが購読解除リンクをクリックすると、購読解除フォームにリダイレクトされます。
-  ![画像](/help/assets/ListUnsubscribe1.png)
+  ![画像](/help/assets/UTF-8-1.png)
 
 
 ### タイポロジルールの作成 {#creating-a-typology-rule}
@@ -206,12 +206,11 @@ Gmail、Outlook.comおよびMicrosoft Outlook はこの方法をサポートし�
 One-Click List-Unsubscribe を直接設定するには：
 
 * 次の「受信者の購読解除 (no-click)」Web アプリケーションを追加します。 
-* リソース/オンライン/Web アプリケーションに移動します。
-* 「受信者の購読解除 (no-click)」をアップロード [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
-
+   1. リソース/オンライン/Web アプリケーションに移動します。
+   2. 「受信者の購読解除 (no-click)」をアップロード [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
 * List-Unsubscribe および List-Unsubscribe-Post の設定
-* 配信プロパティの「 SMTP 」セクションに移動します。
-* 「 Additional SMTP Headers 」で、コマンドラインにを入力します（各ヘッダーは別々の行に記述する必要があります）。
+   1. 配信プロパティの「 SMTP 」セクションに移動します。
+   2. 「 Additional SMTP Headers 」で、コマンドラインにを入力します（各ヘッダーは別々の行に記述する必要があります）。
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
