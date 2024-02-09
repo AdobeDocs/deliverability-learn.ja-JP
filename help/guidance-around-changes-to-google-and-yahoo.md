@@ -9,9 +9,9 @@ jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
 source-git-commit: 50017358f7f88f5579de282a1f528916ecb17493
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1775'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -45,15 +45,15 @@ ht-degree: 90%
 
 DMARC のルールは変更されていません。つまり、DMARC を防止するように設定していない限り、親ドメイン（adobe.com など）の DMARC レコードが継承され、サブドメイン（email.adobe.com など）が対象になります。様々なビジネス上の理由で追加する必要がある場合を除き、サブドメインに異なる DMARC レコードは必要ありません。
 
-DMARC TXT レコードの設定は、現在、Campaign と AJO のAdobeで完全にサポートされていますが、必須ではありません。 無料の DMARC チェッカーを使用して、サブドメインに DMARC が設定されているかどうかを確認します。設定されてない場合は、アドビのサポートチームにお問い合わせの上、その設定を取得するための最適な方法を確認してください。
+DMARC TXT レコードの設定は、現在、Campaign と AJO のアドビで完全にサポートされていますが、必須ではありません。無料の DMARC チェッカーを使用して、サブドメインに DMARC が設定されているかどうかを確認します。設定されてない場合は、アドビのサポートチームにお問い合わせの上、その設定を取得するための最適な方法を確認してください。
 
-DMARC の詳細と、Marketo Engage に対する実装方法については、[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=ja){target="_blank"} for Adobe Campaign, [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/dmarc-record-update.html?lang=en){target="_blank"} for AJO, or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html?lang=ja){target="_blank"}を参照してください。
+DMARC の詳細と、Marketo Engage に対する実装方法については、[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=ja){target="_blank"} for Adobe Campaign, [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/dmarc-record-update.html?lang=ja){target="_blank"} for AJO, or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html?lang=ja){target="_blank"}を参照してください。
 
 ## ワンクリック（リスト）登録解除：
 
-混乱する必要はありません。[!DNL Google] と [!DNL Yahoo] は、セキュリティボットが単にジョブを実行することで、または誤ってクリックする可能性のある、メールの本文やフッター内の登録解除リンクについては触れていません。これは、「mailto」または「http/URI」バージョンの List-Unsubscribe ヘッダー機能を意味します。 これは、ユーザーが登録解除をクリックできる [!DNL Yahoo] および Gmail UI 内の機能です。Gmail では、「スパムを報告」をクリックしたユーザーに対して、登録を解除するかどうかを確認するメッセージも表示します。これにより、受け取った苦情（お客様の評判を傷つける）を登録解除（お客様の評判を傷つけない）に変えることで、苦情の件数を減らすことができます。
+混乱する必要はありません。[!DNL Google] と [!DNL Yahoo] は、セキュリティボットが単にジョブを実行することで、または誤ってクリックする可能性のある、メールの本文やフッター内の登録解除リンクについては触れていません。これらが意味するのは、「mailto」または「http/URI」バージョンの List-Unsubscribe ヘッダー機能です。これは、ユーザーが登録解除をクリックできる [!DNL Yahoo] および Gmail UI 内の機能です。Gmail では、「スパムを報告」をクリックしたユーザーに対して、登録を解除するかどうかを確認するメッセージも表示します。これにより、受け取った苦情（お客様の評判を傷つける）を登録解除（お客様の評判を傷つけない）に変えることで、苦情の件数を減らすことができます。
 
-注意すべき点は [!DNL Google] および [!DNL Yahoo] はどちらも、「1-Click」という名前の「http/URI」オプションを指しているので、意図的なものです。 技術的には、元の「http/URI」オプションを使用して、受信者を Web サイトにリダイレクトできます。 これは、[!DNL Yahoo] と [!DNL Google] の焦点ではありません。両社は更新された [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} を参照しています。この RFC8058 は、web サイトではなく HTTPS POST リクエストを介して登録解除を処理し、「ワンクリック」にすることにフォーカスしています。
+[!DNL Google] と [!DNL Yahoo] は両社とも意図的に、「http/URI」オプションを「ワンクリック」という名前で参照していることに注意することが重要です。技術的には、元の「http/URI」オプションでは、受信者を web サイトにリダイレクトできました。これは、[!DNL Yahoo] と [!DNL Google] の焦点ではありません。両社は更新された [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} を参照しています。この RFC8058 は、web サイトではなく HTTPS POST リクエストを介して登録解除を処理し、「ワンクリック」にすることにフォーカスしています。
 
 現在、Gmail では「mailto」list-unsubscribe オプションを使用できます。Gmail では、「mailto」は今後の期待に応えられないため、送信者は「投稿」list-unsubscribe オプションを有効にする必要があるとの見解を示しています。既に何らかのタイプの list-unsubscribe を設定している送信者は、2024年6月1日（PT）までに「ワンクリック」list-unsubscribe を設定する必要があります。
 
@@ -69,10 +69,10 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 > アドビは、これらの要件を満たすユーザーをサポートするために、すべてのメール送信プラットフォームで「投稿」サポートを有効にすることに取り組んでいます。
 > 
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]：完全にサポートPOST1 — クリック今日、手順が見つかります [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"}.
->* [!DNL Adobe Campaign Standard]:2 月下旬までにPOST1 回のクリックをサポートするように更新中です。 設定手順が提供されます [ここ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"} 準備が整いました。
->* [!DNL Adobe Journey Optimizer]：今日のPOST1 回のクリックをサポートしますが、主な改善が進行中で、2024 年 3 月に実施される予定です。 ドキュメントの更新が公開されます [ここ](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"} 準備が整いました。
-> * [!DNL Marketo]:2024 年 1 月 31 日現在、POST1-Click-List-Unsubscribe が完全にサポートされています。 ユーザーに必要なアクションはありません。
+> * [!DNL Adobe Campaign Classic V7/V8]：現在、ワンクリック投稿を完全にサポートしています。手順については、[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"}を参照してください。
+>* [!DNL Adobe Campaign Standard]：2 月下旬までにワンクリック投稿をサポートするように更新されます。設定手順は、準備ができ次第、[こちら](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"}で提供されます。
+>* [!DNL Adobe Journey Optimizer]：現在、ワンクリック投稿をサポートしていますが、いくつかの重要な改善が進行中であり、2024年3月に実施される予定です。ドキュメントの更新は、準備ができ次第、[こちら](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"}で公開されます。
+> * [!DNL Marketo]：2024年1月31日（PT）以降、ワンクリック投稿のリスト登録解除が完全にサポートされます。ユーザーによるアクションは不要です。
 
 
 ## 2 日以内での登録解除プロセス：
@@ -110,9 +110,9 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 
 [!DNL Yahoo]：
 
-2024 年 2 月 — 1-Click List-Unsubscribe 以外のすべての要件に対する実施の段階的な展開は、2024 年 2 月に開始されます。
+2024年2月 - ワンクリック投稿のリスト登録解除以外のすべての要件に対する実施の段階的なロールアウトは、2024年2月に開始されます。
 
-2024 年 6 月 — 1-Click List-Unsubscribe の実施は 2024 年 6 月に開始されます。
+2024年6月 - ワンクリックのリスト登録解除の実施は 2024年6月に開始されます。
 
 ## マーケターに与える影響
 
