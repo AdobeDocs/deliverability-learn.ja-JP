@@ -1,39 +1,39 @@
 ---
 source-git-commit: 0332be5688f9d0375d1dba97c39a87d0e8d28c52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '168'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
-# ワンクリック List-Unsubscribe をサポートするタイポロジルールを作成する：
+# ワンクリックリストの購読解除をサポートするタイポロジルールを作成：
 
-**1.新しいタイポロジルールを作成します。**
-* ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
+**1.新しいタイポロジルールを作成する：**
+* ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します
 
 ![画像](/help/assets/CreatingTypologyRules1.png)
 
-**2. 次の手順で、タイポロジルールを設定します。**
+**2. 次の手順で、タイポロジルールを設定する：**
 * ルールタイプ：コントロール
 * フェーズ：ターゲティングの開始時
-* チャネル： E メール
-* レベル：選択
+* チャネル：メール
+* レベル：任意の選択
 * アクティブ
 
 
 ![画像](/help/assets/CreatingTypologyRules2.png)
 
 
-**タイポロジルールの JavaScript をコード化します。**
+**タイポロジルールの JavaScript をコード化する：**
 
 
 >[!NOTE]
 >
->以下で説明するコードは、例としてのみ参照する必要があります。
+>以下で説明するコードは、例としてのみ参照してください。
 >この例では、次の方法を詳しく説明します。
->* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto：パラメーターを追加して、次と置き換えます。 &lt;mailto..>>, https://...
->* List-Unsubscribe-Post ヘッダーにを追加する
->投稿 URL の例では、var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;÷を使用します。
->* 他のパラメーター（&amp;service = ...など）を追加できます。
+>* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto: パラメーターを追加して、&lt;mailto..>, https://… に置き換えます
+>* List-Unsubscribe-Post ヘッダーを追加する
+>投稿 URL の例では、var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;÷ を使用します
+>* 他のパラメーター（like &amp;service = ... など）を追加できます
 >
 
 
@@ -135,11 +135,11 @@ return true;
 
 ![画像](/help/assets/CreatingTypologyRules3.png)
 
-**3.新しいルールをタイポロジに追加して E メールに追加します（デフォルトのタイポロジは ok です）。**
+**3.新しいルールをメールのタイポロジーに追加（デフォルトのタイポロジも使用可）：**
 
 ![画像](/help/assets/CreatingTypologyRules4.png)
 
-**4. 新しい配信を準備します（配信プロパティの追加の SMTP ヘッダーが空であることを確認します）。**
+**4. 新しい配信を準備する（配信プロパティの追加の SMTP ヘッダーが空であることを確認）**
 
 ![画像](/help/assets/CreatingTypologyRules5.png)
 
