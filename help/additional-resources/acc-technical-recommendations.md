@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: bfdf87937d001791701884d29db2da1fd7a0e8ee
+source-git-commit: b5e1d878c889112e08da0969d50bdb3c72e48f8c
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 56%
+source-wordcount: '1899'
+ht-degree: 64%
 
 ---
 
@@ -139,7 +139,7 @@ Adobe Campaign の配信品質サービスは、以下の ISP のフィードバ
 
 ### List-Unsubscribe について {#about-list-unsubscribe}
 
-という名前の SMTP ヘッダーを追加しています **List-Unsubscribe** は、最適な配信品質管理を確保するために必須です。2024 年 6 月 1 日以降、Yahoo および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 One-Click List-Unsubscribe の設定方法については、以下を参照してください。
+という名前の SMTP ヘッダーを追加しています **List-Unsubscribe** 配信品質の最適な管理を実現するには、が必須です。 2024 年 6 月 1 日以降、Yahoo および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 ワンクリック List-Unsubscribe の設定方法については、 [この節](#one-click-list-unsubscribe).
 
 
 このヘッダーは、「スパムとして報告」アイコンの代わりに使用できます。E メールインターフェイスに配信停止リンクとして表示されます。
@@ -181,7 +181,7 @@ List-Unsubscribe: mailto:unsubscribe@domain.com
 List-Unsubscribe: https://domain.com/unsubscribe.jsp
 * クリック **登録解除** リンクは、ユーザーを購読解除フォームにリダイレクトします。
 
-![画像](/help/assets/UTF-8-1.png)
+![画像](../assets/UTF-8-1.png)
 
 
 ### タイポロジルールの作成 {#creating-a-typology-rule}
@@ -196,7 +196,7 @@ List-Unsubscribe: https://domain.com/unsubscribe.jsp
 >
 >Adobe Campaign Classicでタイポロジルールを作成する方法については、 [この節](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
 
-### ワンクリックリスト配信停止
+### ワンクリックリスト配信停止 {#one-click-list-unsubscribe}
 
 2024 年 6 月 1 日以降、Yahoo および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 ワンクリックリスト配信停止要件の送信者に準拠するには、次の要件を満たす必要があります。
 
@@ -215,46 +215,44 @@ One-Click List-Unsubscribe を直接設定するには：
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
-List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
+List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
 
 上記の例では、One-Click をサポートする ISP で One-Click List-Unsubscribe を有効にします。一方、URL list-unsubscribe をサポートしていない受信者は、引き続き E メールで配信停止を要求できます。
 
 
-### ワンクリック List-Unsubscribe をサポートするタイポロジルールを作成する：
+### ワンクリックリストの購読解除をサポートするタイポロジルールを作成：
 
-**1.新しいタイポロジルールを作成します。**
+**1.新しいタイポロジルールを作成する：**
 
-* ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します。
+* ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します
 
-
-![画像](/help/assets/CreatingTypologyRules1.png)
-
+![画像](../assets/CreatingTypologyRules1.png)
 
 
-**2. 次の手順で、タイポロジルールを設定します。**
+**2. 次の手順で、タイポロジルールを設定する：**
 
 * ルールタイプ：コントロール
 * フェーズ：ターゲティングの開始時
-* チャネル： E メール
-* レベル：選択
+* チャネル：メール
+* レベル：任意の選択
 * アクティブ
 
 
-![画像](/help/assets/CreatingTypologyRules2.png)
+![画像](../assets/CreatingTypologyRules2.png)
 
 
-**タイポロジルールの JavaScript をコード化します。**
+**タイポロジルールの JavaScript をコード化する：**
 
 
 >[!NOTE]
 >
->以下で説明するコードは、例としてのみ参照する必要があります。
+>以下で説明するコードは、例としてのみ参照してください。
 >この例では、次の方法を詳しく説明します。
->* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto：パラメーターを追加して、次と置き換えます。 &lt;mailto..>>, https://...
->* List-Unsubscribe-Post ヘッダーにを追加する
->投稿 URL の例では、var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;÷を使用します。
->* 他のパラメーター（&amp;service = ...など）を追加できます。
+>* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto: パラメーターを追加して、&lt;mailto..>, https://… に置き換えます
+>* List-Unsubscribe-Post ヘッダーを追加する
+>投稿 URL の例では、var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;÷ を使用します
+>* 他のパラメーター（like &amp;service = ... など）を追加できます
 >
 
 
@@ -354,31 +352,31 @@ return true;
 ```
 
 
-![画像](/help/assets/CreatingTypologyRules3.png)
+![画像](../assets/CreatingTypologyRules3.png)
 
 
 
-**3.新しいルールをタイポロジに追加して E メールに追加します（デフォルトのタイポロジは ok です）。**
+**3.新しいルールをメールのタイポロジーに追加（デフォルトのタイポロジも使用可）：**
 
-![画像](/help/assets/CreatingTypologyRules4.png)
+![画像](../assets/CreatingTypologyRules4.png)
 
 
 
-**4. 新しい配信を準備します（配信プロパティの追加の SMTP ヘッダーが空であることを確認します）。**
+**4. 新しい配信を準備する（配信プロパティの追加の SMTP ヘッダーが空であることを確認）**
 
-![画像](/help/assets/CreatingTypologyRules5.png)
+![画像](../assets/CreatingTypologyRules5.png)
 
 
 
 **5. 配信の準備中に、新しいタイポロジルールが適用されていることを確認します。**
 
-![画像](/help/assets/CreatingTypologyRules6.png)
+![画像](../assets/CreatingTypologyRules6.png)
 
 
 
 **6.List-Unsubscribe が存在することを検証します。**
 
-![画像](/help/assets/CreatingTypologyRules7.png)
+![画像](../assets/CreatingTypologyRules7.png)
 
 
 ## E メールの最適化 {#email-optimization}
