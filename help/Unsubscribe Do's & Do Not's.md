@@ -1,5 +1,5 @@
 ---
-source-git-commit: d30c3e96a9e341f34d471af35692da9e1c0b72d4
+source-git-commit: 5e7c7bf626b6277abf8d50181826deb2e21c868f
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -48,7 +48,7 @@ DO：購読者に関係の指定を許可します。
 
 DO: E メールテンプレートで List Unsubscribe ヘッダーを使用すると、E メールの上部に配信停止リンクを表示する E メールクライアント ( 例：gmail.com) を、ユーザーが配信停止を探すのに慣れている場所で簡単に見つけることができます。
 
-+ ワンクリック購読解除に関する業界の取り組みについて詳しくは、ここをクリック (https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html) してください。
++ クリック [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=ja) ワンクリックでの購読解除に関する業界の取り組みの詳細を確認するには、以下を参照してください。
 
 Do Not&#39;s
 
