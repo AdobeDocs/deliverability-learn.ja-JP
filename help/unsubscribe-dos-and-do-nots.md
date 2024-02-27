@@ -1,10 +1,21 @@
 ---
-source-git-commit: 68580661062e1e323ff728c09ebf3a5103544fff
+title: 配信停止と配信停止
+description: 配信停止を管理する際に実行する操作と回避する操作のリストを使用します。
+feature: Deliverability
+role: Admin
+level: Beginner
+doc-type: Feature Video
+duration: 0
+last-substantial-update: 2024-02-27T00:00:00Z
+jira: KT-15029
+source-git-commit: 77de42d30ce01ab66323da1731a4a0bf96a94f44
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
+
+
 # 配信停止と配信停止
 
 購読解除は、電子メールのライフサイクルの自然な部分です。 しかし、マーケターが時々別れを言うのは難しい。 最も魅力的な E メールを作成し、ブランドが提供する製品やサービスに関する最高の契約を提示するのに非常に懸命に取り組みます。 ただし、一部の購読者が先に進むことを決定するのは、完全に正常で、予想される必要があります。 これはいくつかの理由による可能性がありますが、結局は、彼らはもうあなたからの連絡に興味を持っていないということです。
