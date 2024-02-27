@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b5e1d878c889112e08da0969d50bdb3c72e48f8c
+source-git-commit: 466b775442964e2d8cad133280e6b9f8af148b25
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1902'
 ht-degree: 64%
 
 ---
@@ -139,10 +139,13 @@ Adobe Campaign の配信品質サービスは、以下の ISP のフィードバ
 
 ### List-Unsubscribe について {#about-list-unsubscribe}
 
-という名前の SMTP ヘッダーを追加しています **List-Unsubscribe** 配信品質の最適な管理を実現するには、が必須です。 2024 年 6 月 1 日以降、Yahoo および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 ワンクリック List-Unsubscribe の設定方法については、 [この節](#one-click-list-unsubscribe).
+配信品質の最適な管理を実現するには、**List-Unsubscribe** という SMTP ヘッダーを付けることが不可欠です。
 
+>[!CAUTION]
+>
+>2024 年 6 月 1 日より、Yahoo! また、Gmail は、送信者に対して、次の条件に従うよう求めます： **ワンクリック List-Unsubscribe**. ワンクリック List-Unsubscribe の設定方法については、 [この節](#one-click-list-unsubscribe).
 
-このヘッダーは、「スパムとして報告」アイコンの代わりに使用できます。E メールインターフェイスに配信停止リンクとして表示されます。
+このヘッダーは、「スパムとして報告」アイコンの代わりに使用できます。このリンクは、E メールインターフェイスに配信停止リンクとして表示されます。
 
 この機能を使用すると、評判を守ることができ、フィードバックは購読解除として実行されます。
 
@@ -191,20 +194,18 @@ List-Unsubscribe: https://domain.com/unsubscribe.jsp
 >[!NOTE]
 >
 >タイポロジルールを作成することをお勧めします。各メールに List-Unsubscribe 機能が自動的に追加されます。
-
->[!NOTE]
 >
->Adobe Campaign Classicでタイポロジルールを作成する方法については、 [この節](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+>Adobe Campaign v7/v8 でタイポロジルールを作成する方法については、 [この節](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
 
 ### ワンクリックリスト配信停止 {#one-click-list-unsubscribe}
 
-2024 年 6 月 1 日以降、Yahoo および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 ワンクリックリスト配信停止要件の送信者に準拠するには、次の要件を満たす必要があります。
+2024 年 6 月 1 日以降、Yahoo および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 この要件を満たすには、送信者は次の要件を満たす必要があります。
 
-1. &quot;List-Unsubscribe-Post: List-Unsubscribe=One-Click&quot;に追加します。
-2. URI 配信停止リンクを含める
-3. Adobe Campaignがサポートするレシーバーからの HTTPPOST応答の受信をサポートします。
+1. 次のコマンドラインを追加します。`List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
+1. URI 配信停止リンクを含めます。
+1. Adobe Campaignがサポートするレシーバーからの HTTPPOST応答の受信をサポートします。
 
-One-Click List-Unsubscribe を直接設定するには：
+Adobe Campaign v7/v8 で One-Click List-Unsubscribe を直接設定するには：
 
 * 次の「受信者の購読解除 (no-click)」Web アプリケーションを追加します。 
    1. リソース/オンライン/Web アプリケーションに移動します。

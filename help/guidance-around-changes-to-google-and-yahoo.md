@@ -8,10 +8,10 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 50017358f7f88f5579de282a1f528916ecb17493
-workflow-type: ht
-source-wordcount: '1775'
-ht-degree: 100%
+source-git-commit: e2c2fbfee5e404e1eef25dd0068a6bdd560ed977
+workflow-type: tm+mt
+source-wordcount: '1770'
+ht-degree: 88%
 
 ---
 
@@ -55,25 +55,23 @@ DMARC の詳細と、Marketo Engage に対する実装方法については、[�
 
 [!DNL Google] と [!DNL Yahoo] は両社とも意図的に、「http/URI」オプションを「ワンクリック」という名前で参照していることに注意することが重要です。技術的には、元の「http/URI」オプションでは、受信者を web サイトにリダイレクトできました。これは、[!DNL Yahoo] と [!DNL Google] の焦点ではありません。両社は更新された [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} を参照しています。この RFC8058 は、web サイトではなく HTTPS POST リクエストを介して登録解除を処理し、「ワンクリック」にすることにフォーカスしています。
 
-現在、Gmail では「mailto」list-unsubscribe オプションを使用できます。Gmail では、「mailto」は今後の期待に応えられないため、送信者は「投稿」list-unsubscribe オプションを有効にする必要があるとの見解を示しています。既に何らかのタイプの list-unsubscribe を設定している送信者は、2024年6月1日（PT）までに「ワンクリック」list-unsubscribe を設定する必要があります。
+現在、Gmail は「mailto」list-unsubscribe オプションを受け付けています。 Gmail は、「mailto」が今後の期待を満たさないと言い、送信者は「post」リスト配信停止オプションを有効にする必要があると言いました。 既に何らかの種類の list-unsubscribe が設定されている送信者は、2024 年 6 月 1 日までに、「1-click」の list-unsubscribe が設定されています。
 
-[!DNL Yahoo] では、現時点では「mailto」オプションを引き続き使用するものの、今後は「投稿」オプションも必要になると述べています。
+[!DNL Yahoo] は、今のところ「mailto」オプションを尊重し続けるが、今後も「post」を必要とすると言っています。
 
-アドビでは、「mailto」と「投稿／ワンクリック」list-unsubscribe オプションの両方を使用することをお勧めします。アドビは、これらの要件を満たすユーザーをサポートするために、すべてのメール送信プラットフォームで「投稿」サポートを有効にすることに取り組んでいます。詳しくは、以下を参照してください。
+Adobeは、&quot;mailto&quot;と&quot;post/1-Click&quot;の両方の list-unsubscribe オプションを使用することをお勧めします。 Adobeは、これらの要件を満たすユーザーをサポートするために、すべての電子メール送信プラットフォームで「投稿」サポートを有効にする作業を進めています。詳細は以下を参照してください。
 
 list-unsubscribe ヘッダーの必要性は、トランザクションメールには適用されません。トリガーされたメッセージ（放棄された買い物かごなど）や、サブスクライバーによって生成されない類似の通信は、[!DNL Google] や [!DNL Yahoo] などのメールボックスプロバイダーによってマーケティングと見なされ、list-unsubscribe が必要になることに注意してください。
 
 [!DNL Google] と [!DNL Yahoo] は両社とも、受信者が登録解除し、後日再登録する場合があることを認識しています。両社とも、これらの状況をどのように識別するかという秘密のソースを共有するつもりはありませんが、このような場合に送信者に誤ってペナルティを課すことを回避する方法に取り組んでいます。
 
 >[!INFO]
-> アドビは、これらの要件を満たすユーザーをサポートするために、すべてのメール送信プラットフォームで「投稿」サポートを有効にすることに取り組んでいます。
-> 
-> 
-> * [!DNL Adobe Campaign Classic V7/V8]：現在、ワンクリック投稿を完全にサポートしています。手順については、[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"}を参照してください。
->* [!DNL Adobe Campaign Standard]：2 月下旬までにワンクリック投稿をサポートするように更新されます。設定手順は、準備ができ次第、[こちら](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=ja){target="_blank"}で提供されます。
+> Adobeは、以下の要件を満たすユーザーをサポートするために、すべての電子メール送信プラットフォームで「投稿」サポートを有効にする作業を進めています。
+>
+> * [!DNL Adobe Campaign v7/v8]：現在、ワンクリック投稿を完全にサポートしています。手順については、[こちら](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=ja#list-unsubscribe){target="_blank"}を参照してください。
+>* [!DNL Adobe Campaign Standard]:2 月 19 日現在、はPOST1 — クリックを完全にサポートしています。 詳細はこちらをご覧ください [ここ](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-channels/configuring-email-channel.html#email-channel-parameters){target="_blank"}.
 >* [!DNL Adobe Journey Optimizer]：現在、ワンクリック投稿をサポートしていますが、いくつかの重要な改善が進行中であり、2024年3月に実施される予定です。ドキュメントの更新は、準備ができ次第、[こちら](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=ja){target="_blank"}で公開されます。
-> * [!DNL Marketo]：2024年1月31日（PT）以降、ワンクリック投稿のリスト登録解除が完全にサポートされます。ユーザーによるアクションは不要です。
-
+> * [!DNL Marketo]:2024 年 1 月 31 日現在、は、POST1-Click List-Unsubscribe をサポートしています。 ユーザーによるアクションは不要です。
 
 ## 2 日以内での登録解除プロセス：
 
@@ -92,7 +90,7 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 
 [!DNL Yahoo] は、苦情のしきい値も 0.30％の範囲内になると述べています。
 
-[!DNL Google] と [!DNL Yahoo] の目標は、たった 1 日の悪い日や苦情の一時的急増を引き起こす 1 つの誤りによって送信者を処罰することではありません。代わりに、長期間にわたって苦情率が高い送信者や、不適切な送信動作のパターンに焦点を当てています。
+[!DNL Google] および [!DNL Yahoo]の目標は、送信者に対して 1 日の悪い日や、苦情の一時的な急増を引き起こす誤りを処罰することではありません。 代わりに、長期間にわたって苦情率が高い送信者や、不適切な送信動作のパターンに焦点を当てています。
 
 苦情率の監視や、苦情を減らすための戦略にサポートが必要な場合は、アドビ配信品質コンサルタントにご相談いただくか、配信品質コンサルタントがまだいない場合はアカウントチームに配信品質コンサルタントの追加についてご相談ください。
 
@@ -102,7 +100,7 @@ list-unsubscribe ヘッダーの必要性は、トランザクションメール
 
 [!DNL Gmail]：
 
-2024年2月 - コンプライアンス違反の警告を提供するために設計された、一時的なバウンスが開始されます。お客様がまだ準拠していない場合、メールは少し遅れてから通常どおり配信されます。完全に準拠している場合、一時的なバウンスは発生せず、お客様には何の影響もありません。
+2024年2月 - コンプライアンス違反の警告を提供するために設計された、一時的なバウンスが開始されます。お客様がまだ準拠していない場合、メールは少し遅れてから通常どおり配信されます。完全に準拠している場合、一時的なバウンスはなく、何も気付きません。
 
 2024年4月 - ワンクリックリスト登録解除を除くすべてに準拠していない送信者に対して、ブロックが開始されます。最初は準拠していないメールの一部のみがブロックされ、時間の経過と共にブロック対象の割合が増加します。
 
