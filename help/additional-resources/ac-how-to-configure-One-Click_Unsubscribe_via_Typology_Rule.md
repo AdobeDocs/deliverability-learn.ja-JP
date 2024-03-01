@@ -1,6 +1,6 @@
 ---
-source-git-commit: 0332be5688f9d0375d1dba97c39a87d0e8d28c52
-workflow-type: ht
+source-git-commit: d105a5b7d81aa14144b9d01f28a5e24c1110ae6c
+workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 100%
 
@@ -8,11 +8,13 @@ ht-degree: 100%
 # ワンクリックリストの購読解除をサポートするタイポロジルールを作成：
 
 **1.新しいタイポロジルールを作成する：**
+
 * ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します
 
 ![画像](/help/assets/CreatingTypologyRules1.png)
 
 **2. 次の手順で、タイポロジルールを設定する：**
+
 * ルールタイプ：コントロール
 * フェーズ：ターゲティングの開始時
 * チャネル：メール
