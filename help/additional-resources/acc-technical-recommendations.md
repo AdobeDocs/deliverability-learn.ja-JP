@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: dd2de465850181cf72085328352c38bcefd59458
+source-git-commit: ea91b7285814eca254590f2aff128fb6e5f77520
 workflow-type: tm+mt
-source-wordcount: '2078'
-ht-degree: 50%
+source-wordcount: '2124'
+ht-degree: 48%
 
 ---
 
@@ -139,11 +139,11 @@ Adobe Campaign の配信品質サービスは、以下の ISP のフィードバ
 
 配信品質の最適な管理を実現するには、**List-Unsubscribe** という SMTP ヘッダーを付けることが不可欠です。
 
-このヘッダーは、「スパムとして報告」アイコンの代わりに使用できます。ISP の E メールインターフェイスでは、「配信停止」リンクとして表示されます。 以下に例を示します。
+このヘッダーは、「スパムとして報告」アイコンの代わりに使用できます。ISP の E メールインターフェイスでは、「配信停止」リンクとして表示されます。
+
+Gmail、Outlook.com、Yahoo! とMicrosoft Outlook はこの方法をサポートしています。 「購読解除」リンクは、各ユーザーのインターフェイスで直接使用できます。 以下に例を示します。
 
 ![画像](../assets/List-Unsubscribe-example-Gmail.png)
-
-Gmail、Outlook.com、Yahoo! とMicrosoft Outlook はこの方法をサポートしています。 「購読解除」リンクは、各ユーザーのインターフェイスで直接使用できます。
 
 >[!NOTE]
 >
@@ -161,7 +161,6 @@ List-Unsubscribe ヘッダー機能には、次の 2 つのバージョンがあ
 
 <!--OR: With this method, clicking the **Unsubscribe** link opens the user's default email client with a pre-filled email to the unsubscribe address specified in the email header. This allows the user to unsubscribe simply by sending the email without any further manual steps.-->
 
-and
 * **「ワンクリック」List-Unsubscribe**  — この方法では、 **配信停止** リンクは、ユーザーを直接購読解除します。 [詳細情報](#one-click-list-unsubscribe)
 
 >[!CAUTION]
@@ -172,23 +171,17 @@ and
 
 ### &quot;mailto&quot; List-Unsubscribe {#mailto-list-unsubscribe}
 
-&quot;mailto&quot; List-Unsubscribe を使用するには、次のようなコマンドラインを入力する必要があります。
+この方法では、 **配信停止** リンクは、e メールヘッダーで指定された配信停止アドレスに、事前入力済みの e メールを送信します。
 
-```
-List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
-```
+&quot;mailto&quot; List-Unsubscribe を使用するには、次のようなメールアドレスを指定するコマンドラインを入力する必要があります。 `List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`
 
 >[!CAUTION]
 >
 >上記の例は受信者テーブルに基づいています。データベースの実装が別のテーブルに基づいておこなわれている場合は、正しい情報を反映するようにコマンドラインを修正する必要があります。
 
-また、次のようなコマンドラインを使用して、動的な&quot;mailto&quot; List-Unsubscribe を作成することもできます。
+また、次のようなコマンドラインを使用して、動的な&quot;mailto&quot; List-Unsubscribe を作成することもできます。 `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
-```
-List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>
-```
-
-実装するには **&quot;mailto&quot; List-Unsubscribe**&#x200B;次のいずれかを実行できます。
+実装するには **&quot;mailto&quot; List-Unsubscribe** Campaign では、次のいずれかを実行できます。
 
 * 配信または配信テンプレートにコマンドラインを直接追加する — [方法を学ぶ](#adding-a-command-line-in-a-delivery-template)
 
@@ -200,7 +193,7 @@ List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMes
 
 この追加はメールごとにおこなうこともできますし、既存の配信テンプレートでおこなうこともできます。また、この機能を組み込んだ配信テンプレートを新しく作成することもできます。
 
-例えば、次のスクリプトを **[!UICONTROL 追加の SMTP ヘッダー]**: `List-Unsubscribe: mailto:unsubscribe@domain.com`
+例えば、次のスクリプトを **[!UICONTROL 追加の SMTP ヘッダー]** フィールド： `List-Unsubscribe: mailto:unsubscribe@domain.com`
 
 クリック **登録解除** リンクはunsubscribe@domain.comアドレスに電子メールを送信します。
 
@@ -229,7 +222,9 @@ Adobe Campaign v7/v8 でタイポロジルールを作成する方法につい�
 >
 >タイポロジルールを作成することをお勧めします。このタイポロジルールを使用して、各 E メールに List-Unsubscribe 機能が自動的に追加されます。
 
-### ワンクリックリスト配信停止 {#one-click-list-unsubscribe}
+### ワンクリック List-Unsubscribe {#one-click-list-unsubscribe}
+
+この方法では、 **配信停止** リンクは、ユーザーを直接購読解除します。購読解除には 1 つのアクションのみが必要です。
 
 2024 年 6 月 1 日より、Yahoo! および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 [この変更の詳細を表示](../guidance-around-changes-to-google-and-yahoo.md)
 
@@ -245,7 +240,7 @@ Adobe Campaign v7/v8 で One-Click List-Unsubscribe PSOT 応答を直接サポ�
 
 1. 「受信者の購読解除 (no-click)」をアップロード [XML](/help/assets/WebAppUnsubNoClick.xml.zip) ファイル。
 
-を設定するには、以下を実行します。 **ワンクリック List-Unsubscribe**&#x200B;次のいずれかを実行できます。
+を設定するには、以下を実行します。 **ワンクリック List-Unsubscribe** Campaign では、次のいずれかを実行できます。
 
 * 配信または配信テンプレートにコマンドラインを追加します。 [方法を学ぶ](#one-click-delivery-template)
 * タイポロジルールの作成 — [方法を学ぶ](#one-click-typology-rule)
@@ -265,7 +260,7 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
 ![画像](../assets/List-Unsubscribe-1-click-template-SMTP.png)
 
-上記の例では、One-Click をサポートする ISP に対して、One-Click List-Unsubscribe を有効にします。一方、&quot;mailto&quot;をサポートしない受信者は、引き続きメールを使用して配信停止を要求できます。
+上記の例では、One-Click をサポートする ISP に対して、One-Click List-Unsubscribe を有効にします。一方、「mailto」をサポートしていない受信者は、引き続きメールを使用して配信停止を要求できます。
 
 #### ワンクリック List-Unsubscribe をサポートするタイポロジルールの作成 {#one-click-typology-rule}
 
