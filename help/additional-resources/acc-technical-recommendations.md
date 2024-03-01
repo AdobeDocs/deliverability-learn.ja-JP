@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 56a8bb69be854ede21385ef35179b90f95cb1f6e
+source-git-commit: dd2de465850181cf72085328352c38bcefd59458
 workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 50%
@@ -166,7 +166,7 @@ and
 
 >[!CAUTION]
 >
->2024 年 6 月 1 日より、Yahoo! また、Gmail は、送信者に対して、次の条件に従うよう求めます： **ワンクリック List-Unsubscribe**. [この変更の詳細を表示](guidance-around-changes-to-google-and-yahoo.md)
+>2024 年 6 月 1 日より、Yahoo! また、Gmail は、送信者に対して、次の条件に従うよう求めます： **ワンクリック List-Unsubscribe**. [この変更の詳細を表示](../guidance-around-changes-to-google-and-yahoo.md)
 >
 >でのワンクリックリスト配信停止の設定方法を説明します。 [この節](#one-click-list-unsubscribe).
 
@@ -231,7 +231,7 @@ Adobe Campaign v7/v8 でタイポロジルールを作成する方法につい�
 
 ### ワンクリックリスト配信停止 {#one-click-list-unsubscribe}
 
-2024 年 6 月 1 日より、Yahoo! および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 [この変更の詳細を表示](guidance-around-changes-to-google-and-yahoo.md)
+2024 年 6 月 1 日より、Yahoo! および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 [この変更の詳細を表示](../guidance-around-changes-to-google-and-yahoo.md)
 
 この要件を満たすには、送信者は次の要件を満たす必要があります。
 
@@ -262,6 +262,7 @@ Adobe Campaign v7/v8 で One-Click List-Unsubscribe PSOT 応答を直接サポ�
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
+
 ![画像](../assets/List-Unsubscribe-1-click-template-SMTP.png)
 
 上記の例では、One-Click をサポートする ISP に対して、One-Click List-Unsubscribe を有効にします。一方、&quot;mailto&quot;をサポートしない受信者は、引き続きメールを使用して配信停止を要求できます。
