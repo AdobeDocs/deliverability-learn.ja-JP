@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: ea91b7285814eca254590f2aff128fb6e5f77520
+source-git-commit: ffa2e9788326389ae2e4da6e272367cdc837b72e
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2150'
 ht-degree: 48%
 
 ---
@@ -141,6 +141,8 @@ Adobe Campaign の配信品質サービスは、以下の ISP のフィードバ
 
 このヘッダーは、「スパムとして報告」アイコンの代わりに使用できます。ISP の E メールインターフェイスでは、「配信停止」リンクとして表示されます。
 
+この機能を使用すると、苦情率が下がり、評判を守るのに役立ちます。 フィードバックは購読解除として実行されます。
+
 Gmail、Outlook.com、Yahoo! とMicrosoft Outlook はこの方法をサポートしています。 「購読解除」リンクは、各ユーザーのインターフェイスで直接使用できます。 以下に例を示します。
 
 ![画像](../assets/List-Unsubscribe-example-Gmail.png)
@@ -153,8 +155,6 @@ Gmail、Outlook.com、Yahoo! とMicrosoft Outlook はこの方法をサポート
 >* ISP のスパム苦情数しきい値の下
 >* 完全に認証済み
 
-この機能を使用すると、苦情率が下がり、評判を守るのに役立ちます。 フィードバックは購読解除として実行されます。
-
 List-Unsubscribe ヘッダー機能には、次の 2 つのバージョンがあります。
 
 * **&quot;mailto&quot; List-Unsubscribe**  — この方法では、 **配信停止** リンクは、e メールヘッダーで指定された配信停止アドレスに、事前入力済みの e メールを送信します。 [詳細情報](#mailto-list-unsubscribe)
@@ -163,7 +163,7 @@ List-Unsubscribe ヘッダー機能には、次の 2 つのバージョンがあ
 
 * **「ワンクリック」List-Unsubscribe**  — この方法では、 **配信停止** リンクは、ユーザーを直接購読解除します。 [詳細情報](#one-click-list-unsubscribe)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >2024 年 6 月 1 日より、Yahoo! また、Gmail は、送信者に対して、次の条件に従うよう求めます： **ワンクリック List-Unsubscribe**. [この変更の詳細を表示](../guidance-around-changes-to-google-and-yahoo.md)
 >
@@ -193,9 +193,7 @@ List-Unsubscribe ヘッダー機能には、次の 2 つのバージョンがあ
 
 この追加はメールごとにおこなうこともできますし、既存の配信テンプレートでおこなうこともできます。また、この機能を組み込んだ配信テンプレートを新しく作成することもできます。
 
-例えば、次のスクリプトを **[!UICONTROL 追加の SMTP ヘッダー]** フィールド： `List-Unsubscribe: mailto:unsubscribe@domain.com`
-
-クリック **登録解除** リンクはunsubscribe@domain.comアドレスに電子メールを送信します。
+例えば、次のスクリプトを **[!UICONTROL 追加の SMTP ヘッダー]** フィールド： `List-Unsubscribe: mailto:unsubscribe@domain.com`. クリック **登録解除** リンクはunsubscribe@domain.comアドレスに電子メールを送信します。
 
 また、動的なアドレスを使用することもできます。 例えば、プラットフォームに対して定義されたエラーアドレスに E メールを送信するには、次のスクリプトを使用します。 `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
@@ -247,6 +245,8 @@ Adobe Campaign v7/v8 で One-Click List-Unsubscribe PSOT 応答を直接サポ�
 
 #### 配信またはテンプレートでのワンクリックによる List-Unsubscribe の設定 {#one-click-delivery-template}
 
+配信または配信テンプレートで OneClick List-Unsubscribe を設定するには、次の手順に従います。
+
 1. 次に移動： **[!UICONTROL SMTP]** 」セクションに表示されます。
 
 1. の下 **[!UICONTROL 追加の SMTP ヘッダー]**&#x200B;に設定し、次の例のようにコマンドラインを入力します。 各ヘッダーは別々の行に記述する必要があります。
@@ -263,6 +263,8 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 上記の例では、One-Click をサポートする ISP に対して、One-Click List-Unsubscribe を有効にします。一方、「mailto」をサポートしていない受信者は、引き続きメールを使用して配信停止を要求できます。
 
 #### ワンクリック List-Unsubscribe をサポートするタイポロジルールの作成 {#one-click-typology-rule}
+
+タイポロジルールを使用して「ワンクリックリスト — 購読解除」を設定するには、次の手順に従います。
 
 1. ナビゲーションツリーで、に移動します。 **[!UICONTROL タイポロジルール]** をクリックします。 **[!UICONTROL 新規]**.
 
