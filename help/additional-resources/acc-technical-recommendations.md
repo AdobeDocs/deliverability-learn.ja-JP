@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 570f64fee87db7df8be8dfdd0ae1c6e6101058f7
+source-git-commit: 56a8bb69be854ede21385ef35179b90f95cb1f6e
 workflow-type: tm+mt
-source-wordcount: '1962'
-ht-degree: 61%
+source-wordcount: '2078'
+ht-degree: 50%
 
 ---
 
@@ -139,17 +139,40 @@ Adobe Campaign の配信品質サービスは、以下の ISP のフィードバ
 
 配信品質の最適な管理を実現するには、**List-Unsubscribe** という SMTP ヘッダーを付けることが不可欠です。
 
+このヘッダーは、「スパムとして報告」アイコンの代わりに使用できます。ISP の E メールインターフェイスでは、「配信停止」リンクとして表示されます。 以下に例を示します。
+
+![画像](../assets/List-Unsubscribe-example-Gmail.png)
+
+Gmail、Outlook.com、Yahoo! とMicrosoft Outlook はこの方法をサポートしています。 「購読解除」リンクは、各ユーザーのインターフェイスで直接使用できます。
+
+>[!NOTE]
+>
+>「配信停止」リンクが常に表示されるとは限りません。 実際、各 ISP の特定の条件やポリシーに依存する場合があります。 したがって、メッセージは送信者から送信されたものとします。
+>
+>* 評判の良い
+>* ISP のスパム苦情数しきい値の下
+>* 完全に認証済み
+
+この機能を使用すると、苦情率が下がり、評判を守るのに役立ちます。 フィードバックは購読解除として実行されます。
+
+List-Unsubscribe ヘッダー機能には、次の 2 つのバージョンがあります。
+
+* **&quot;mailto&quot; List-Unsubscribe**  — この方法では、 **配信停止** リンクは、e メールヘッダーで指定された配信停止アドレスに、事前入力済みの e メールを送信します。 [詳細情報](#mailto-list-unsubscribe)
+
+<!--OR: With this method, clicking the **Unsubscribe** link opens the user's default email client with a pre-filled email to the unsubscribe address specified in the email header. This allows the user to unsubscribe simply by sending the email without any further manual steps.-->
+
+and
+* **「ワンクリック」List-Unsubscribe**  — この方法では、 **配信停止** リンクは、ユーザーを直接購読解除します。 [詳細情報](#one-click-list-unsubscribe)
+
 >[!CAUTION]
 >
->2024 年 6 月 1 日より、Yahoo! また、Gmail は、送信者に対して、次の条件に従うよう求めます： **ワンクリック List-Unsubscribe**. ワンクリック List-Unsubscribe の設定方法については、 [この節](#one-click-list-unsubscribe).
+>2024 年 6 月 1 日より、Yahoo! また、Gmail は、送信者に対して、次の条件に従うよう求めます： **ワンクリック List-Unsubscribe**. [この変更の詳細を表示](guidance-around-changes-to-google-and-yahoo.md)
+>
+>でのワンクリックリスト配信停止の設定方法を説明します。 [この節](#one-click-list-unsubscribe).
 
-### List-Unsubscribe について {#about-list-unsubscribe}
+### &quot;mailto&quot; List-Unsubscribe {#mailto-list-unsubscribe}
 
-このヘッダーは、「スパムとして報告」アイコンの代わりに使用できます。このリンクは、E メールインターフェイスに配信停止リンクとして表示されます。
-
-この機能を使用すると、評判を守ることができ、フィードバックは購読解除として実行されます。
-
-List-Unsubscribe を使用するには、次のようなコマンドラインを入力する必要があります。
+&quot;mailto&quot; List-Unsubscribe を使用するには、次のようなコマンドラインを入力する必要があります。
 
 ```
 List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
@@ -159,30 +182,19 @@ List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body
 >
 >上記の例は受信者テーブルに基づいています。データベースの実装が別のテーブルに基づいておこなわれている場合は、正しい情報を反映するようにコマンドラインを修正する必要があります。
 
-次のコマンドラインは、動的な **List-Unsubscribe** の作成に使用できます。
+また、次のようなコマンドラインを使用して、動的な&quot;mailto&quot; List-Unsubscribe を作成することもできます。
 
 ```
 List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>
 ```
 
-<!--This example uses the error address.-->
+実装するには **&quot;mailto&quot; List-Unsubscribe**&#x200B;次のいずれかを実行できます。
 
-Gmail、Outlook.comおよびMicrosoft Outlook はこの方法をサポートしており、Outlook のインターフェイスで直接購読解除ボタンを使用できます。 この手法を利用すると、苦情率が下がります。
+* 配信または配信テンプレートにコマンドラインを直接追加する — [方法を学ぶ](#adding-a-command-line-in-a-delivery-template)
 
->[!NOTE]
->
->ISP の「配信停止」ボタンが常に表示されるわけではありません。 実際、各 ISP の特定の条件やポリシーに依存する場合があります。 したがって、メッセージは IP/Sender によって送信されるようにしてください。
->
->* 評判の良い
->* ISP のスパム苦情数しきい値の下
->* 完全に認証済み
+* タイポロジルールの作成 — [方法を学ぶ](#creating-a-typology-rule)
 
-以下を実装できます。 **List-Unsubscribe** 次のいずれかを指定します。
-
-* 直接 [配信テンプレートへのコマンドラインの追加](#adding-a-command-line-in-a-delivery-template)
-* [タイポロジルールの作成](#creating-a-typology-rule)
-
-### 配信テンプレートへのコマンドラインの追加 {#adding-a-command-line-in-a-delivery-template}
+#### 配信またはテンプレートへのコマンドラインの追加 {#adding-a-command-line-in-a-delivery-template}
 
 コマンドラインを **[!UICONTROL 追加の SMTP ヘッダー]** E メールの SMTP ヘッダーのセクション。
 
@@ -190,9 +202,11 @@ Gmail、Outlook.comおよびMicrosoft Outlook はこの方法をサポートし�
 
 例えば、次のスクリプトを **[!UICONTROL 追加の SMTP ヘッダー]**: `List-Unsubscribe: mailto:unsubscribe@domain.com`
 
-![画像](../assets/List-Unsubscribe-template-SMTP.png)
-
 クリック **登録解除** リンクはunsubscribe@domain.comアドレスに電子メールを送信します。
+
+また、動的なアドレスを使用することもできます。 例えば、プラットフォームに対して定義されたエラーアドレスに E メールを送信するには、次のスクリプトを使用します。 `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
+
+![画像](../assets/List-Unsubscribe-template-SMTP.png)
 
 <!--
 List-Unsubscribe: mailto:unsubscribe@domain.com 
@@ -205,208 +219,206 @@ List-Unsubscribe: https://domain.com/unsubscribe.jsp
   ![image](../assets/UTF-8-1.png)
 -->
 
-### タイポロジルールの作成 {#creating-a-typology-rule}
+#### タイポロジルールの作成 {#creating-a-typology-rule}
 
 ルールには、コマンドラインを生成するスクリプトが含まれている必要があり、このルールをメールヘッダーに組み込む必要があります。
 
+Adobe Campaign v7/v8 でタイポロジルールを作成する方法については、 [この節](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+
 >[!NOTE]
 >
->タイポロジルールを作成することをお勧めします。各メールに List-Unsubscribe 機能が自動的に追加されます。
->
->Adobe Campaign v7/v8 でタイポロジルールを作成する方法については、 [この節](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
-
-<!--Can you explain precisely how to create the tyology rule in the UI and what should be added to this typology rule?-->
+>タイポロジルールを作成することをお勧めします。このタイポロジルールを使用して、各 E メールに List-Unsubscribe 機能が自動的に追加されます。
 
 ### ワンクリックリスト配信停止 {#one-click-list-unsubscribe}
 
-2024 年 6 月 1 日以降、Yahoo および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 この要件を満たすには、送信者は次の要件を満たす必要があります。
+2024 年 6 月 1 日より、Yahoo! および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 [この変更の詳細を表示](guidance-around-changes-to-google-and-yahoo.md)
 
-1. 次のコマンドラインを追加します。`List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
-1. URI 配信停止リンクを含めます。
-1. Adobe Campaignがサポートするレシーバーからの HTTPPOST応答の受信をサポートします。 外部サービスを使用することもできます。
+この要件を満たすには、送信者は次の要件を満たす必要があります。
 
-Adobe Campaign v7/v8 で One-Click List-Unsubscribe を直接設定するには：
+* 次のコマンドラインを追加します。 `List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
+* URI 配信停止リンクを含めます。
+* Adobe Campaignがサポートするレシーバーからの HTTPPOST応答の受信をサポートします。 外部サービスを使用することもできます。
 
-* 次の「受信者の購読解除 (no-click)」Web アプリケーションを追加します。 
-   1. リソース/オンライン/Web アプリケーションに移動します。
-   2. 「受信者の購読解除 (no-click)」をアップロード [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
+Adobe Campaign v7/v8 で One-Click List-Unsubscribe PSOT 応答を直接サポートするには、「Unsubscribe recipients no-click」Web アプリケーションにを追加する必要があります。 それには、以下の手順を実行します。
 
-ワンクリック List-Unsubscribe を設定するには、次のいずれかを実行します。
+1. に移動します。 **[!UICONTROL リソース]** > **[!UICONTROL オンライン]** > **[!UICONTROL Web アプリケーション]**.
 
-* [配信テンプレートにコマンドラインを追加する](#one-click-delivery-template)
-* [タイポロジルールの作成](#one-click-typology-rule)
+1. 「受信者の購読解除 (no-click)」をアップロード [XML](/help/assets/WebAppUnsubNoClick.xml.zip) ファイル。
 
-### 配信テンプレートでのワンクリックによる List-Unsubscribe の設定 {#one-click-delivery-template}
+を設定するには、以下を実行します。 **ワンクリック List-Unsubscribe**&#x200B;次のいずれかを実行できます。
 
-1. 配信プロパティの「 SMTP 」セクションに移動します。
-2. 「 Additional SMTP Headers 」で、以下のコマンドラインにを入力します。 各ヘッダーは別々の行に記述する必要があります。
+* 配信または配信テンプレートにコマンドラインを追加します。 [方法を学ぶ](#one-click-delivery-template)
+* タイポロジルールの作成 — [方法を学ぶ](#one-click-typology-rule)
 
-   ```
-   List-Unsubscribe-Post: List-Unsubscribe=One-Click
-   List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
-   ```
+#### 配信またはテンプレートでのワンクリックによる List-Unsubscribe の設定 {#one-click-delivery-template}
 
-上記の例では、One-Click をサポートする ISP の場合、One-Click List-Unsubscribe を有効にします。一方、URL List-Unsubscribe をサポートしていない受信者は、引き続き電子メールで配信停止を要求できます。
+1. 次に移動： **[!UICONTROL SMTP]** 」セクションに表示されます。
 
-### ワンクリック List-Unsubscribe をサポートするタイポロジルールの作成 {#one-click-typology-rule}
+1. の下 **[!UICONTROL 追加の SMTP ヘッダー]**&#x200B;に設定し、次の例のようにコマンドラインを入力します。 各ヘッダーは別々の行に記述する必要があります。
 
-**1.新しいタイポロジルールを作成する：**
-
-<!--Need to check screenshots?-->
-
-* ナビゲーションツリーで「新規」をクリックし、新しいタイポロジを作成します
-
-![画像](../assets/CreatingTypologyRules1.png)
-
-
-**2. 次の手順で、タイポロジルールを設定する：**
-
-* ルールタイプ：コントロール
-* フェーズ：ターゲティングの開始時
-* チャネル：メール
-* レベル：任意の選択
-* アクティブ
-
-
-![画像](../assets/CreatingTypologyRules2.png)
-
-
-**タイポロジルールの JavaScript をコード化する：**
-
-
->[!NOTE]
->
->以下で説明するコードは、例としてのみ参照してください。
->この例では、次の方法を詳しく説明します。
->* URL List-Unsubscribe を設定し、ヘッダーを追加するか、既存の mailto: パラメーターを追加して、&lt;mailto..>, https://… に置き換えます
->* List-Unsubscribe-Post ヘッダーを追加する
->投稿 URL の例では、var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= recipient.cryptedId %>&quot;÷ を使用します
->* 他のパラメーター（like &amp;service = ... など）を追加できます
->
-
+以下に例を示します。
 
 ```
-// Function to add or replace a header in the provided headers 
-function addHeader(headers, header, value)  { 
-    
-  // Create the new header line 
-  var headerLine = header + ": " + value; 
-    
-  // Create a regular expression to find the specified header 
-  var regExp = new RegExp(header + ":(.*)$", "i") 
-    
-  // Split the headers into individual lines 
-  var headerLines = headers.split("\n"); 
-    
-  // Loop through each line 
-  for (var i=0; i < headerLines.length; i++) { 
-      
-    // Check if the specified header exists 
-    var match = headerLines[i].match(regExp) 
-      
-    // If it exists 
-    if ( match != null ) { 
-        
-      // Replace the existing header line 
-      headerLines[i] = headerLine; 
-        
-      // Return the modified headers 
-      return headerLines.join("\n"); 
-    } 
-  } 
-    
-  // If the header does not exist, add the new header line 
-  headerLines.push(headerLine); 
-    
-  // Return the modified headers 
-  return headerLines.join("\n"); 
-} 
-  
-// Function to get the value of a specified header from the provided headers 
-function getHeader(headers, header) { 
-    
-  // Create a regular expression to find the specified header 
-  var regExp = new RegExp(header + ":(.*)$", "i") 
-    
-  // Split the headers into individual lines 
-  var headerLines = headers.split("\n"); 
-    
-  // Loop each line 
-  for each (line in headerLines) { 
-      
-    // Check if the specified header exists 
-    var match = line.match(regExp); 
-      
-    // If it exists 
-    if ( match != null ) { 
-        
-      // Return the header value, removing leading whitespace 
-      return match[1].replace(/^\s*/, ""); 
-    } 
-  } 
-    
-  // If the header does not exist, return an empty string 
-  return ""; 
-} 
-  
-  
-// Define the unsubscribe URL 
-var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"; 
-  
-// Get the value of the List-Unsubscribe header 
-var headerUnsub = getHeader(delivery.mailParameters.headers, "List-Unsubscribe"); 
-  
-// If the List-Unsubscribe header does not exist 
-if ( headerUnsub === "" ) { 
-  // Add the List-Unsubscribe header 
-  delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe", "<"+headerUnsubUrl+">"); 
-} 
-// If the List-Unsubscribe header exists and contains 'mailto' 
-else if(headerUnsub.search('mailto')){ 
-  // Replace the existing List-Unsubscribe header 
-  delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe", "<"+headerUnsubUrl+">"); 
-} 
-  
-// Get the value of the List-Unsubscribe-Post header 
-var headerUnsubPost = getHeader(delivery.mailParameters.headers, "List-Unsubscribe-Post"); 
-  
-// If the List-Unsubscribe-Post header does not exist 
-if ( headerUnsubPost === "" ) { 
-  // Add the List-Unsubscribe-Post header 
-  delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe-Post", "List-Unsubscribe=One-Click"); 
-} 
-  
-// Return true to indicate success 
-return true; 
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
+![画像](../assets/List-Unsubscribe-1-click-template-SMTP.png)
+
+上記の例では、One-Click をサポートする ISP に対して、One-Click List-Unsubscribe を有効にします。一方、&quot;mailto&quot;をサポートしない受信者は、引き続きメールを使用して配信停止を要求できます。
+
+#### ワンクリック List-Unsubscribe をサポートするタイポロジルールの作成 {#one-click-typology-rule}
+
+1. ナビゲーションツリーで、に移動します。 **[!UICONTROL タイポロジルール]** をクリックします。 **[!UICONTROL 新規]**.
+
+   ![画像](../assets/CreatingTypologyRules1.png)
 
 
-![画像](../assets/CreatingTypologyRules3.png)
+1. 次のような新しいタイポロジルールを設定します。
+
+   * **[!UICONTROL ルールタイプ]**: **[!UICONTROL 制御]**
+   * **[!UICONTROL フェーズ]**: **[!UICONTROL ターゲティングの開始時]**
+   * **[!UICONTROL チャネル]**: **[!UICONTROL 電子メール]**
+   * **[!UICONTROL レベル]**：選択肢
+   * **[!UICONTROL アクティブ]**
 
 
+   ![画像](../assets/CreatingTypologyRules2.png)
 
-**3.新しいルールをメールのタイポロジーに追加（デフォルトのタイポロジも使用可）：**
+1. 以下の例に示すように、タイポロジルールの JavaScript をコード化します。
 
-![画像](../assets/CreatingTypologyRules4.png)
+   >[!NOTE]
+   >
+   >以下で説明するコードは、例としてのみ参照してください。
+
+   この例では、次の方法を詳しく説明します。
+   * &quot;mailto&quot; List-Unsubscribe を設定します。 ヘッダーを追加するか、既存の「mailto:」パラメータを追加し、次と置き換えます。 &lt;mailto..>>, https://....
+   * One-Click List-Unsubscribe ヘッダーにを追加します。 次を使用します。 `var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷`
+
+   >[!NOTE]
+   >
+   >他のパラメーター（&amp;service =...など）を追加できます。
+
+   ```
+   // Function to add or replace a header in the provided headers 
+   function addHeader(headers, header, value)  { 
+       
+     // Create the new header line 
+     var headerLine = header + ": " + value; 
+       
+     // Create a regular expression to find the specified header 
+     var regExp = new RegExp(header + ":(.*)$", "i") 
+       
+     // Split the headers into individual lines 
+     var headerLines = headers.split("\n"); 
+       
+     // Loop through each line 
+     for (var i=0; i < headerLines.length; i++) { 
+         
+       // Check if the specified header exists 
+       var match = headerLines[i].match(regExp) 
+         
+       // If it exists 
+       if ( match != null ) { 
+           
+         // Replace the existing header line 
+         headerLines[i] = headerLine; 
+           
+         // Return the modified headers 
+         return headerLines.join("\n"); 
+       } 
+     } 
+       
+     // If the header does not exist, add the new header line 
+     headerLines.push(headerLine); 
+       
+     // Return the modified headers 
+     return headerLines.join("\n"); 
+   } 
+     
+   // Function to get the value of a specified header from the provided headers 
+   function getHeader(headers, header) { 
+       
+     // Create a regular expression to find the specified header 
+     var regExp = new RegExp(header + ":(.*)$", "i") 
+       
+     // Split the headers into individual lines 
+     var headerLines = headers.split("\n"); 
+       
+     // Loop each line 
+     for each (line in headerLines) { 
+         
+       // Check if the specified header exists 
+       var match = line.match(regExp); 
+         
+       // If it exists 
+       if ( match != null ) { 
+           
+         // Return the header value, removing leading whitespace 
+         return match[1].replace(/^\s*/, ""); 
+       } 
+     } 
+       
+     // If the header does not exist, return an empty string 
+     return ""; 
+   } 
+     
+     
+   // Define the unsubscribe URL 
+   var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"; 
+     
+   // Get the value of the List-Unsubscribe header 
+   var headerUnsub = getHeader(delivery.mailParameters.headers, "List-Unsubscribe"); 
+     
+   // If the List-Unsubscribe header does not exist 
+   if ( headerUnsub === "" ) { 
+     // Add the List-Unsubscribe header 
+     delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe", "<"+headerUnsubUrl+">"); 
+   } 
+   // If the List-Unsubscribe header exists and contains 'mailto' 
+   else if(headerUnsub.search('mailto')){ 
+     // Replace the existing List-Unsubscribe header 
+     delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe", "<"+headerUnsubUrl+">"); 
+   } 
+     
+   // Get the value of the List-Unsubscribe-Post header 
+   var headerUnsubPost = getHeader(delivery.mailParameters.headers, "List-Unsubscribe-Post"); 
+     
+   // If the List-Unsubscribe-Post header does not exist 
+   if ( headerUnsubPost === "" ) { 
+     // Add the List-Unsubscribe-Post header 
+     delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe-Post", "List-Unsubscribe=One-Click"); 
+   } 
+     
+   // Return true to indicate success 
+   return true; 
+   ```
 
 
+   ![画像](../assets/CreatingTypologyRules3.png)
 
-**4. 新しい配信を準備する（配信プロパティの追加の SMTP ヘッダーが空であることを確認）**
+1. E メールに適用するタイポロジに新しいルールを追加します。
 
-![画像](../assets/CreatingTypologyRules5.png)
+   >[!NOTE]
+   >
+   >これをデフォルトのタイポロジに追加できます。
 
+   ![画像](../assets/CreatingTypologyRules4.png)
 
+1. 新しい配信を準備します。
 
-**5. 配信の準備中に、新しいタイポロジルールが適用されていることを確認します。**
+   >[!CAUTION]
+   >
+   >次を確認します。 **[!UICONTROL 追加の SMTP ヘッダー]** 配信プロパティのフィールドが空です。
 
-![画像](../assets/CreatingTypologyRules6.png)
+   ![画像](../assets/CreatingTypologyRules5.png)
 
+1. 配信の準備中に、新しいタイポロジルールが適用されていることを確認します。
 
+   ![画像](../assets/CreatingTypologyRules6.png)
 
-**6.List-Unsubscribe が存在することを検証します。**
+1. 配信停止リンクが存在することを確認します。
 
-![画像](../assets/CreatingTypologyRules7.png)
-
+   ![画像](../assets/CreatingTypologyRules7.png)
 
 ## E メールの最適化 {#email-optimization}
 
