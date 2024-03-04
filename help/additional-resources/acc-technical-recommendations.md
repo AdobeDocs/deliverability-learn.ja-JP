@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 3ceca47634f946488115ccbef5cb9ffb5aba8b07
+source-git-commit: 12bd5f583476dad0eac9641389ce35b40dc5136c
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 48%
+source-wordcount: '2109'
+ht-degree: 49%
 
 ---
 
@@ -165,9 +165,7 @@ List-Unsubscribe ヘッダー機能には、次の 2 つのバージョンがあ
 
 >[!IMPORTANT]
 >
->2024 年 6 月 1 日より、Yahoo! また、Gmail は、送信者に対して、次の条件に従うよう求めます： **ワンクリック List-Unsubscribe**. [この変更の詳細を表示](../guidance-around-changes-to-google-and-yahoo.md)
->
->でのワンクリックリスト配信停止の設定方法を説明します。 [この節](#one-click-list-unsubscribe).
+>>でのワンクリックリスト配信停止の設定方法を説明します。 [この節](#one-click-list-unsubscribe).
 
 ### &quot;mailto&quot; List-Unsubscribe {#mailto-list-unsubscribe}
 
@@ -223,8 +221,6 @@ Adobe Campaign v7/v8 でタイポロジルールを作成する方法につい�
 ### ワンクリック List-Unsubscribe {#one-click-list-unsubscribe}
 
 この方法では、 **配信停止** リンクは、ユーザーを直接購読解除します。購読解除には 1 つのアクションのみが必要です。
-
-2024 年 6 月 1 日より、Yahoo! および Gmail では、送信者がワンクリックリスト配信停止に準拠する必要があります。 [この変更の詳細を表示](../guidance-around-changes-to-google-and-yahoo.md)
 
 この要件を満たすには、送信者は次の要件を満たす必要があります。
 
