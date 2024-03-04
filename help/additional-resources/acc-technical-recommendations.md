@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: ffa2e9788326389ae2e4da6e272367cdc837b72e
+source-git-commit: 3ceca47634f946488115ccbef5cb9ffb5aba8b07
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 48%
@@ -232,7 +232,7 @@ Adobe Campaign v7/v8 でタイポロジルールを作成する方法につい�
 * URI 配信停止リンクを含めます。
 * Adobe Campaignがサポートするレシーバーからの HTTPPOST応答の受信をサポートします。 外部サービスを使用することもできます。
 
-Adobe Campaign v7/v8 で One-Click List-Unsubscribe PSOT 応答を直接サポートするには、「Unsubscribe recipients no-click」Web アプリケーションにを追加する必要があります。 それには、以下の手順を実行します。
+Adobe Campaign v7/v8 で One-Click List-UnsubscribePOSTの応答を直接サポートするには、「Unsubscribe recipients no-click」Web アプリケーションにを追加する必要があります。 それには、以下の手順を実行します。
 
 1. に移動します。 **[!UICONTROL リソース]** > **[!UICONTROL オンライン]** > **[!UICONTROL Web アプリケーション]**.
 
