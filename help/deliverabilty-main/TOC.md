@@ -6,9 +6,9 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: 12bd5f583476dad0eac9641389ce35b40dc5136c
+source-git-commit: f79df94a991939a1599a751f9d758f14ce328e12
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '183'
 ht-degree: 97%
 
 ---
@@ -46,6 +46,7 @@ ht-degree: 97%
 + [実際の利用](/help/putting-it-in-practice.md)
 + 付録：追加のリソース {#additional-resources}
    + [概要](/help/additional-resources/general-resources.md)
+   + [Yahoo と Gmail のアップデート](/help/guidance-around-changes-to-google-and-yahoo.md)
    + [配信停止と配信停止](/help/unsubscribe-dos-and-do-nots.md)
    + 汎用リソース {#generic-resources}
       + [スパムトラップに関するすべて](/help/additional-resources/all-about-spam-traps.md)
