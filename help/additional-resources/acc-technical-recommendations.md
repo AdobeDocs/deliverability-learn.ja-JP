@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 12bd5f583476dad0eac9641389ce35b40dc5136c
+source-git-commit: b163628adde1e4d7225a1c2c54d29b24e2b2a352
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 49%
+source-wordcount: '2128'
+ht-degree: 48%
 
 ---
 
@@ -159,13 +159,11 @@ List-Unsubscribe ヘッダー機能には、次の 2 つのバージョンがあ
 
 * **&quot;mailto&quot; List-Unsubscribe**  — この方法では、 **配信停止** リンクは、e メールヘッダーで指定された配信停止アドレスに、事前入力済みの e メールを送信します。 [詳細情報](#mailto-list-unsubscribe)
 
-<!--OR: With this method, clicking the **Unsubscribe** link opens the user's default email client with a pre-filled email to the unsubscribe address specified in the email header. This allows the user to unsubscribe simply by sending the email without any further manual steps.-->
-
 * **「ワンクリック」List-Unsubscribe**  — この方法では、 **配信停止** リンクは、ユーザーを直接購読解除します。 [詳細情報](#one-click-list-unsubscribe)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->>でのワンクリックリスト配信停止の設定方法を説明します。 [この節](#one-click-list-unsubscribe).
+>2024 年 6 月 1 日以降、主要な ISP では、送信者がに準拠する必要が生じます。 **ワンクリック List-Unsubscribe**.
 
 ### &quot;mailto&quot; List-Unsubscribe {#mailto-list-unsubscribe}
 
@@ -197,17 +195,6 @@ List-Unsubscribe ヘッダー機能には、次の 2 つのバージョンがあ
 
 ![画像](../assets/List-Unsubscribe-template-SMTP.png)
 
-<!--
-List-Unsubscribe: mailto:unsubscribe@domain.com 
-* Clicking the **unsubscribe** link opens the user's default email client. This typology rule must be added in a typology used for creating email.
-
-List-Unsubscribe: https://domain.com/unsubscribe.jsp 
-
-* Clicking the **unsubscribe** link redirects the user to your unsubscribe form.
-
-  ![image](../assets/UTF-8-1.png)
--->
-
 #### タイポロジルールの作成 {#creating-a-typology-rule}
 
 ルールには、コマンドラインを生成するスクリプトが含まれている必要があり、このルールをメールヘッダーに組み込む必要があります。
@@ -221,6 +208,8 @@ Adobe Campaign v7/v8 でタイポロジルールを作成する方法につい�
 ### ワンクリック List-Unsubscribe {#one-click-list-unsubscribe}
 
 この方法では、 **配信停止** リンクは、ユーザーを直接購読解除します。購読解除には 1 つのアクションのみが必要です。
+
+2024 年 6 月 1 日以降、主要な ISP では、送信者がに準拠する必要が生じます。 **ワンクリック List-Unsubscribe**.
 
 この要件を満たすには、送信者は次の要件を満たす必要があります。
 
