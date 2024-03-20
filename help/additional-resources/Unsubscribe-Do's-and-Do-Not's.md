@@ -1,7 +1,7 @@
 ---
-source-git-commit: 758bc4144e09c53883d682a480f5f52a25c98111
+source-git-commit: e5b40a9f0a58f70066c5210053cfd88fc938bb65
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '916'
 ht-degree: 0%
 
 ---
@@ -45,8 +45,6 @@ ht-degree: 0%
 + 購読者にオプションを提供しても問題ありません。これは、環境設定センターやオプトダウンイニシアティブで管理できます。
 
 **以下を実行します。** E メールテンプレートで「リスト配信停止」ヘッダーを使用すると、E メールの上部に配信停止リンクを表示する E メールクライアント (gmail.comなど ) を、ユーザーが配信停止を探すのに慣れている場所で簡単に見つけることができます。
-
-+ クリック [ここ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html?lang=ja) ワンクリックでの購読解除に関する業界の取り組みの詳細を確認するには、以下を参照してください。
 
 ## Do Not&#39;s
 
