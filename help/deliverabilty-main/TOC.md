@@ -7,9 +7,9 @@ role: Leader, User
 level: Beginner
 auto-video-transcripts: true
 source-git-commit: 0d78f4c588ae55c61a7e40e07a3b8d33ce84cb01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 + [実際の利用](/help/putting-it-in-practice.md)
 + 付録：追加のリソース {#additional-resources}
    + [概要](/help/additional-resources/general-resources.md)
-   + [配信停止と配信停止](/help/unsubscribe-dos-and-do-nots.md)
+   + [登録解除の注意事項](/help/unsubscribe-dos-and-do-nots.md)
    + 汎用リソース {#generic-resources}
       + [スパムトラップに関するすべて](/help/additional-resources/all-about-spam-traps.md)
       + [IP ウォーミングによる電子メールの評判の向上](/help/additional-resources/increase-reputation-with-ip-warming.md)
