@@ -15,11 +15,11 @@ ht-degree: 48%
 
 # Campaign Classic - 技術的なレコメンデーション {#technical-recommendations}
 
-Adobe Campaign Classicを使用する際に配信品質の割合を向上させるために使用できるテクニック、設定、ツールのいくつかを以下に示します。
+Adobe Campaign Classicを使用する際に、配信品質を向上させるために使用できるテクニック、設定およびツールを以下に示します。
 
 ## 設定 {#configuration}
 
-### リバース DNS {#reverse-dns}
+### 逆引き DNS {#reverse-dns}
 
 Adobe Campaign は、IP アドレスに対してリバース DNS が提供されているかどうか、そのリバース DNS が正しく IP を指しているかどうかを確認します。
 
@@ -29,17 +29,17 @@ Adobe Campaign は、IP アドレスに対してリバース DNS が提供され
 
 >[!NOTE]
 >
->以下を使用できます。 [この外部ツール](https://mxtoolbox.com/SuperTool.aspx) をクリックして、ドメインの設定を検証します。
+>[ この外部ツール ](https://mxtoolbox.com/SuperTool.aspx) を使用して、ドメインの設定を検証できます。
 
 ### MX ルール {#mx-rules}
 
 MX（Mail eXchanger）ルールは、送信サーバーと受信サーバーの間の通信を管理するルールです。
 
-より正確に言えば、Adobe Campaign MTA(Message Transfer Agent) が E メールを個々の E メールドメインまたは ISP(hotmail.com、comcast.netなど ) に送信する速度を制御するために使用されます。 これらのルールは、通常、ISP によって公開された制限に基づいています（例えば、各 SMTP 接続につき 20 を超えるメッセージを含めないようにします）。
+より正確には、Adobe Campaign MTA （Message Transfer Agent）が個々のメールドメインまたは ISP （例：hotmail.com、comcast.net）にメールを送信する速度を制御するために使用されます。 これらのルールは通常、ISP によって公開された制限に基づいています（例えば、各 SMTP 接続ごとに 20 を超えるメッセージを含めないようにします）。
 
 >[!NOTE]
 >
->Adobe Campaign Classicでの MX 管理について詳しくは、 [この節](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration).
+>Adobe Campaign Classicの MX 管理について詳しくは、[ この節 ](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration) を参照してください。
 
 ### TLS {#tls}
 
@@ -47,7 +47,7 @@ TLS（トランスポート層セキュリティ）は、暗号化プロトコ�
 
 ### 送信者のドメイン {#sender-domain}
 
-HELO コマンドに使用するドメインを定義するには、インスタンスの設定ファイル (conf/config-instance.xml) を編集し、次のように「localDomain」属性を定義します。
+HELO コマンドに使用するドメインを定義するには、インスタンスの設定ファイル（conf/config-instance.xml）を編集し、「localDomain」属性を次のように定義します。
 
 ```
 <serverConf>
@@ -57,32 +57,32 @@ HELO コマンドに使用するドメインを定義するには、インスタ
 </serverConf>
 ```
 
-MAIL FROM ドメインは、技術的なバウンスメッセージで使用されるドメインです。 このアドレスは、デプロイウィザードで、または NmsEmail_DefaultErrorAddr オプションを使用して定義されます。
+MAIL FROM ドメインは、技術的なバウンスメッセージで使用されるドメインです。 このアドレスは、デプロイメントウィザードで、または NmsEmail_DefaultErrorAddr オプションを使用して定義します。
 
 ### SPF レコード {#dns-configuration}
 
-SPF レコードは、現在、DNS サーバー上で TXT タイプのレコード（コード 16）または SPF タイプのレコード（コード 99）として定義できます。 SPF レコードは、文字列の形式を取ります。 以下に例を示します。
+SPF レコードは、現在、DNS サーバーで TXT タイプのレコード（コード 16）または SPF タイプのレコード（コード 99）として定義できます。 SPF レコードは、文字列の形式を取ります。 例：
 
 ```
 v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 ```
 
-は、ドメイン用の e メールを送信する権限を持つ 2 つの IP アドレス (12.34.56.78と12.34.56.79) を定義します。 **～すべて** は、その他のアドレスが SoftFail と解釈される必要があることを意味します。
+ドメインのメールを送信するために許可される 2 つの IP アドレス（12.34.56.78 と 12.34.56.79）を定義します。 **～all** は、その他のアドレスは SoftFail として解釈される必要があることを意味します。
 
-Recommendations :SPF レコードを定義します。
+SPF レコードを定義するためのRecommendations:
 
-* 追加 **～すべて** (SoftFail) または **-all** （失敗）最後に、定義された以外のすべてのサーバーを拒否します。 これがなければ、サーバは（Neutral 評価を使用して）このドメインを構築できます。
-* 追加しない **ptr** (openspf.orgは、コストが高く信頼できないとして、これに対するお勧めです )。
+* 定義されたサーバー以外のすべてのサーバーを拒否するには、末尾に **～all** （SoftFail）または **-all** （Fail）を追加します。 これがないと、サーバーはこのドメインを（中立的な評価で）偽造することができます。
+* **ptr** を追加しないでください（openspf.orgでは、コストがかかり信頼性が低いとしてこれを推奨しています）。
 
 >[!NOTE]
 >
->での SPF の詳細 [この節](/help/additional-resources/authentication.md#spf).
+>SPF について詳しくは、[ この節 ](/help/additional-resources/authentication.md#spf) を参照してください。
 
 ## 認証
 
 >[!NOTE]
 >
->様々な形式の E メール認証について詳しくは、 [この節](/help/additional-resources/authentication.md).
+>様々なメール認証フォームについて詳しくは、[ この節 ](/help/additional-resources/authentication.md) を参照してください。
 
 ### DKIM {#dkim-acc}
 
@@ -90,17 +90,17 @@ Recommendations :SPF レコードを定義します。
 >
 >ホストインストールまたはハイブリッドインストールで [Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages) にアップグレードした場合、すべてのドメインのすべてのメッセージに対する DKIM のメール認証署名は、Enhanced MTA がおこないます。
 
-使用 [DKIM](/help/additional-resources/authentication.md#dkim) Adobe Campaign Classicを使用するには、次の前提条件が必要です。
+Adobe Campaign Classicで [DKIM](/help/additional-resources/authentication.md#dkim) を使用するには、次の前提条件が必要です。
 
-**Adobe Campaignオプション宣言**:Adobe Campaignでは、DKIM 秘密鍵は DKIM セレクターとドメインに基づきます。 同じドメイン／サブドメインに対して、セレクターの異なる複数の秘密鍵を作成することは、現時点ではできません。プラットフォームでもメールでも、どのセレクタードメイン／サブドメインを認証に使用すべきかを定義することはできません。プラットフォームでは、その代わりに、秘密鍵のいずれか 1 つを選択します。つまり、認証は失敗する可能性が高くなります。
+**Adobe Campaign オプション宣言**: Adobe Campaignでは、DKIM 秘密鍵は DKIM セレクターおよびドメインに基づいています。 同じドメイン／サブドメインに対して、セレクターの異なる複数の秘密鍵を作成することは、現時点ではできません。プラットフォームでもメールでも、どのセレクタードメイン／サブドメインを認証に使用すべきかを定義することはできません。プラットフォームでは、その代わりに、秘密鍵のいずれか 1 つを選択します。つまり、認証は失敗する可能性が高くなります。
 
-* お使いの Adobe Campaign インスタンスに DomainKeys を設定してある場合は、[ドメイン管理ルール](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)で **dkim** を選択するだけです。そうでない場合は、DomainKeys（DKIM に代わる）と同じ設定手順（秘密鍵/公開鍵）に従います。
+* お使いの Adobe Campaign インスタンスに DomainKeys を設定してある場合は、[ドメイン管理ルール](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)で **dkim** を選択するだけです。そうでない場合は、DomainKeys （DKIM の代わり）と同じ設定手順（秘密鍵/公開鍵）に従います。
 * DKIM は DomainKeys の改良版なので、同じドメインに DomainKeys と DKIM の両方を有効にする必要はありません。
 * 現在 DKIM が有効になっているドメインは、AOL および Gmail です。
 
 ## フィードバックループ {#feedback-loop-acc}
 
-メッセージの送信に使用される IP アドレスの範囲に対して、特定のメールアドレスを ISP レベルで宣言することにより、フィードバックループが機能します。ISP では、受信者からスパムとして報告されたメッセージを、バウンスメッセージの場合と同様の方法で、このメールボックスに送信します。苦情を訴えたユーザーへの今後の配信をブロックするように、プラットフォームを設定する必要があります。これらのユーザーが正しいオプトアウトリンクを使用しなかったとしても、そうしたユーザーにはもう連絡しないことが重要です。ISP が苦情に基づいて、IP アドレスをそのに追加すブロックリストに加えるる。 ISP によっては、苦情率がおよそ 1％になると、IP アドレスがブロックリストに登録されます。
+メッセージの送信に使用される IP アドレスの範囲に対して、特定のメールアドレスを ISP レベルで宣言することにより、フィードバックループが機能します。ISP では、受信者からスパムとして報告されたメッセージを、バウンスメッセージの場合と同様の方法で、このメールボックスに送信します。苦情を訴えたユーザーへの今後の配信をブロックするように、プラットフォームを設定する必要があります。これらのユーザーが正しいオプトアウトリンクを使用しなかったとしても、そうしたユーザーにはもう連絡しないことが重要です。ISP がブロックリストに IP アドレスを追加するのは、これらの苦情に基づいています。 ISP によっては、苦情率がおよそ 1％になると、IP アドレスがブロックリストに登録されます。
 
 フィードバックループメッセージの形式を定義する標準 [Abuse Feedback Reporting Format（ARF）](https://tools.ietf.org/html/rfc6650)が現在策定中です。
 
@@ -139,59 +139,59 @@ Adobe Campaign の配信品質サービスは、以下の ISP のフィードバ
 
 配信品質の最適な管理を実現するには、**List-Unsubscribe** という SMTP ヘッダーを付けることが不可欠です。
 
-このヘッダーは、「スパムとして報告」アイコンの代わりに使用できます。ISP の E メールインターフェイスでは、「配信停止」リンクとして表示されます。
+このヘッダーは、「スパムとして報告」アイコンの代わりに使用できます。これは、ISP のメールインターフェイスに「購読解除」リンクとして表示されます。
 
-この機能を使用すると、苦情率が下がり、評判を守るのに役立ちます。 フィードバックは購読解除として実行されます。
+この機能を使用すると、苦情の発生率が低下し、評判を保護するのに役立ちます。 フィードバックは、登録解除として実行されます。
 
-Gmail、Outlook.com、Yahoo! とMicrosoft Outlook はこの方法をサポートしています。 「購読解除」リンクは、各ユーザーのインターフェイスで直接使用できます。 以下に例を示します。
+Gmail、Outlook.com、Yahoo! Microsoft Outlook では、この方法をサポートしています。 「登録解除」リンクは、インターフェイスで直接使用できます。 例：
 
 ![画像](../assets/List-Unsubscribe-example-Gmail.png)
 
 >[!NOTE]
 >
->「配信停止」リンクが常に表示されるとは限りません。 実際、各 ISP の特定の条件やポリシーに依存する場合があります。 したがって、メッセージは送信者から送信されたものとします。
+>「購読解除」リンクは常に表示されるとは限りません。 実際には、各 ISP の特定の基準とポリシーに依存する可能性があります。 したがって、メッセージが送信者によって送信されていることを確認します。
 >
 >* 評判の良い
->* ISP のスパム苦情数しきい値の下
->* 完全に認証済み
+>* ISP のスパム報告しきい値の下
+>* 完全認証済み
 
 List-Unsubscribe ヘッダー機能には、次の 2 つのバージョンがあります。
 
-* **&quot;mailto&quot; List-Unsubscribe**  — この方法では、 **配信停止** リンクは、e メールヘッダーで指定された配信停止アドレスに、事前入力済みの e メールを送信します。 [詳細情報](#mailto-list-unsubscribe)
+* **「mailto」 List-Unsubscribe** – このメソッドで **購読解除** リンクをクリックすると、メールヘッダーで指定された購読解除アドレスに事前入力されたメールが送信されます。 [詳細情報](#mailto-list-unsubscribe)
 
-* **「ワンクリック」List-Unsubscribe**  — この方法では、 **配信停止** リンクは、ユーザーを直接購読解除します。 [詳細情報](#one-click-list-unsubscribe)
+* **「ワンクリック」リスト – 購読解除** – このメソッドで、**購読解除** リンクをクリックすると、ユーザーの購読が直接解除されます。 [詳細情報](#one-click-list-unsubscribe)
 
 >[!NOTE]
 >
->2024 年 6 月 1 日以降、主要な ISP では、送信者がに準拠する必要が生じます。 **ワンクリック List-Unsubscribe**.
+>2024 年 6 月 1 日（PT）以降、主要な ISP は、送信者に対して、**ワンクリックリスト – 登録解除** に準拠するよう求めるようになります。
 
-### &quot;mailto&quot; List-Unsubscribe {#mailto-list-unsubscribe}
+### 「mailto」リスト – 購読解除 {#mailto-list-unsubscribe}
 
-この方法では、 **配信停止** リンクは、e メールヘッダーで指定された配信停止アドレスに、事前入力済みの e メールを送信します。
+このメソッドでは、「購読解除 **リンクをクリックすると、メール** ヘッダーで指定された購読解除アドレスに事前入力されたメールが送信されます。
 
-&quot;mailto&quot; List-Unsubscribe を使用するには、次のようなメールアドレスを指定するコマンドラインを入力する必要があります。 `List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`
+「mailto」 List-Unsubscribe を使用するには、メールアドレスを指定するコマンドラインを入力する必要があります。例：`List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`
 
 >[!CAUTION]
 >
 >上記の例は受信者テーブルに基づいています。データベースの実装が別のテーブルに基づいておこなわれている場合は、正しい情報を反映するようにコマンドラインを修正する必要があります。
 
-また、次のようなコマンドラインを使用して、動的な&quot;mailto&quot; List-Unsubscribe を作成することもできます。 `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
+`List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>` のようなコマンドラインを使用して、動的な「mailto」 List-Unsubscribe を作成することもできます。
 
-実装するには **&quot;mailto&quot; List-Unsubscribe** Campaign では、次のいずれかを実行できます。
+Campaign に **mailto」 List-Unsubscribe** を実装するには、次のいずれかを実行します。
 
-* 配信または配信テンプレートにコマンドラインを直接追加する — [方法を学ぶ](#adding-a-command-line-in-a-delivery-template)
+* 配信または配信テンプレートへのコマンドラインの直接追加 – [ 詳細 ](#adding-a-command-line-in-a-delivery-template)
 
-* タイポロジルールの作成 — [方法を学ぶ](#creating-a-typology-rule)
+* タイポロジルールの作成 – [ 詳細 ](#creating-a-typology-rule)
 
 #### 配信またはテンプレートへのコマンドラインの追加 {#adding-a-command-line-in-a-delivery-template}
 
-コマンドラインを **[!UICONTROL 追加の SMTP ヘッダー]** E メールの SMTP ヘッダーのセクション。
+コマンドラインをメールの SMTP ヘッダーの **[!UICONTROL 追加の SMTP ヘッダー]** セクションに追加する必要があります。
 
 この追加はメールごとにおこなうこともできますし、既存の配信テンプレートでおこなうこともできます。また、この機能を組み込んだ配信テンプレートを新しく作成することもできます。
 
-例えば、次のスクリプトを **[!UICONTROL 追加の SMTP ヘッダー]** フィールド： `List-Unsubscribe: mailto:unsubscribe@domain.com`. クリック **登録解除** リンクはunsubscribe@domain.comアドレスに電子メールを送信します。
+例えば、「**[!UICONTROL 追加の SMTP ヘッダー]**」フィールドに次のスクリプトを入力します。`List-Unsubscribe: mailto:unsubscribe@domain.com`。 **登録解除** リンクをクリックすると、unsubscribe@domain.com アドレスにメールが送信されます。
 
-また、動的なアドレスを使用することもできます。 例えば、プラットフォームに対して定義されたエラーアドレスに E メールを送信するには、次のスクリプトを使用します。 `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
+また、動的アドレスを使用することもできます。 例えば、プラットフォーム用に定義されたエラーアドレスにメールを送信するには、次のスクリプトを使用できます。`List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
 ![画像](../assets/List-Unsubscribe-template-SMTP.png)
 
@@ -199,44 +199,44 @@ List-Unsubscribe ヘッダー機能には、次の 2 つのバージョンがあ
 
 ルールには、コマンドラインを生成するスクリプトが含まれている必要があり、このルールをメールヘッダーに組み込む必要があります。
 
-Adobe Campaign v7/v8 でタイポロジルールを作成する方法については、 [この節](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+Adobe Campaign v7/v8 でタイポロジルールを作成する方法については、[ この節 ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules) を参照してください。
 
 >[!NOTE]
 >
->タイポロジルールを作成することをお勧めします。このタイポロジルールを使用して、各 E メールに List-Unsubscribe 機能が自動的に追加されます。
+>タイポロジルールを作成することをお勧めします。このタイポロジルールを使用すると、各メールにリスト – 購読解除機能が自動的に追加されます。
 
-### ワンクリック List-Unsubscribe {#one-click-list-unsubscribe}
+### ワンクリックリスト – 登録解除 {#one-click-list-unsubscribe}
 
-この方法では、 **配信停止** リンクは、ユーザーを直接購読解除します。購読解除には 1 つのアクションのみが必要です。
+このメソッドを使用すると、「購読解除 **リンクをクリックすると、ユーザーの購読が直接解除され** す。購読解除には 1 つのアクションのみが必要です。
 
-2024 年 6 月 1 日以降、主要な ISP では、送信者がに準拠する必要が生じます。 **ワンクリック List-Unsubscribe**.
+2024 年 6 月 1 日（PT）以降、主要な ISP は、送信者に対して、**ワンクリックリスト – 登録解除** に準拠するよう求めるようになります。
 
-この要件を満たすには、送信者は次の要件を満たす必要があります。
+この要件に準拠するには、送信者は次の操作を行う必要があります。
 
-* 次のコマンドラインを追加します。 `List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
-* URI 配信停止リンクを含めます。
-* Adobe Campaignがサポートするレシーバーからの HTTPPOST応答の受信をサポートします。 外部サービスを使用することもできます。
+* コマンドライン `List-Unsubscribe-Post: List-Unsubscribe=One-Click` を追加します。
+* URI 登録解除リンクを含めます。
+* Adobe Campaignがサポートする、受信者からの HTTP POST応答の受信をサポートします。 外部サービスを使用することもできます。
 
-Adobe Campaign v7/v8 で One-Click List-UnsubscribePOSTの応答を直接サポートするには、「Unsubscribe recipients no-click」Web アプリケーションにを追加する必要があります。 それには、以下の手順を実行します。
+Adobe Campaign v7/v8 で直接ワンクリックリスト – 登録解除POST応答をサポートするには、「受信者の登録解除 – クリックなし」 web アプリケーションにを追加する必要があります。 それには、以下の手順を実行します。
 
-1. に移動します。 **[!UICONTROL リソース]** > **[!UICONTROL オンライン]** > **[!UICONTROL Web アプリケーション]**.
+1. **[!UICONTROL リソース]**/**[!UICONTROL オンライン]**/**[!UICONTROL web アプリケーション]** に移動します。
 
-1. 「受信者の購読解除 (no-click)」をアップロード [XML](/help/assets/WebAppUnsubNoClick.xml.zip) ファイル。
+1. 「受信者の登録解除のクリックなし」 [XML](/help/assets/WebAppUnsubNoClick.xml.zip) ファイルをアップロードします。
 
-を設定するには、以下を実行します。 **ワンクリック List-Unsubscribe** Campaign では、次のいずれかを実行できます。
+Campaign で **ワンクリックリスト – 登録解除** を設定するには、次のいずれかを実行します。
 
-* 配信または配信テンプレートにコマンドラインを追加します。 [方法を学ぶ](#one-click-delivery-template)
-* タイポロジルールの作成 — [方法を学ぶ](#one-click-typology-rule)
+* 配信または配信テンプレートへのコマンドラインの追加 – [ 詳細 ](#one-click-delivery-template)
+* タイポロジルールの作成 – [ 詳細 ](#one-click-typology-rule)
 
-#### 配信またはテンプレートでのワンクリックによる List-Unsubscribe の設定 {#one-click-delivery-template}
+#### 配信またはテンプレートでのワンクリックリスト – 購読解除の設定 {#one-click-delivery-template}
 
-配信または配信テンプレートで OneClick List-Unsubscribe を設定するには、次の手順に従います。
+配信または配信テンプレートでワンクリックリスト – 購読解除を設定するには、次の手順に従います。
 
-1. 次に移動： **[!UICONTROL SMTP]** 」セクションに表示されます。
+1. 配信プロパティの「**[!UICONTROL SMTP]**」セクションに移動します。
 
-1. の下 **[!UICONTROL 追加の SMTP ヘッダー]**&#x200B;に設定し、次の例のようにコマンドラインを入力します。 各ヘッダーは別々の行に記述する必要があります。
+1. **[!UICONTROL 追加の SMTP ヘッダー]** の下に、次の例のようなコマンドラインを入力します。 各ヘッダーは、別々の行にする必要があります。
 
-以下に例を示します。
+例：
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
@@ -245,41 +245,41 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
 ![画像](../assets/List-Unsubscribe-1-click-template-SMTP.png)
 
-上記の例では、One-Click をサポートする ISP に対して、One-Click List-Unsubscribe を有効にします。一方、「mailto」をサポートしていない受信者は、引き続きメールを使用して配信停止を要求できます。
+上記の例では、ワンクリックをサポートしている ISP に対してワンクリックリスト – 登録解除を有効にしますが、「mailto」をサポートしていない受信者も、メールを介して登録解除を引き続きリクエストできます。
 
-#### ワンクリック List-Unsubscribe をサポートするタイポロジルールの作成 {#one-click-typology-rule}
+#### ワンクリックリスト – 購読解除をサポートするタイポロジルールの作成 {#one-click-typology-rule}
 
-タイポロジルールを使用して「ワンクリックリスト — 購読解除」を設定するには、次の手順に従います。
+タイポロジルールを使用してワンクリックリスト – 購読解除を設定するには、次の手順に従います。
 
-1. ナビゲーションツリーで、に移動します。 **[!UICONTROL タイポロジルール]** をクリックします。 **[!UICONTROL 新規]**.
+1. ナビゲーションツリーで、**[!UICONTROL タイポロジルール]** に移動し、**[!UICONTROL 新規]** をクリックします。
 
    ![画像](../assets/CreatingTypologyRules1.png)
 
 
 1. 次のような新しいタイポロジルールを設定します。
 
-   * **[!UICONTROL ルールタイプ]**: **[!UICONTROL 制御]**
-   * **[!UICONTROL フェーズ]**: **[!UICONTROL ターゲティングの開始時]**
-   * **[!UICONTROL チャネル]**: **[!UICONTROL 電子メール]**
-   * **[!UICONTROL レベル]**：選択肢
+   * **[!UICONTROL ルールタイプ]**: **[!UICONTROL コントロール]**
+   * **[!UICONTROL フェーズ]**:**[!UICONTROL ターゲティングの開始時]**
+   * **[!UICONTROL チャネル]**: **[!UICONTROL メール]**
+   * **[!UICONTROL レベル]**：自分で選ぶ
    * **[!UICONTROL アクティブ]**
 
 
    ![画像](../assets/CreatingTypologyRules2.png)
 
-1. 以下の例に示すように、タイポロジルールの JavaScript をコード化します。
+1. 次の例のように、タイポロジルールの Javascript をコーディングします。
 
    >[!NOTE]
    >
    >以下で説明するコードは、例としてのみ参照してください。
 
    この例では、次の方法を詳しく説明します。
-   * &quot;mailto&quot; List-Unsubscribe を設定します。 ヘッダーを追加するか、既存の「mailto:」パラメータを追加し、次と置き換えます。 &lt;mailto..>>, https://....
-   * One-Click List-Unsubscribe ヘッダーにを追加します。 次を使用します。 `var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷`
+   * 「mailto」リストの購読解除を設定します。 ヘッダーを追加するか、既存の「mailto:」パラメーターを追加して、&lt;mailto...に置き換えます。>、https://...
+   * ワンクリックリスト – 登録解除ヘッダーにを追加します。 `var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷` を使用します
 
    >[!NOTE]
    >
-   >他のパラメーター（&amp;service =...など）を追加できます。
+   >その他のパラメーター（例：&amp;service =...）を追加できます。
 
    ```
    // Function to add or replace a header in the provided headers 
@@ -379,7 +379,7 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
    ![画像](../assets/CreatingTypologyRules3.png)
 
-1. E メールに適用するタイポロジに新しいルールを追加します。
+1. メールに適用するタイポロジに新しいルールを追加します。
 
    >[!NOTE]
    >
@@ -391,25 +391,25 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
    >[!CAUTION]
    >
-   >次を確認します。 **[!UICONTROL 追加の SMTP ヘッダー]** 配信プロパティのフィールドが空です。
+   >配信プロパティの **[!UICONTROL 追加の SMTP ヘッダー]** フィールドが空であることを確認します。
 
    ![画像](../assets/CreatingTypologyRules5.png)
 
-1. 配信の準備中に、新しいタイポロジルールが適用されていることを確認します。
+1. 配信準備中に、新しいタイポロジルールが適用されていることを確認します。
 
    ![画像](../assets/CreatingTypologyRules6.png)
 
-1. 配信停止リンクが存在することを確認します。
+1. 購読解除リンクが存在することを確認します。
 
    ![画像](../assets/CreatingTypologyRules7.png)
 
-## E メールの最適化 {#email-optimization}
+## メールの最適化 {#email-optimization}
 
 ### SMTP {#smtp}
 
 SMTP（Simple Mail Transfer Protoco）は、メール送信のインターネット標準です。
 
-ルールでチェックされない SMTP エラーは、**[!UICONTROL 管理]**／**[!UICONTROL キャンペーン管理]**／**[!UICONTROL 配信不能件数の管理]**／**[!UICONTROL 配信ログの検証]**&#x200B;フォルダーにリスト表示されます。これらのエラーメッセージは、デフォルトでは、到達不能なソフトエラーと解釈されます。
+ルールでチェックされない SMTP エラーは、**[!UICONTROL 管理]**／**[!UICONTROL キャンペーン管理]**／**[!UICONTROL 配信不能件数の管理]**／**[!UICONTROL 配信ログの検証]**&#x200B;フォルダーにリスト表示されます。これらのエラーメッセージは、デフォルトでは到達不能ソフトエラーとして解釈されます。
 
 SMTP サーバーからのフィードバックを正しく検証する場合は、最もよく起こるエラーを特定し、それに対応するルールを&#x200B;**[!UICONTROL 管理]**／**[!UICONTROL キャンペーン管理]**／**[!UICONTROL 配信不能件数の管理]**／**[!UICONTROL メールルールセット]**&#x200B;に追加する必要があります。これをおこなわないと、プラットフォームは不要な再試行を実行したり（不明ユーザーの場合）、一定回数のテストの後に特定の受信者を誤って強制隔離したりすることになります。
 

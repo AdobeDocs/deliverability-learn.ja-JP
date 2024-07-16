@@ -1,6 +1,6 @@
 ---
 title: リアルタイムブラックホールリスト
-description: スパム送信者が使用する可能性が高い IP アドレスとドメインのリストを管理する組織について説明します。
+description: スパムの発信者が使用する可能性の高い IP アドレスとドメインのリストを管理する組織について説明します。
 topics: Deliverability
 doc-type: article
 activity: understand
@@ -8,7 +8,7 @@ team: ACS
 exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
 source-git-commit: e7427d6109f3201affa58decde36294d1631bf5b
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '373'
 ht-degree: 90%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 90%
 
 * IP アドレス別：スパムを送信しているかスパムを中継している可能性の高い IP アドレスをリストアップします。
 * 送信者ドメイン別：スパムを送信しているか誤って設定された送信者ドメイン（バウンスメールアドレスのフルドメイン）をリストアップします。
-* Web ドメイン別：スパムコンテンツに含まれているリンクや画像の URL にあるドメイン（登録機関に登録されている高レベルのドメイン）をリストアップします。Adobeソリューションでは、通常、考慮されるべきドメインは、トラッキングに使用されるアドレスです。
+* Web ドメイン別：スパムコンテンツに含まれているリンクや画像の URL にあるドメイン（登録機関に登録されている高レベルのドメイン）をリストアップします。Adobeソリューションでは、考慮されるドメインは通常、トラッキングに使用されるアドレスです。
 
 次に、最も広く使用されている RBL のリストを示します。詳細なリストについては、[https://www.dnsstuff.com/](https://tools.dnsstuff.com/) を参照してください。
 
@@ -45,7 +45,7 @@ ht-degree: 90%
 
 * **SURBL**
 
-  参照： [https://surbl.org/](https://surbl.org/)
+  [https://surbl.org/を参照してください ](https://surbl.org/)
 
   SURBL では、スパムで定期的に見られる Web サイトを特定しています。お使いのドメインがこのリストに載った場合は、配信品質に重大な影響が及ぶおそれがあります。配信品質サービスと[アドビカスタマーケア](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)にただちに知らせてください。
 

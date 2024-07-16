@@ -12,25 +12,25 @@ level: Beginner
 exl-id: e6a855ba-a929-477f-a339-6861a755a529
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 22%
+source-wordcount: '188'
+ht-degree: 16%
 
 ---
 
 # ターゲティング設定条件
 
-新しいトラフィックを送信する場合は、IP ウォーミングの初期段階で、最も関与したユーザーをターゲットにするだけです。 これは、あまり関与していないオーディエンスにローリングする前に、get-go から肯定的な評判を確立し、信頼を効果的に構築するのに役立ちます。 次に、エンゲージメントの基本的な式を示します。
+新しいトラフィックを送信する場合は、IP ウォーミングの初期段階で、最も関与の高いユーザーのみをターゲットにします。 これにより、エンゲージメントの低いオーディエンスをローリングする前に、効果的に信頼を構築するための最初のステップから得られる肯定的な評判を確立できます。 エンゲージメントの基本的な数式を次に示します。
 
-![エンゲージメントの数式](../assets/formula-for-enagement.png)
+![ 契約の式 ](../assets/formula-for-enagement.png)
 
-通常、エンゲージメント率は特定の期間に基づきます。 この指標は、数式が全体レベルで適用されるか、特定のメーリングタイプまたはキャンペーンに適用されるかによって、大幅に異なる場合があります。 送信者と ISP はそれぞれ異なり、通常はカスタマイズされたプランが必要なので、特定のターゲット条件は、Adobeの配信品質コンサルタントと協力して提供する必要があります。
+通常、エンゲージメント率は特定の期間に基づいています。 この指標は、式が全体的なレベルで適用されているか、特定のメーリングタイプやキャンペーンに適用されているかによって大きく異なる場合があります。 特定のターゲティング条件は、Adobe配信品質コンサルタントと協力して指定する必要があります。これは、すべての送信者と ISP が異なり、通常はカスタマイズされたプランが必要になるからです。
 
 ## 製品固有のリソース
 
 **Analytics**
 
-* [エンゲージメント率とリテンション率を高める方法（チュートリアル）](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *コホートを使用して行動を通じてエンゲージしたオーディエンスを特定し、モバイルアプリで定着度を高める原因を把握します。 Segment IQ のデータサイエンスアルゴリズムを使用して、セグメント間の相違点と類似点を把握します。*
+* [ エンゲージメント率およびリテンション率を高める方法（チュートリアル） ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics):*コホートを使用した行動を通じてエンゲージメントのあるオーディエンスを特定し、モバイルアプリのスティッキネスを促進する根本的な原因を把握します。 Segment IQ のデータサイエンスアルゴリズムを使用して、セグメント間の違いと類似点を把握します。*
 
 **Campaign Standard**
 
-* [AI を利用した E メール：予測エンゲージメントスコアリング](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)
+* [AI を活用した E メール：予測エンゲージメントスコアリング ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)

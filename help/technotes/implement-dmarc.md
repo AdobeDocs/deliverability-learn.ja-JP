@@ -8,11 +8,11 @@ exl-id: f1c14b10-6191-4202-9825-23f948714f1e
 source-git-commit: 2a78db97a46150237629eef32086919cacf4998c
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 13%
+ht-degree: 17%
 
 ---
 
-# 実装方法 [!DNL Domain-based Message Authentication, Reporting and Conformance] （DMARC）
+# [!DNL Domain-based Message Authentication, Reporting and Conformance] （DMARC）の実装
 
 このドキュメントの目的は、電子メール認証方法 DMARC に関する追加情報を読者に提供することです。 DMARC の仕組みと様々なポリシーオプションを説明することで、読者は DMARC がメール配信品質に与える影響をより深く理解できます。
 
@@ -22,9 +22,9 @@ ht-degree: 13%
 
 DMARC には次の 3 つのポリシーオプションがあります。
 
-* **モニター（p=なし）:** メールボックス プロバイダー/ISP に対して、通常メッセージに対して行う操作を指示します。
-* **強制隔離（p=quarantine）:** DMARC を受信者のスパムまたは迷惑メールフォルダーに渡さないメールを配信するよう、メールボックスプロバイダーまたは ISP に指示します。
-* **却下（p=reject）:** バウンスの原因となる DMARC を通過しないメールをブロックするように、メールボックスプロバイダーや ISP に指示します。
+* **監視（p=なし）:** メールボックス プロバイダー/ISP に対して、通常メッセージに対して行う操作を指示します。
+* **強制隔離（p=quarantine）:** DMARC を受信者のスパムフォルダーまたは迷惑メールフォルダーに渡さないメールを配信するように、メールボックスプロバイダーや ISP に指示します。
+* **拒否（p=拒否）:** バウンスの原因となる DMARC を通過しないメールをブロックするようにメールボックスプロバイダーや ISP に指示します。
 
 ## DMARC の仕組み {#how}
 
@@ -44,7 +44,8 @@ DMARC はオプションであり、必須ではありませんが、無料で�
 
 ## DMARC 実装のベストプラクティス {#best-practice}
 
-DMARC はオプションなので、ESP のプラットフォームでは、デフォルトでは設定されません。 ドメインを機能させるには、ドメインの DNS に DMARC レコードを作成する必要があります。 さらに、組織内で DMARC レポートを送信する場所を示すには、任意のメールアドレスが必要です。 ベストプラクティスとして、DMARC の潜在的な影響を DMARC が理解できるように、DMARC ポリシーを p=none、p=quarantine、p=reject にエスカレーションして、DMARC 実装をゆっくりと展開することをお勧めします。
+DMARC はオプションなので、ESP のプラットフォームでは、デフォルトでは設定されません。 ドメインを機能させるには、ドメインの DNS に DMARC レコードを作成する必要があります。 さらに、組織内で DMARC レポートを送信する場所を示すには、任意のメールアドレスが必要です。 ベストプラクティスは次のとおりです。
+dmarc の潜在的な影響を DMARC が理解できるように、DMARC ポリシーを p=none、p=quarantine、p=reject にエスカレーションして、DMARC 実装をゆっくりと展開することをお勧めします。
 
 1. 受け取って使用するフィードバック（p=none）を分析します。このフィードバックは、認証に失敗してもメールレポートを送信者に送信するメッセージに対しては、何のアクションも実行しないように受信者に指示します。 また、正当なメッセージが認証に失敗する場合は、SPF／DKIM の問題を確認および修正します。
 1. SPF と DKIM が連携し、すべての正当なメールに認証を渡しているかどうかを判断し、ポリシーを（p=quarantine）に移動します。これにより、受信メールサーバーに、認証に失敗したメールを強制隔離するように指示します（通常、これらのメッセージをスパムフォルダーに配置することを意味します）。
@@ -58,19 +59,19 @@ DMARC はオプションなので、ESP のプラットフォームでは、デ�
 
 DMARC は、SPF/DKIM に失敗したメールに関するレポートを受信する機能を備えています。 認証プロセスの一環として、ISP サービサーによって生成される異なる 2 つのレポートがあります。これらのレポートは、送信者が DMARC ポリシーの RUA/RUF タグを介して受信できます。
 
-* **集約レポート（RUA）:** GDPR に影響を受ける可能性のある PII （個人を特定できる情報）が含まれていません。
-* **フォレンジックレポート（RUF）:** GDPR に敏感なメールアドレスが含まれます。 を利用する前に、GDPR に準拠する必要のある情報に対処する方法を内部で確認することをお勧めします。
+* **集計レポート（RUA）:** には、GDPR に影響を受ける可能性のある PII （個人を特定できる情報）は含まれていません。
+* **フォレンジックレポート（RUF）:** GDPR に機密のメールアドレスが含まれます。 を利用する前に、GDPR に準拠する必要のある情報に対処する方法を内部で確認することをお勧めします。
 
 これらのレポートの主な用途は、スプーフィングが試行されたメールの概要を受け取ることです。 これらは、サードパーティのツールを介してダイジェストするのが最適な、高度に技術的なレポートです。 DMARC 監視を専門とする企業の一部を次に示します。
 
 * [ValiMail](https://www.valimail.com/products/#automated-delivery)
-* [あがり](https://www.agari.com/)
-* [ダルシア語](https://dmarcian.com/)
-* [Proofpoint](https://www.proofpoint.com/us)
+* [ あがり ](https://www.agari.com/)
+* [ ダルシア語 ](https://dmarcian.com/)
+* [ 配達確認 ](https://www.proofpoint.com/us)
 
 >[!CAUTION]
 >
->レポートを受信するために追加するメールアドレスが DMARC レコードを作成したドメイン外にある場合は、このドメインを所有する DNS を指定する外部ドメインを承認する必要があります。 それには、で説明されている手順に従います [dmarc.org ドキュメント](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)
+>レポートを受信するために追加するメールアドレスが DMARC レコードを作成したドメインの外部にある場合は、その外部ドメインを承認して、このドメインを所有していることを DNS に指定する必要があります。これを行うには、[dmarc.org ドキュメント](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)で詳しく説明されている手順に従います。
 
 ### DMARC レコードの例 {#example}
 
@@ -86,7 +87,7 @@ DMARC レコードには、DMARC タグと呼ばれる複数のコンポーネ�
 |  ---  |  ---  |  ---  |  ---  |  ---  |
 | v | 必須 | この DMARC タグはバージョンを指定します。 現時点では 1 つのバージョンしかないので、v=DMARC1 の固定値になります | V=DMARC1 DMARC1 | DMARC1 |
 | p | 必須 | 選択した DMARC ポリシーを表示し、認証チェックに失敗したメールを報告、強制隔離、または拒否するように受信者に指示します。 | p=なし、強制隔離または拒否 | - |
-| fo | オプション | ドメイン所有者がレポートオプションを指定することを許可します。 | 0：すべてが失敗した場合にレポートを生成<br/>1：失敗した場合にレポートを生成する<br/>d: DKIM が失敗した場合にレポートを生成<br/>s:SPF が失敗した場合にレポートを生成 | 1 （DMARC レポートの場合に推奨） |
+| fo | オプション | ドメイン所有者がレポートオプションを指定することを許可します。 | 0：すべてが失敗した場合にレポートを生成 <br/>1：何かが失敗した場合にレポートを生成 <br/>d: DKIM が失敗した場合にレポートを生成 <br/>s: SPF が失敗した場合にレポートを生成 | 1 （DMARC レポートの場合に推奨） |
 | pct | オプション | フィルタリング対象メッセージの割合を示します。 | pct=20 | 100 |
 | rua | オプション （推奨） | 集合レポートの配信先を識別します。 | `rua=mailto:aggrep@example.com` | - |
 | ルーフ | オプション （推奨） | フォレンジックレポートの配信先を識別します。 | `ruf=mailto:authfail@example.com` | - |
@@ -98,7 +99,7 @@ DMARC レコードには、DMARC タグと呼ばれる複数のコンポーネ�
 
 >[!NOTE]
 >
->Campaign インスタンスがAWSでホストされている場合は、Campaign コントロールパネルを使用してサブドメインに DMARC を実装できます。 [Campaign コントロールパネルを使用して DMARC レコードを実装する方法を説明します](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
+>Campaign インスタンスがAWSでホストされている場合は、Campaign コントロールパネルを使用してサブドメインに DMARC を実装できます。 [Campaign コントロールパネルを使用して DMARC レコードを実装する方法を説明します ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html)。
 
 DMARC エラーの一般的な理由は、「From」と「Errors-To」または「Return-Path」アドレスの位置ずれです。 これを回避するには、DMARC を設定する際に、配信テンプレートの「送信者」および「エラー先」アドレス設定を再確認することをお勧めします。
 
@@ -119,4 +120,4 @@ DMARC エラーの一般的な理由は、「From」と「Errors-To」または�
 ## 役に立つリンク {#links}
 
 * [DMARC.org](https://dmarc.org/){target="_blank"}
-* [M3AAWG メール認証](https://www.m3aawg.org/sites/default/files/document/M3AAWG_Email_Authentication_Update-2015.pdf){target="_blank"}
+* [M3AAWG メール認証 ](https://www.m3aawg.org/sites/default/files/document/M3AAWG_Email_Authentication_Update-2015.pdf){target="_blank"}
