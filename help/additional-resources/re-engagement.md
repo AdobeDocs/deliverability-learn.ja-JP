@@ -75,8 +75,8 @@ Return Path の調査によれば、再エンゲージメントキャンペー�
 
 **Adobe Campaign**
 
-* [Campaign Classic内のトラッキングログ ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
-* [Campaign Standard内のトラッキングログ ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
+* [Campaign Classic内のトラッキングログ ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=ja#tracking-logs)
+* [Campaign Standard内のトラッキングログ ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html?lang=ja#tracking-logs)
 
 **Adobe カスタマージャーニー管理**
 

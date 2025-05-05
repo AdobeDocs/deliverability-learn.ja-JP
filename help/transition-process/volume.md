@@ -50,8 +50,8 @@ ht-degree: 1%
 * Adobe Campaignで新しいプラットフォームを開始する際の配信品質の管理について詳しくは、[ この節 ](/help/additional-resources/ac-starting-new-platform.md) を参照してください。
 * Adobe Campaign Classicで複数のウェーブを使用して送信する方法については、[ この節 ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=ja#sending-using-multiple-waves) を参照してください。
 * サブドメインをAdobe Campaign Classicまたは Standard に完全にデリゲートする方法については、[ この節 ](/help/additional-resources/ac-domain-name-setup.md) を参照してください。
-* [Campaign コントロールパネル：完全なサブドメインデリゲーション（チュートリアル） ](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *サブドメインをAdobe Campaign Classicに完全にデリゲートする方法を説明します*。
-* [Campaign コントロールパネル：完全なサブドメインデリゲーション（チュートリアル） ](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *サブドメインをAdobe Campaign Standardに完全にデリゲートする方法を説明します*。
+* [Campaign コントロールパネル：完全なサブドメインデリゲーション（チュートリアル） ](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=ja) - *サブドメインをAdobe Campaign Classicに完全にデリゲートする方法を説明します*。
+* [Campaign コントロールパネル：完全なサブドメインデリゲーション（チュートリアル） ](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=ja) - *サブドメインをAdobe Campaign Standardに完全にデリゲートする方法を説明します*。
 
 ## その他のリソース
 

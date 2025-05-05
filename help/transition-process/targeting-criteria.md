@@ -29,8 +29,8 @@ ht-degree: 16%
 
 **Analytics**
 
-* [ エンゲージメント率およびリテンション率を高める方法（チュートリアル） ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics):*コホートを使用した行動を通じてエンゲージメントのあるオーディエンスを特定し、モバイルアプリのスティッキネスを促進する根本的な原因を把握します。 Segment IQ のデータサイエンスアルゴリズムを使用して、セグメント間の違いと類似点を把握します。*
+* [ エンゲージメント率およびリテンション率を高める方法（チュートリアル） ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=ja#mobile-app-analytics):*コホートを使用した行動を通じてエンゲージメントのあるオーディエンスを特定し、モバイルアプリのスティッキネスを促進する根本的な原因を把握します。 Segment IQ のデータサイエンスアルゴリズムを使用して、セグメント間の違いと類似点を把握します。*
 
 **Campaign Standard**
 
-* [AI を活用した E メール：予測エンゲージメントスコアリング ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)
+* [AI を活用した E メール：予測エンゲージメントスコアリング ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html?lang=ja#predictive-scoring)

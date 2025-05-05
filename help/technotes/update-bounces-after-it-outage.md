@@ -45,8 +45,8 @@ Adobe Campaignは、標準のバウンス処理ロジックに従って、これ
 
 この問題の影響を受けた受信者を見つける場合や、他の ISP で同じ状況が発生する場合は、次の手順を参照してください。
 
-* Campaign Classic v7 および Campaign v8 については、[ このページ ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank} を参照してください。
-* Campaign Standardについては、[ このページ ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank} を参照してください。
+* Campaign Classic v7 および Campaign v8 については、[ このページ ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=ja#unquarantine-bulk){_blank} を参照してください。
+* Campaign Standardについては、[ このページ ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=ja#unquarantine-bulk){_blank} を参照してください。
 
 ### Adobe Journey Optimizer{#ajo-update}
 
@@ -54,5 +54,5 @@ Adobe Campaignは、標準のバウンス処理ロジックに従って、これ
 
 識別したら、「**[!UICONTROL 削除]**」ボタンを使用して、これらのアドレスを抑制リストから手動で削除できます。 その後、これらのアドレスは今後のメールキャンペーンに含めることができます。
 
-詳しくは、[ この節 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank} を参照してください。
+詳しくは、[ この節 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=ja#remove-from-suppression-list){_blank} を参照してください。
 

@@ -29,8 +29,8 @@ ht-degree: 12%
 
 **Campaign Classic**
 
-* [ メッセージコンテンツの制御 ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/control-message-content.html)
+* [ メッセージコンテンツの制御 ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/control-message-content.html?lang=ja)
 
 **Campaign Standard**
 
-* [メールコンテンツの制御](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/managing-deliverability/control-email-content.html#testing-and-sending)
+* [メールコンテンツの制御](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/managing-deliverability/control-email-content.html?lang=ja#testing-and-sending)

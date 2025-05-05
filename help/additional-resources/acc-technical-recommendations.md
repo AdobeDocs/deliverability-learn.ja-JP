@@ -39,7 +39,7 @@ MX（Mail eXchanger）ルールは、送信サーバーと受信サーバーの�
 
 >[!NOTE]
 >
->Adobe Campaign Classicの MX 管理について詳しくは、[ この節 ](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration) を参照してください。
+>Adobe Campaign Classicの MX 管理について詳しくは、[ この節 ](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=ja#mx-configuration) を参照してください。
 
 ### TLS {#tls}
 
@@ -88,13 +88,13 @@ SPF レコードを定義するためのRecommendations:
 
 >[!NOTE]
 >
->ホストインストールまたはハイブリッドインストールで [Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages) にアップグレードした場合、すべてのドメインのすべてのメッセージに対する DKIM のメール認証署名は、Enhanced MTA がおこないます。
+>ホストインストールまたはハイブリッドインストールで [Enhanced MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html?lang=ja#sending-messages) にアップグレードした場合、すべてのドメインのすべてのメッセージに対する DKIM のメール認証署名は、Enhanced MTA がおこないます。
 
 Adobe Campaign Classicで [DKIM](/help/additional-resources/authentication.md#dkim) を使用するには、次の前提条件が必要です。
 
 **Adobe Campaign オプション宣言**: Adobe Campaignでは、DKIM 秘密鍵は DKIM セレクターおよびドメインに基づいています。 同じドメイン／サブドメインに対して、セレクターの異なる複数の秘密鍵を作成することは、現時点ではできません。プラットフォームでもメールでも、どのセレクタードメイン／サブドメインを認証に使用すべきかを定義することはできません。プラットフォームでは、その代わりに、秘密鍵のいずれか 1 つを選択します。つまり、認証は失敗する可能性が高くなります。
 
-* お使いの Adobe Campaign インスタンスに DomainKeys を設定してある場合は、[ドメイン管理ルール](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules)で **dkim** を選択するだけです。そうでない場合は、DomainKeys （DKIM の代わり）と同じ設定手順（秘密鍵/公開鍵）に従います。
+* お使いの Adobe Campaign インスタンスに DomainKeys を設定してある場合は、[ドメイン管理ルール](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=ja#email-management-rules)で **dkim** を選択するだけです。そうでない場合は、DomainKeys （DKIM の代わり）と同じ設定手順（秘密鍵/公開鍵）に従います。
 * DKIM は DomainKeys の改良版なので、同じドメインに DomainKeys と DKIM の両方を有効にする必要はありません。
 * 現在 DKIM が有効になっているドメインは、AOL および Gmail です。
 
@@ -199,7 +199,7 @@ Campaign に **mailto」 List-Unsubscribe** を実装するには、次のいず
 
 ルールには、コマンドラインを生成するスクリプトが含まれている必要があり、このルールをメールヘッダーに組み込む必要があります。
 
-Adobe Campaign v7/v8 でタイポロジルールを作成する方法については、[ この節 ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules) を参照してください。
+Adobe Campaign v7/v8 でタイポロジルールを作成する方法については、[ この節 ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=ja#typology-rules) を参照してください。
 
 >[!NOTE]
 >

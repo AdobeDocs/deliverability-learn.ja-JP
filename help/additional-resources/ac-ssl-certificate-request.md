@@ -83,7 +83,7 @@ CSR （証明書署名要求）ファイルを取得するには、次の手順�
 従うべきベストプラクティスをいくつか示します。
 
 * デリゲートされたサブドメインごとに 1 つのリクエストを発生させます。
-* 複数のサブドメインを 1 つの CSR リクエストに組み合わせることができますが、それは同じ環境内だけです。 例えば、Campaign Classicでは、マーケティングサーバー、[ ミッドソーシングサーバー ](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html) および [ 実行インスタンス ](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance) は 3 つの異なる環境となります。
+* 複数のサブドメインを 1 つの CSR リクエストに組み合わせることができますが、それは同じ環境内だけです。 例えば、Campaign Classicでは、マーケティングサーバー、[ ミッドソーシングサーバー ](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html?lang=ja) および [ 実行インスタンス ](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html?lang=ja#execution-instance) は 3 つの異なる環境となります。
 * SSL 証明書を更新するには、新しい CSR を取得する必要があります。 1 年以上前の古い CSR ファイルは使用しないでください。
 
 次の情報を入力する必要があります。
@@ -199,7 +199,7 @@ SSL 証明書が正しくインストールされていない場合は、次の�
 
 * サポートチケットを作成して、証明書の有効期限の 2 週間前までに、更新された証明書をリクエストします CSR の詳細が変更されていない限り、追加の CSR をリクエストする必要はありません。
 
-* [ 環境 ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja) にアクセスでき、Campaign コントロールパネルがAdobeによってAWS環境でホストされている場合は、Campaign コントロールパネルを使用して有効期限が切れる前に証明書を更新できます。 詳しくは、[この節](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates)を参照してください。
+* [ 環境 ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=ja) にアクセスでき、Campaign コントロールパネルがAdobeによってAWS環境でホストされている場合は、Campaign コントロールパネルを使用して有効期限が切れる前に証明書を更新できます。 詳しくは、[この節](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=ja#monitoring-certificates)を参照してください。
 
 ### 手順 8 – 特定の設定の更新 {#update-configuration}
 
@@ -207,7 +207,7 @@ SSL 証明書が正しくインストールされていない場合は、次の�
 
 >[!NOTE]
 >
->Campaign Classicについては、更新する URL は主に [ デプロイメントウィザード ](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) と [ 外部アカウント ](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=ja) （トラッキング、ミラーページ、パブリックリソースドメイン）にあります。 Campaign Standardについては、[ ブランディング設定 ](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity) を参照してください。
+>Campaign Classicについては、更新する URL は主に [ デプロイメントウィザード ](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html?lang=ja#deployment-wizard) と [ 外部アカウント ](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=ja) （トラッキング、ミラーページ、パブリックリソースドメイン）にあります。 Campaign Standardについては、[ ブランディング設定 ](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html?lang=ja#about-brand-identity) を参照してください。
 
 設定が更新されると、新しいメールは HTTP ではなく HTTPS URL で送信されます。 URL が保護されていることを確認するには、次のテストをすばやく実行できます。
 
@@ -218,8 +218,8 @@ SSL 証明書が正しくインストールされていない場合は、次の�
 
 **Campaign Classic**
 
-* [Campaign コントロールパネル: SSL 証明書の追加（チュートリアル） ](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - SSL 証明書を追加してサブドメインを保護する方法を説明します。
+* [Campaign コントロールパネル: SSL 証明書の追加（チュートリアル） ](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=ja) - SSL 証明書を追加してサブドメインを保護する方法を説明します。
 
 **Campaign Standard**
 
-* [Campaign コントロールパネル: SSL 証明書の追加（チュートリアル） ](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - SSL 証明書を追加してサブドメインを保護する方法を説明します。
+* [Campaign コントロールパネル: SSL 証明書の追加（チュートリアル） ](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=ja) - SSL 証明書を追加してサブドメインを保護する方法を説明します。

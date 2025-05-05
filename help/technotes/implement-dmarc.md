@@ -99,7 +99,7 @@ DMARC レコードには、DMARC タグと呼ばれる複数のコンポーネ�
 
 >[!NOTE]
 >
->Campaign インスタンスがAWSでホストされている場合は、Campaign コントロールパネルを使用してサブドメインに DMARC を実装できます。 [Campaign コントロールパネルを使用して DMARC レコードを実装する方法を説明します ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html)。
+>Campaign インスタンスがAWSでホストされている場合は、Campaign コントロールパネルを使用してサブドメインに DMARC を実装できます。 [Campaign コントロールパネルを使用して DMARC レコードを実装する方法を説明します ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html?lang=ja)。
 
 DMARC エラーの一般的な理由は、「From」と「Errors-To」または「Return-Path」アドレスの位置ずれです。 これを回避するには、DMARC を設定する際に、配信テンプレートの「送信者」および「エラー先」アドレス設定を再確認することをお勧めします。
 
