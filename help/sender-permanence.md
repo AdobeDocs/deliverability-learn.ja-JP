@@ -25,8 +25,8 @@ ht-degree: 2%
 
 **次に例を示します。**
 
-![ 優れた送信永続性 ](assets/Sender_Permanence_1.png)
+![&#x200B; 優れた送信永続性 &#x200B;](assets/Sender_Permanence_1.png)
 
-![ 送信の永続性が無効です ](assets/Sender_Permanence_2.png)
+![&#x200B; 送信の永続性が無効です &#x200B;](assets/Sender_Permanence_2.png)
 
-![ 許容可能な送信パーマネンス ](assets/Sender_Permanence_3.png)
+![&#x200B; 許容可能な送信パーマネンス &#x200B;](assets/Sender_Permanence_3.png)

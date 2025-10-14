@@ -29,7 +29,7 @@ Adobe Campaign は、IP アドレスに対してリバース DNS が提供され
 
 >[!NOTE]
 >
->[ この外部ツール ](https://mxtoolbox.com/SuperTool.aspx) を使用して、ドメインの設定を検証できます。
+>[&#x200B; この外部ツール &#x200B;](https://mxtoolbox.com/SuperTool.aspx) を使用して、ドメインの設定を検証できます。
 
 ### MX ルール {#mx-rules}
 
@@ -39,7 +39,7 @@ MX（Mail eXchanger）ルールは、送信サーバーと受信サーバーの�
 
 >[!NOTE]
 >
->Adobe Campaign Classicの MX 管理について詳しくは、[ この節 ](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=ja#mx-configuration) を参照してください。
+>Adobe Campaign Classicの MX 管理について詳しくは、[&#x200B; この節 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=ja#mx-configuration) を参照してください。
 
 ### TLS {#tls}
 
@@ -76,13 +76,13 @@ SPF レコードを定義するためのRecommendations:
 
 >[!NOTE]
 >
->SPF について詳しくは、[ この節 ](/help/additional-resources/authentication.md#spf) を参照してください。
+>SPF について詳しくは、[&#x200B; この節 &#x200B;](/help/additional-resources/authentication.md#spf) を参照してください。
 
 ## 認証
 
 >[!NOTE]
 >
->様々なメール認証フォームについて詳しくは、[ この節 ](/help/additional-resources/authentication.md) を参照してください。
+>様々なメール認証フォームについて詳しくは、[&#x200B; この節 &#x200B;](/help/additional-resources/authentication.md) を参照してください。
 
 ### DKIM {#dkim-acc}
 
@@ -179,9 +179,9 @@ List-Unsubscribe ヘッダー機能には、次の 2 つのバージョンがあ
 
 Campaign に **mailto」 List-Unsubscribe** を実装するには、次のいずれかを実行します。
 
-* 配信または配信テンプレートへのコマンドラインの直接追加 – [ 詳細 ](#adding-a-command-line-in-a-delivery-template)
+* 配信または配信テンプレートへのコマンドラインの直接追加 – [&#x200B; 詳細 &#x200B;](#adding-a-command-line-in-a-delivery-template)
 
-* タイポロジルールの作成 – [ 詳細 ](#creating-a-typology-rule)
+* タイポロジルールの作成 – [&#x200B; 詳細 &#x200B;](#creating-a-typology-rule)
 
 #### 配信またはテンプレートへのコマンドラインの追加 {#adding-a-command-line-in-a-delivery-template}
 
@@ -199,7 +199,7 @@ Campaign に **mailto」 List-Unsubscribe** を実装するには、次のいず
 
 ルールには、コマンドラインを生成するスクリプトが含まれている必要があり、このルールをメールヘッダーに組み込む必要があります。
 
-Adobe Campaign v7/v8 でタイポロジルールを作成する方法については、[ この節 ](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=ja#typology-rules) を参照してください。
+Adobe Campaign v7/v8 でタイポロジルールを作成する方法については、[&#x200B; この節 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=ja#typology-rules) を参照してください。
 
 >[!NOTE]
 >
@@ -225,8 +225,8 @@ Adobe Campaign v7/v8 で直接ワンクリックリスト – 登録解除POST�
 
 Campaign で **ワンクリックリスト – 登録解除** を設定するには、次のいずれかを実行します。
 
-* 配信または配信テンプレートへのコマンドラインの追加 – [ 詳細 ](#one-click-delivery-template)
-* タイポロジルールの作成 – [ 詳細 ](#one-click-typology-rule)
+* 配信または配信テンプレートへのコマンドラインの追加 – [&#x200B; 詳細 &#x200B;](#one-click-delivery-template)
+* タイポロジルールの作成 – [&#x200B; 詳細 &#x200B;](#one-click-typology-rule)
 
 #### 配信またはテンプレートでのワンクリックリスト – 購読解除の設定 {#one-click-delivery-template}
 

@@ -37,8 +37,8 @@ ht-degree: 60%
 
 **Adobe Campaign Classic**
 
-* [ 「重複排除」アクティビティ ](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html?lang=ja)
-* [ 重複排除アクティビティの結合機能の使用 ](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=ja)
+* [&#x200B; 「重複排除」アクティビティ &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html?lang=ja)
+* [&#x200B; 重複排除アクティビティの結合機能の使用 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=ja)
 
 **Adobe Campaign Standard**
 

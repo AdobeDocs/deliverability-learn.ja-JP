@@ -26,7 +26,7 @@ ht-degree: 51%
 
 ## ISP はエンゲージメント以外のアクティビティをどのように見ていますか？ {#how-do-isps-view-non-engagement-activity-}
 
-長年の間、ISP は、ユーザーからのエンゲージメントフィードバック指標を使用して、メッセージを配置する場所やメッセージを配信するかどうかを決定してきました。ユーザー [ エンゲージメント ](/help/engagement.md) は、ポジティブフィードバックとネガティブフィードバックの両方で構成され、ISP は両方を一定ベースで監視します。 エンゲージメントがないことは、おそらく、否定的なエンゲージメントの主な一因となります。配信品質の観点では、エンゲージメントを見せないユーザーに変わることなくキャンペーンを送信し続けると、IP アドレスとドメインのレピュテーションが全体的に低下するおそれもあります。
+長年の間、ISP は、ユーザーからのエンゲージメントフィードバック指標を使用して、メッセージを配置する場所やメッセージを配信するかどうかを決定してきました。ユーザー [&#x200B; エンゲージメント &#x200B;](/help/engagement.md) は、ポジティブフィードバックとネガティブフィードバックの両方で構成され、ISP は両方を一定ベースで監視します。 エンゲージメントがないことは、おそらく、否定的なエンゲージメントの主な一因となります。配信品質の観点では、エンゲージメントを見せないユーザーに変わることなくキャンペーンを送信し続けると、IP アドレスとドメインのレピュテーションが全体的に低下するおそれもあります。
 
 Gmail、Microsoft®、OATH などの ISP は、エンゲージメントがないことを不要なメールと見なし、メッセージをスパムフォルダーにリダイレクトし始めます。 また、これらの購読者がメールアカウントを所有しなくなり、これを「リサイクル」スパムトラップとして使用することができます。 これは、アドレスがしばらくの間無効であり、すべてのメッセージが拒否されることを意味します。 購読者の管理システムが「ハードバウンス」アドレスを削除していない場合は、スパムトラップに送信される可能性が高く、配信に関する重大な問題が発生する可能性があります。
 
@@ -75,9 +75,9 @@ Return Path の調査によれば、再エンゲージメントキャンペー�
 
 **Adobe Campaign**
 
-* [Campaign Classic内のトラッキングログ ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=ja#tracking-logs)
-* [Campaign Standard内のトラッキングログ ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html?lang=ja#tracking-logs)
+* [Campaign Classic内のトラッキングログ &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=ja#tracking-logs)
+* [Campaign Standard内のトラッキングログ &#x200B;](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html?lang=ja#tracking-logs)
 
 **Adobe カスタマージャーニー管理**
 
-* [ メッセージトラッキング ](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html?lang=ja)
+* [&#x200B; メッセージトラッキング &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html?lang=ja)

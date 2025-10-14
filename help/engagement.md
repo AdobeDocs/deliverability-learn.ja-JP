@@ -69,4 +69,4 @@ Win-Back キャンペーンまたは再アクティブ化キャンペーンを�
 
 ## その他のリソース
 
-* 再エンゲージメント（または勝利）戦略について詳しくは、[ この節 ](/help/additional-resources/re-engagement.md) を参照してください。
+* 再エンゲージメント（または勝利）戦略について詳しくは、[&#x200B; この節 &#x200B;](/help/additional-resources/re-engagement.md) を参照してください。

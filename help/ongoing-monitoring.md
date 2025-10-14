@@ -42,4 +42,4 @@ ht-degree: 21%
 
 ## その他のリソース
 
-* 配信品質の問題に対処する方法について詳しくは、[ この節 ](/help/additional-resources/troubleshooting.md) を参照してください。
+* 配信品質の問題に対処する方法について詳しくは、[&#x200B; この節 &#x200B;](/help/additional-resources/troubleshooting.md) を参照してください。

@@ -25,7 +25,7 @@ BIMI は、配信品質や評判を直接向上させません。 受信者と�
 
 ## どんな感じ？
 
-様々なプロバイダーの実装例や、どのプロバイダーが [BIMI Group のページ ](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"} にロゴを表示しているかについて詳しく説明しています。
+様々なプロバイダーの実装例や、どのプロバイダーが [BIMI Group のページ &#x200B;](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"} にロゴを表示しているかについて詳しく説明しています。
 
 ## BIMI グループとは？
 
@@ -35,7 +35,7 @@ BIMI グループは、Google、Yahoo、Fastmail、Proofpoint、Mailchimp、Send
 
 ## 誰が BIMI をサポートしていますか？
 
-BIMI をサポートするメールボックスプロバイダーのリストは着実に増加しています。 BIMI を検討しているプロバイダーだけでなく、サポートしているプロバイダーの両方の最新のリストが [ こちら ](https://bimigroup.org/bimi-infographic/){target="_blank"} あります。
+BIMI をサポートするメールボックスプロバイダーのリストは着実に増加しています。 BIMI を検討しているプロバイダーだけでなく、サポートしているプロバイダーの両方の最新のリストが [&#x200B; こちら &#x200B;](https://bimigroup.org/bimi-infographic/){target="_blank"} あります。
 
 2023 年 4 月現在、リストには、Gmail、Yahoo、La Poste、Fastmail、Onet.pl および Zone、スパム対策アプライアンスとしての Proofpoint、Apple メール（iOS 16 以降）が含まれています。
 
@@ -45,15 +45,15 @@ BIMI をサポートするメールボックスプロバイダーのリストは
 
 BIMI の実装は、次の複数のステップで行われます。
 
-1. 送信ドメインとその組織ドメインの両方について、適用レベルでの DMARC （ドメインベースのメッセージ認証、レポートおよび準拠）の実装 – [ 詳細情報 ](#dmarc)
+1. 送信ドメインとその組織ドメインの両方について、適用レベルでの DMARC （ドメインベースのメッセージ認証、レポートおよび準拠）の実装 – [&#x200B; 詳細情報 &#x200B;](#dmarc)
 
-1. TinyPSSVGのブランドロゴの作成 – [ 詳細情報 ](#create-brand-logo)
+1. TinyPSSVGのブランドロゴの作成 – [&#x200B; 詳細情報 &#x200B;](#create-brand-logo)
 
-1. 検証済みマーク証明書への新規登録（一部のプロバイダーにのみ必要） – [ 詳細情報 ](#vmc)
+1. 検証済みマーク証明書への新規登録（一部のプロバイダーにのみ必要） – [&#x200B; 詳細情報 &#x200B;](#vmc)
 
-1. ロゴと証明書を含む BIMI DNS レコードをPublishします – [ 詳細情報 ](#publish-bimi-record)
+1. ロゴと証明書を含む BIMI DNS レコードをPublishします – [&#x200B; 詳細情報 &#x200B;](#publish-bimi-record)
 
-1. 評判が高い – [ 詳細情報 ](#good-reputation)
+1. 評判が高い – [&#x200B; 詳細情報 &#x200B;](#good-reputation)
 
 >[!NOTE]
 >
@@ -62,13 +62,13 @@ BIMI の実装は、次の複数のステップで行われます。
 
 ### DMARC {#dmarc}
 
-DMARC は、メールボックスプロバイダーが失敗したメールに対して何をすべきかをブランドが決定できるようにする標準です [ 認証 ](../additional-resources/authentication.md)。 いわゆるポリシーは、「なし」から「強制隔離」（スパムフォルダーの配置）から「拒否」（メールを完全にブロック）まで多岐にわたります。 後者の 2 つのポリシーのみが「執行」と呼ばれ、BIMI の資格があります。 SPF （Sender Policy Framework）と DKIM （Domain Keys Identified Mail）がデフォルトで設定されているので、Adobeから送信されたメールは認証を渡します。 Adobeは、リクエストに応じて、送信側ドメインに DMARC を設定しています。
+DMARC は、メールボックスプロバイダーが失敗したメールに対して何をすべきかをブランドが決定できるようにする標準です [&#x200B; 認証 &#x200B;](../additional-resources/authentication.md)。 いわゆるポリシーは、「なし」から「強制隔離」（スパムフォルダーの配置）から「拒否」（メールを完全にブロック）まで多岐にわたります。 後者の 2 つのポリシーのみが「執行」と呼ばれ、BIMI の資格があります。 SPF （Sender Policy Framework）と DKIM （Domain Keys Identified Mail）がデフォルトで設定されているので、Adobeから送信されたメールは認証を渡します。 Adobeは、リクエストに応じて、送信側ドメインに DMARC を設定しています。
 
 送信ドメインでの DMARC に加えて、組織ドメインの実施レベルでも DMARC を採用する必要があります（送信ドメインがnews.example.comの場合、example.comは組織ドメインです）。
 
 ### ブランドロゴの作成 {#create-brand-logo}
 
-ロゴの作成は、100% の要件に従う必要があります。 [BIMI グループのガイドライン ](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"} を必ずご参照ください。
+ロゴの作成は、100% の要件に従う必要があります。 [BIMI グループのガイドライン &#x200B;](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"} を必ずご参照ください。
 
 コンテンツ配信ネットワーク（CDN）を使用する場合、メールボックスプロバイダーがロゴを取得できない保護（ボット保護など）を無効にする必要がある場合は、ロゴを安全な場所（HTTPS）に保存する必要があります。
 
@@ -107,10 +107,10 @@ VMC の作業と費用を実行しても、この部分は取り除かれませ�
 
 ## ヒントとテクニック
 
-* BIMI グループは、BIMI の便利な検証ツールを提供しています。 すべてが設定され、準備完了であるかどうかを再確認する場合、またはロゴが準拠しているかどうかを確認する場合は、[ このリンク ](https://bimigroup.org/bimi-generator/){target="_blank"} に移動してください。 後者の場合は、**[!UICONTROL BIMI を生成]** をクリックし、プレースホルダードメインを入力しますが、正しいロゴ URL を入力します。 ロゴが準拠しているかどうかはインスペクターで確認できます。
+* BIMI グループは、BIMI の便利な検証ツールを提供しています。 すべてが設定され、準備完了であるかどうかを再確認する場合、またはロゴが準拠しているかどうかを確認する場合は、[&#x200B; このリンク &#x200B;](https://bimigroup.org/bimi-generator/){target="_blank"} に移動してください。 後者の場合は、**[!UICONTROL BIMI を生成]** をクリックし、プレースホルダードメインを入力しますが、正しいロゴ URL を入力します。 ロゴが準拠しているかどうかはインスペクターで確認できます。
 
 * VMC なしでも安全に開始できます。BIMI レコードに VMC URL が含まれていない場合でも、レピュテーションに害はありませんが、ロゴはすでに Yahoo で表示できます。
 
 * 組織レベルで DMARC を実装するのは大規模な作業です。 一部の企業は、ブランドが DMARC を完全に導入するのを支援することを専門としています。
 
-* よくある質問の詳細なリストが公開されています [ こちら ](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}。
+* よくある質問の詳細なリストが公開されています [&#x200B; こちら &#x200B;](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}。

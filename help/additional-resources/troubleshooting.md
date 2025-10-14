@@ -19,7 +19,7 @@ ht-degree: 87%
 
 ## 配信品質の問題の特定 {#identify-deliverability-issue}
 
-考えられる問題を特定するために、[ そのページ ](/help/ongoing-monitoring.md) に一覧表示されている要素に注意が向く場合があります。
+考えられる問題を特定するために、[&#x200B; そのページ &#x200B;](/help/ongoing-monitoring.md) に一覧表示されている要素に注意が向く場合があります。
 
 <!--
 Mailing or campaign metrics: unsubscribe, abuse complaint and/or bounce rates are higher than usual.
@@ -44,7 +44,7 @@ Seed accounts show filtered or non-delivered mailings.
 
 ### 苦情
 
-[ 苦情 ](/help/metrics/complaints.md) は、メールをスパムとしてレポートする購読者が、インボックスから対応するボタンを押して定義します。
+[&#x200B; 苦情 &#x200B;](/help/metrics/complaints.md) は、メールをスパムとしてレポートする購読者が、インボックスから対応するボタンを押して定義します。
 
 配信の問題が苦情に起因する場合：
 * 受信者が苦情を言っている理由を判断する必要があります。

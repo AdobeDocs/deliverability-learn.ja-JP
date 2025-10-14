@@ -21,7 +21,7 @@ ht-degree: 16%
 
 ISP には、様々なルールがあり、トラフィックの見方も異なります。 例えば、Gmail は、他のすべてのレピュテーション指標に加えて、エンゲージメントを非常に厳密に（開封数とクリック数）調べるので、最も洗練された ISP の 1 つです。 これには、開始時に最も関与の高いユーザーのみを対象としたカスタマイズされたプランが必要です。 他の ISP でも同じことが必要になる場合があります。 具体的な計画については、担当のAdobe配信品質コンサルタントにお問い合わせください。
 
-次の選択されたプロバイダーグループ間の重要な違いについて詳しくは、[ インターネットサービスプロバイダーの詳細 ](/help/internet-service-provider-specifics/overview.md) の節を参照してください。
+次の選択されたプロバイダーグループ間の重要な違いについて詳しくは、[&#x200B; インターネットサービスプロバイダーの詳細 &#x200B;](/help/internet-service-provider-specifics/overview.md) の節を参照してください。
 
 * [Gmail](/help/internet-service-provider-specifics/gmail.md)
 * [Microsoft（Hotmail、Outlook、Windows Live など）](/help/internet-service-provider-specifics/microsoft.md)
@@ -29,4 +29,4 @@ ISP には、様々なルールがあり、トラフィックの見方も異な�
 
 ## その他のリソース
 
-* IP ウォーミングを使用してメールの評判を高める方法について詳しくは、[ この節 ](/help/additional-resources/increase-reputation-with-ip-warming.md) を参照してください。
+* IP ウォーミングを使用してメールの評判を高める方法について詳しくは、[&#x200B; この節 &#x200B;](/help/additional-resources/increase-reputation-with-ip-warming.md) を参照してください。

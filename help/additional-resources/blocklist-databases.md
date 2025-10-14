@@ -45,7 +45,7 @@ ht-degree: 90%
 
 * **SURBL**
 
-  [https://surbl.org/を参照してください ](https://surbl.org/)
+  [https://surbl.org/を参照してください &#x200B;](https://surbl.org/)
 
   SURBL では、スパムで定期的に見られる Web サイトを特定しています。お使いのドメインがこのリストに載った場合は、配信品質に重大な影響が及ぶおそれがあります。配信品質サービスと[アドビカスタマーケア](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)にただちに知らせてください。
 

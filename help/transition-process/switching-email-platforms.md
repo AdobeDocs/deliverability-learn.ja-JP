@@ -23,7 +23,7 @@ ht-degree: 7%
 
 肯定的な評判を確立することはプロセスです。 しかし、一度設定されると、小さな負の指標は、あなたとあなたのメール配信に与える影響が少なくなります。
 
-![ 移行プロセス ](../assets/transition-process.png)
+![&#x200B; 移行プロセス &#x200B;](../assets/transition-process.png)
 
 IP アドレスとドメインをウォームアップする時間は場合によって異なりますが、一般的な送信者が最も多くの Tier 1 ISP （Gmail、Microsoft、Verizon/Yahoo/AOL など）で評価を確立するのに最大 8 週間のベンチマークが用いられます。
 

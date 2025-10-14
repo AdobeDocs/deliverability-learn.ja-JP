@@ -54,13 +54,13 @@ ISP は、当然ながら、メールを送信するのに使用したことが�
 
 **Adobe Campaign Classic**
 
-* [ 強制隔離による配信の最適化 ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=ja#optimizing-your-delivery-through-quarantines)
-* [ プラットフォーム全体の強制隔離アドレスを識別 ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=ja#identifying-quarantined-addresses-for-the-entire-platform)
-* [ 複数のウェーブを使用した送信 ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=ja#sending-using-multiple-waves)
+* [&#x200B; 強制隔離による配信の最適化 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=ja#optimizing-your-delivery-through-quarantines)
+* [&#x200B; プラットフォーム全体の強制隔離アドレスを識別 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=ja#identifying-quarantined-addresses-for-the-entire-platform)
+* [&#x200B; 複数のウェーブを使用した送信 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=ja#sending-using-multiple-waves)
 * [配信の監視](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=ja#sending-messages)
 
 **Adobe Campaign Standard**
 
-* [ 強制隔離による配信の最適化 ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=ja#optimizing-your-delivery-through-quarantines)
-* [ プラットフォーム全体の強制隔離アドレスを識別 ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=ja)
+* [&#x200B; 強制隔離による配信の最適化 &#x200B;](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=ja#optimizing-your-delivery-through-quarantines)
+* [&#x200B; プラットフォーム全体の強制隔離アドレスを識別 &#x200B;](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=ja)
 * [配信の監視](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=ja)

@@ -65,12 +65,12 @@ Adobeプラットフォームにおける新しい送信者のオンボーディ
 
 **Campaign**
 
-* サブドメインをAdobe Campaign Classicまたは Standard に完全にデリゲートする方法については、[ この節 ](/help/additional-resources/ac-domain-name-setup.md) を参照してください。
-* [Campaign コントロールパネル：完全なサブドメインデリゲーション（チュートリアル） ](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=ja) - *サブドメインをAdobe Campaign Classicに完全にデリゲートする方法を説明します*。
-* [Campaign コントロールパネル：完全なサブドメインデリゲーション（チュートリアル） ](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=ja) - *サブドメインをAdobe Campaign Standardに完全にデリゲートする方法を説明します*。
-* Campaign Classicインスタンスのフィードバックループの実装について詳しくは、[ この節 ](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc) を参照してください。
+* サブドメインをAdobe Campaign Classicまたは Standard に完全にデリゲートする方法については、[&#x200B; この節 &#x200B;](/help/additional-resources/ac-domain-name-setup.md) を参照してください。
+* [Campaign コントロールパネル：完全なサブドメインデリゲーション（チュートリアル） &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=ja) - *サブドメインをAdobe Campaign Classicに完全にデリゲートする方法を説明します*。
+* [Campaign コントロールパネル：完全なサブドメインデリゲーション（チュートリアル） &#x200B;](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=ja) - *サブドメインをAdobe Campaign Standardに完全にデリゲートする方法を説明します*。
+* Campaign Classicインスタンスのフィードバックループの実装について詳しくは、[&#x200B; この節 &#x200B;](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc) を参照してください。
 
 ## その他のリソース
 
-* SPF、DKIM、DMARC の認証方法について詳しくは、[ この節 ](/help/additional-resources/authentication.md) を参照してください。
-* IP ウォーミングを使用してメールの評判を高める方法について詳しくは、[ この節 ](/help/additional-resources/increase-reputation-with-ip-warming.md) を参照してください。
+* SPF、DKIM、DMARC の認証方法について詳しくは、[&#x200B; この節 &#x200B;](/help/additional-resources/authentication.md) を参照してください。
+* IP ウォーミングを使用してメールの評判を高める方法について詳しくは、[&#x200B; この節 &#x200B;](/help/additional-resources/increase-reputation-with-ip-warming.md) を参照してください。

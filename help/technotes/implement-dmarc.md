@@ -65,9 +65,9 @@ DMARC は、SPF/DKIM に失敗したメールに関するレポートを受信�
 これらのレポートの主な用途は、スプーフィングが試行されたメールの概要を受け取ることです。 これらは、サードパーティのツールを介してダイジェストするのが最適な、高度に技術的なレポートです。 DMARC 監視を専門とする企業の一部を次に示します。
 
 * [ValiMail](https://www.valimail.com/products/#automated-delivery)
-* [ あがり ](https://www.agari.com/)
-* [ ダルシア語 ](https://dmarcian.com/)
-* [ 配達確認 ](https://www.proofpoint.com/us)
+* [&#x200B; あがり &#x200B;](https://www.agari.com/)
+* [&#x200B; ダルシア語 &#x200B;](https://dmarcian.com/)
+* [&#x200B; 配達確認 &#x200B;](https://www.proofpoint.com/us)
 
 >[!CAUTION]
 >
@@ -99,7 +99,7 @@ DMARC レコードには、DMARC タグと呼ばれる複数のコンポーネ�
 
 >[!NOTE]
 >
->Campaign インスタンスがAWSでホストされている場合は、Campaign コントロールパネルを使用してサブドメインに DMARC を実装できます。 [Campaign コントロールパネルを使用して DMARC レコードを実装する方法を説明します ](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html?lang=ja)。
+>Campaign インスタンスがAWSでホストされている場合は、Campaign コントロールパネルを使用してサブドメインに DMARC を実装できます。 [Campaign コントロールパネルを使用して DMARC レコードを実装する方法を説明します &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html?lang=ja)。
 
 DMARC エラーの一般的な理由は、「From」と「Errors-To」または「Return-Path」アドレスの位置ずれです。 これを回避するには、DMARC を設定する際に、配信テンプレートの「送信者」および「エラー先」アドレス設定を再確認することをお勧めします。
 
@@ -120,4 +120,4 @@ DMARC エラーの一般的な理由は、「From」と「Errors-To」または�
 ## 役に立つリンク {#links}
 
 * [DMARC.org](https://dmarc.org/){target="_blank"}
-* [M3AAWG メール認証 ](https://www.m3aawg.org/sites/default/files/document/M3AAWG_Email_Authentication_Update-2015.pdf){target="_blank"}
+* [M3AAWG メール認証 &#x200B;](https://www.m3aawg.org/sites/default/files/document/M3AAWG_Email_Authentication_Update-2015.pdf){target="_blank"}
