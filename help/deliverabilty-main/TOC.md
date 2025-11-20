@@ -9,7 +9,7 @@ auto-video-transcripts: true
 source-git-commit: 0d78f4c588ae55c61a7e40e07a3b8d33ce84cb01
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
    + [スパムトラップ](/help/metrics/spam-traps.md)
    + [バルク指定とブロック](/help/metrics/bulking-and-blocking.md)
 + [エンゲージメント](/help/engagement.md)
-+ トランジションプロセス -メールプラットフォームの切り替え {#transition-process}
++ 移行プロセス - メールプラットフォームの切り替え {#transition-process}
    + [電子メールプラットフォーム切り替え時のスムーズな移行方法](/help/transition-process/switching-email-platforms.md)
    + [インフラストラクチャ](/help/transition-process/infrastructure.md)
    + [ターゲティング設定条件](/help/transition-process/targeting-criteria.md)
@@ -44,7 +44,7 @@ ht-degree: 100%
    + [Verizon Media Group（Yahoo、AOL、Verizon など）](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [継続的な監視](/help/ongoing-monitoring.md)
 + [実際の利用](/help/putting-it-in-practice.md)
-+ 付録：追加のリソース {#additional-resources}
++ 付録：その他のリソース {#additional-resources}
    + [概要](/help/additional-resources/general-resources.md)
    + [登録解除の注意事項](/help/unsubscribe-dos-and-do-nots.md)
    + 汎用リソース {#generic-resources}
@@ -60,7 +60,7 @@ ht-degree: 100%
       + [SSL 証明書要求プロセス](/help/additional-resources/ac-ssl-certificate-request.md)
       + [新しいプラットフォームの開始](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic - 技術的なレコメンデーション](/help/additional-resources/acc-technical-recommendations.md)
-   + テクニカルノート {#technotes}
+   + テクニカルノート{#technotes}
       + [DMARC の実装](/help/technotes/implement-dmarc.md)
       + [BIMI の実装](/help/technotes/implement-bimi.md)
       + [Italia Online 停止後のバウンスの更新](/help/technotes/update-bounces-after-it-outage.md)
