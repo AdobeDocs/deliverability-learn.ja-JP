@@ -4,10 +4,9 @@ description: Italia Onlineの停止後にバウンスの選定を更新する方
 feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
-hidefromtoc: true
 role: Admin
 level: Beginner
-source-git-commit: e1a2c58e92da00186d91c7acfd8fd7300133a51c
+source-git-commit: 1c1e1b673fbc640fec84948878060b8bc0354ba2
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 16%
@@ -45,8 +44,8 @@ Adobe Campaignは、標準のバウンス処理ロジックに従って、これ
 
 この問題の影響を受けた受信者を見つけるか、他のISPで再度発生する場合は、次の手順を参照してください。
 
-* Campaign Classic v7およびCampaign v8については、[このページ &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}を参照してください。
-* Campaign Standardについては、[このページ &#x200B;](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=ja#unquarantine-bulk){_blank}を参照してください。
+* Campaign Classic v7およびCampaign v8については、[このページ ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}を参照してください。
+* Campaign Standardについては、[このページ ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}を参照してください。
 
 ### Adobe Journey Optimizer{#ajo-update}
 
@@ -54,5 +53,5 @@ Adobe Campaignは、標準のバウンス処理ロジックに従って、これ
 
 識別されると、これらのアドレスは、**[!UICONTROL 削除]** ボタンを使用して、抑制リストから手動で削除できます。 これらのアドレスは、今後のメールキャンペーンに含めることができます。
 
-詳しくは、[この節](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=ja#remove-from-suppression-list){_blank}を参照してください。
+詳しくは、[この節](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}を参照してください。
 
