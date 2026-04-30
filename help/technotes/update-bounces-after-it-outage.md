@@ -4,10 +4,9 @@ description: Italia Onlineの停止後にバウンスの選定を更新する方
 feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
-hidefromtoc: true
 role: Admin
 level: Beginner
-source-git-commit: e1a2c58e92da00186d91c7acfd8fd7300133a51c
+source-git-commit: 1c1e1b673fbc640fec84948878060b8bc0354ba2
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 16%
