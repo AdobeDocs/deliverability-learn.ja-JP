@@ -44,8 +44,8 @@ Adobe Campaignは、標準のバウンス処理ロジックに従って、これ
 
 この問題の影響を受けた受信者を見つけるか、他のISPで再度発生する場合は、次の手順を参照してください。
 
-* Campaign Classic v7およびCampaign v8については、[このページ ](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}を参照してください。
-* Campaign Standardについては、[このページ ](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}を参照してください。
+* Campaign Classic v7およびCampaign v8については、[このページ &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}を参照してください。
+* Campaign Standardについては、[このページ &#x200B;](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}を参照してください。
 
 ### Adobe Journey Optimizer{#ajo-update}
 
