@@ -42,8 +42,8 @@ ht-degree: 13%
 
 **Analytics**
 
-* [&#x200B; エンゲージメント率と顧客維持率を向上させる方法（チュートリアル） &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *コホートを使用して、エンゲージメントの高いオーディエンスの行動を特定し、モバイルアプリでスティッキーが発生する根本原因を把握します。 セグメント IQでデータ サイエンス アルゴリズムを使用して、セグメント間の相違点と類似点を把握します。*
+* [&#x200B; エンゲージメント率と顧客維持率を向上させる方法（チュートリアル） &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=ja#mobile-app-analytics): *コホートを使用して、エンゲージメントの高いオーディエンスの行動を特定し、モバイルアプリでスティッキーが発生する根本原因を把握します。 セグメント IQでデータ サイエンス アルゴリズムを使用して、セグメント間の相違点と類似点を把握します。*
 
 **Campaign Standard**
 
-* [AIを活用したメール：予測エンゲージメントスコアリング](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)
+* [AIを活用したメール：予測エンゲージメントスコアリング](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html?lang=ja#predictive-scoring)
