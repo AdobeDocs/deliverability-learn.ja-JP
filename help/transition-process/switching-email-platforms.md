@@ -1,6 +1,6 @@
 ---
-title: メールプラットフォーム切り替え時のスムーズな移行方法。
-description: メールサービスプロバイダー（ESP）を移動する場合、既存の確立済み IP アドレスも移行できません。 新しく始める際には、肯定的な評判を得るためのベストプラクティスに従うことが重要です。
+title: メールプラットフォームを切り替える際にスムーズに移行する方法。
+description: メールサービスプロバイダー（ESP）を移行する場合、既存のIP アドレスを移行することはできません。 新しいメールマーケティングを始める際には、肯定的なレピュテーションを得るためのベストプラクティスに従うことが重要です。
 topics: Deliverability
 jira: KT-5259
 thumbnail: kt5259.jpg
@@ -10,24 +10,35 @@ role: Admin
 level: Beginner
 team: ACS
 exl-id: 5444d576-5bc1-4fa6-9956-c63dc3c60440
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+TQID: https://experienceleague.adobe.com/sxCdMHKqdCZ3z2xp-aMYKiFfqu5Y-iDhk8FeergrgZw
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b0bb9048-d951-48d8-8232-45cf248a7e27
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 7%
+source-wordcount: 215
+ht-degree: 8%
 
 ---
 
 # メールプラットフォームの切り替え時に移行をスムーズに行う方法
 
-メールサービスプロバイダー（ESP）を移動する場合、既存の確立済み IP アドレスも移行できません。 新しく始める際には、肯定的な評判を得るためのベストプラクティスに従うことが重要です。 使用する新しい IP アドレスはまだ評判が立っていないので、ISP は送信されるメールを完全に信頼できないので、顧客に配信できるメールに注意する必要があります。
+メールサービスプロバイダー（ESP）を移行する場合、既存のIP アドレスを移行することはできません。 新しいメールマーケティングを始める際には、肯定的なレピュテーションを得るためのベストプラクティスに従うことが重要です。 新しいIP アドレスにはまだレピュテーションがないので、ISPはそのIP アドレスから送信されるメールを完全に信頼できず、顧客へのメール配信に慎重な姿勢を示す必要があります。
 
-肯定的な評判を確立することはプロセスです。 しかし、一度設定されると、小さな負の指標は、あなたとあなたのメール配信に与える影響が少なくなります。
+肯定的なレピュテーションを確立するには、ある程度時間を要します。 しかし、一度確立すれば、多少マイナス要素があったとしても、あなたやメール配信への影響を低減できます。
 
-![&#x200B; 移行プロセス &#x200B;](../assets/transition-process.png)
+![移行プロセス &#x200B;](../assets/transition-process.png)
 
-IP アドレスとドメインをウォームアップする時間は場合によって異なりますが、一般的な送信者が最も多くの Tier 1 ISP （Gmail、Microsoft、Verizon/Yahoo/AOL など）で評価を確立するのに最大 8 週間のベンチマークが用いられます。
+IP アドレスとドメインをウォームする時間は異なる場合がありますが、一般的な送信者は、多くのTier 1 ISP （Gmail、Microsoft、Verizon/Yahoo/AOLなど）でレピュテーションを確立するために、最大8週間のベンチマークを設定するのが一般的です。
 
-次の節では、オンボーディングを適切に行うために焦点を当てる必要がある主な領域について説明します。
+以降のセクションでは、オンボーディングを適切に行うために重点的に取り組むべき主な領域について説明します。
 
 1. [インフラストラクチャ](/help/transition-process/infrastructure.md)
 2. [ターゲティング設定条件](/help/transition-process/targeting-criteria.md)
