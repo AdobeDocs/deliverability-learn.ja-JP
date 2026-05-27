@@ -66,5 +66,5 @@ Adobe Campaignは、標準のバウンス処理ロジックに従って、これ
 
 識別されると、これらのアドレスは、**[!UICONTROL 削除]** ボタンを使用して、抑制リストから手動で削除できます。 これらのアドレスは、今後のメールキャンペーンに含めることができます。
 
-詳しくは、[この節](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=ja#remove-from-suppression-list){_blank}を参照してください。
+詳しくは、[こちら](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=ja#remove-from-suppression-list){_blank}を参照してください。
 
