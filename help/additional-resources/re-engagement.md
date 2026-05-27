@@ -7,11 +7,24 @@ activity: understand
 team: ACS
 exl-id: 30118706-d4c0-4bd8-8c9b-50c26b8374ef
 TQID: https://experienceleague.adobe.com/XbAU6Y0r4Ed8W7t71MMNV02jdp2-og04-v-n2lT5m-4
-product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5f60233-d5ea-4453-a799-0ad258b4d399id: e2290edd-b061-4880-9d79-dee306cf5aa9id: ea90ebee-5c84-42d9-8b21-006bdabc95a3id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: b27e5950-9033-45ac-9f86-eb22e567f615
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: c5f60233-d5ea-4453-a799-0ad258b4d399
+  - id: e2290edd-b061-4880-9d79-dee306cf5aa9
+  - id: ea90ebee-5c84-42d9-8b21-006bdabc95a3
+  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
 source-wordcount: 973
@@ -32,7 +45,7 @@ ht-degree: 49%
 
 ## ISPは、非エンゲージメントアクティビティをどのように表示しますか？ {#how-do-isps-view-non-engagement-activity-}
 
-長年の間、ISP は、ユーザーからのエンゲージメントフィードバック指標を使用して、メッセージを配置する場所やメッセージを配信するかどうかを決定してきました。 ユーザー[ エンゲージメント ](/help/engagement.md)は、肯定的なフィードバックと否定的なフィードバックの両方で構成され、ISPは両方を常に監視します。 エンゲージメントがないことは、おそらく、否定的なエンゲージメントの主な一因となります。 配信品質の観点では、エンゲージメントを見せないユーザーに変わることなくキャンペーンを送信し続けると、IP アドレスとドメインのレピュテーションが全体的に低下するおそれもあります。
+長年の間、ISP は、ユーザーからのエンゲージメントフィードバック指標を使用して、メッセージを配置する場所やメッセージを配信するかどうかを決定してきました。 ユーザー[&#x200B; エンゲージメント &#x200B;](/help/engagement.md)は、肯定的なフィードバックと否定的なフィードバックの両方で構成され、ISPは両方を常に監視します。 エンゲージメントがないことは、おそらく、否定的なエンゲージメントの主な一因となります。 配信品質の観点では、エンゲージメントを見せないユーザーに変わることなくキャンペーンを送信し続けると、IP アドレスとドメインのレピュテーションが全体的に低下するおそれもあります。
 
 Gmail、Microsoft®OATHなどのISPは、エンゲージメントしていない電子メールを望ましくない電子メールと見なし、迷惑メールフォルダーにメッセージをリダイレクトします。 また、これらの購読者はメールアカウントを所有しなくなり、これは「リサイクルされた」スパムトラップとして使用できます。 これは、アドレスがしばらく無効であり、すべてのメッセージが拒否されることを意味します。 購読者管理システムが「ハードバウンス」アドレスを削除しない場合、メール配信のトラップに移動する可能性が高くなり、重大な配信の問題につながる可能性があります。
 
