@@ -9,22 +9,11 @@ activity: understand
 team: TM
 exl-id: 350950dc-4703-402a-8e22-3862f4e21d52
 TQID: https://experienceleague.adobe.com/Pq8XpNwqzMbxggauciqILSUqX6BT4OCiDffc7ZgDhWc
-product_v2:
-  - id: b27e5950-9033-45ac-9f86-eb22e567f615
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b0bb9048-d951-48d8-8232-45cf248a7e27
-  - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: b27e5950-9033-45ac-9f86-eb22e567f615id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b0bb9048-d951-48d8-8232-45cf248a7e27id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
 workflow-type: tm+mt
 source-wordcount: 1670
@@ -46,7 +35,7 @@ ht-degree: 6%
 
 * 既知のスパムトラップを悪意を持って送信する行為（「リストポイズニング」とも呼ばれます）については、そのトラップの所有者がアクションを実行した場合、配信およびレピュテーションに関して大きな問題が発生する可能性があります。 受信者に確認せずに、その受信者がマーケティングリストへの追加を本当に希望しているかを知ることはできません。 このため、受信者の期待値も設定できなくなるので、スパムの苦情が増える可能性があります。また、収集されたメールがスパムトラップの場合、迷惑メールとブロックリストに加えるされることがあります。
 
-実店舗とシングルオプトインの両方で発生する問題を最小限に抑える方法については、このガイドの[&#x200B; データの品質と健全性](#data-quality-and-hygiene)の節を参照して、ダブルオプトインの詳細と利点を確認してください。
+実店舗とシングルオプトインの両方で発生する問題を最小限に抑える方法については、このガイドの[ データの品質と健全性](#data-quality-and-hygiene)の節を参照して、ダブルオプトインの詳細と利点を確認してください。
 
 >[!NOTE]
 >
