@@ -7,9 +7,9 @@ role: Leader, User
 level: Beginner
 auto-video-transcripts: true
 source-git-commit: 1c1e1b673fbc640fec84948878060b8bc0354ba2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '182'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -63,4 +63,4 @@ ht-degree: 96%
    + テクニカルノート{#technotes}
       + [DMARC の実装](/help/technotes/implement-dmarc.md)
       + [BIMI の実装](/help/technotes/implement-bimi.md)
-      + {hide-from-toc}[Italia Onlineの停止後にバウンスを更新](/help/technotes/update-bounces-after-it-outage.md)
+      + {hide-from-toc}[Italia Online 停止後のバウンスの更新](/help/technotes/update-bounces-after-it-outage.md)
