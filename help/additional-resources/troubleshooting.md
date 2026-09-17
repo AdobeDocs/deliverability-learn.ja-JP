@@ -41,7 +41,7 @@ ht-degree: 87%
 
 ## 配信品質の問題の特定 {#identify-deliverability-issue}
 
-考えられる問題を特定するには、そのページ ](/help/ongoing-monitoring.md)の[に記載されている要素が注意を引く可能性があります。
+考えられる問題を特定するには、そのページ [&#128279;](/help/ongoing-monitoring.md)のに記載されている要素が注意を引く可能性があります。
 
 <!--
 Mailing or campaign metrics: unsubscribe, abuse complaint and/or bounce rates are higher than usual.
