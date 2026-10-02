@@ -11,27 +11,36 @@ exl-id: 350950dc-4703-402a-8e22-3862f4e21d52
 TQID: https://experienceleague.adobe.com/Pq8XpNwqzMbxggauciqILSUqX6BT4OCiDffc7ZgDhWc
 product_v2:
   - id: b27e5950-9033-45ac-9f86-eb22e567f615
+    internal-label: Marketo Engage
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b0bb9048-d951-48d8-8232-45cf248a7e27
+    internal-label: Forms
   - id: f71e690b-4480-4b67-9ef5-88f42f9cdfdb
+    internal-label: Resources
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 75df8537199680e5f1fc4b98cefdb05220fee7bf
+    internal-label: Security
+source-git-commit: 7fbfe34d5576041c8b595fc4b3f7dc596a4263fb
 workflow-type: tm+mt
-source-wordcount: 1670
+source-wordcount: '1670'
 ht-degree: 6%
-
 ---
-
 # アドレス収集とリスト拡大
 
 新しいメールアドレスの最適なソースは、web サイトや実店舗でのサインアップなどの直接ソースです。 このような状況では、エクスペリエンスの制御により、エクスペリエンスを肯定的なものにし、顧客が自社からの電子メールの受信に興味があることを確認できます。
@@ -66,7 +75,7 @@ ht-degree: 6%
 
 ## データの品質と健全性
 
-データの収集は、課題の一部にすぎません。 また、データが正確かつ使用可能であることも確認する必要があります。 基本形式のフィルターを使用する必要があります。 「@」や「。」が含まれていないメールアドレスは無効です。 一般エイリアスのアドレスは許可しないでください。このようなアドレスはロールアカウントとも呼ばれます（「info」、「admin」、「sales」、「support」など）。 ロールアカウントは、その性質上、受信者は1人ではなく複数の人のグループであるため、リスクが生じる可能性があります。 期待と許容値はグループごとに異なり、それにより苦情、エンゲージメントの変動、登録解除、一般的な混乱が生じるリスクがあります。
+データの収集は、課題の一部にすぎません。 また、データが正確かつ使用可能であることも確認する必要があります。 基本形式のフィルターを使用する必要があります。 「@」または「」が含まれていないメールアドレスは無効です。 例えば、 一般エイリアスのアドレスは許可しないでください。このようなアドレスはロールアカウントとも呼ばれます（「info」、「admin」、「sales」、「support」など）。 ロールアカウントは、その性質上、受信者は1人ではなく複数の人のグループであるため、リスクが生じる可能性があります。 期待と許容値はグループごとに異なり、それにより苦情、エンゲージメントの変動、登録解除、一般的な混乱が生じるリスクがあります。
 
 メールアドレスのデータについて発生する可能性がある一般的な問題の解決策を以下に示します。
 
